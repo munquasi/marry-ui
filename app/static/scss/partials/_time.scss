@@ -1,0 +1,128 @@
+/*Mixin Declarations----------*/
+
+@mixin shift_page_btn($width: 12rem, $height: 4rem, $border-radius: 8px, $background-color: $at-risk, $border: 2px solid $jeopardy, $color: $white, $left-border:rgba(74, 74, 74, 0.25)) {
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+    background-color: $background-color;
+    border: $border;
+    color: $color;
+    padding-left: 1rem;
+    p {
+        font-size: 0.9rem;
+        padding-right: 1rem;
+        vertical-align: middle;
+        text-align: left;
+    }
+    span {
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding-left: 1rem;
+        border-left: solid 1px $left-border;
+        text-align: right;
+        float: right;
+    }
+}
+
+
+/*-----------------------------*/
+
+.shift_page_btn_overdue {
+    @include shift_page_btn($background-color: $overdue, $border: none, $left-border: rgba(255, 255, 255, 0.25));
+}
+
+.shift_page_btn_jeopardy {
+    @include shift_page_btn($background-color: $white, $border: 2px solid $jeopardy, $color: $jeopardy-text);
+}
+
+.shift_page_btn_at_risk {
+    @include shift_page_btn($background-color: $at-risk, $border: none, $color: $bg-darkGrey);
+}
+
+.shift_page_btn_upcoming {
+    @include shift_page_btn($background-color: $upcoming, $border: none, $color: $white);
+}
+
+.shift_page_btn_24_hrs {
+    @include shift_page_btn($background-color: $text, $border: none, $color: $white);
+}
+
+.sortorder:after {
+    content: url('/static/img/arrow_sort-down.png');
+    margin-left: 0.7rem;
+}
+
+.sortorder.reverse:after {
+    content: url('/static/img/arrow_sort-up.png');
+    margin-left: 0.7rem;
+}
+
+.circle-overdue {
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    min-width: 1rem;
+    min-height: 1rem;
+    background-color: $overdue;
+}
+
+.circle-jeopardy {
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    min-width: 1rem;
+    min-height: 1rem;
+    border: 2px solid $jeopardy;
+    background-color: $white;
+}
+
+.circle-risk {
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    min-width: 1rem;
+    min-height: 1rem;
+    background-color: $at-risk;
+}
+
+.circle-upcoming {
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    min-width: 1rem;
+    min-height: 1rem;
+    background-color: $upcoming;
+}
+
+.text-white-space-initial {
+    white-space: initial !important;
+}
+
+.bigger-text-container {
+    // margin-left: .5rem;
+}
+
+.shift-page-btns-container {
+    margin-left: -0.5rem;
+}
+
+.bigger-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.group-button {
+    margin-bottom: 1.6rem;
+}
+
+.select-width-30 {
+    width: 30%;
+}
+
+.date-calander-input {
+    .datepicker.dropdown-menu {
+        width: 350px !important;
+        height: 300px !important;
+        overflow: scroll;
+    }
+}

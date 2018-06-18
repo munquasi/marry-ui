@@ -1,0 +1,915 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="OriginalFile" content="Ops-5PayRoll.docx" />
+ <meta name="generator" content="Adobe RoboHelp 2017" />
+<title>Ops-5PayRoll</title>
+<link rel="stylesheet" href="Ops-5PayRoll.css" type="text/css" />
+<style type="text/css">
+<!--
+body { background-color:#ffffff; }
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/widgets.min.css">
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "";
+</script>
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p style="margin-right: 37.5pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+<p style="margin-right: 37.5pt; margin-left: 12px;">&#160;&#160;&#160;&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 24px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<h2 style="margin-top: .25in; margin-right: 0in; margin-bottom: 6.0pt; 
+	 margin-left: 0in; text-indent: -.5in; line-height: 115%;"><span style="font-size: 18.0pt; 
+	 line-height: 115%; font-family: Arial, sans-serif; color: #000000; 
+	 font-weight: normal;">Ops-6-6 System Administration</span></h2>
+<h3 style="margin-top: 16.0pt; margin-right: 0in; margin-bottom: 4.0pt; 
+	 margin-left: -.5in; line-height: 115%;"><span style="font-family: Arial, sans-serif; 
+													 color: #000000;">OPS- 
+ 6-6.1 Create a Role</span></h3>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; 
+								 font-family: Arial, sans-serif; color: #000000;">In 
+ the Create Roles screen in <b>System Administration</b> tab of Javelin 
+ OPS interface, the System Administrator can create and edit roles and 
+ manage the following:</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .25in; text-indent: -13.5pt; 
+	 line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; 
+								 font-family: Arial, sans-serif; color: #000000;">●<span 
+	 style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Role Name (e.g. Contract Manager)</span></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .25in; text-indent: -13.5pt; 
+	 line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; 
+								 font-family: Arial, sans-serif; color: #000000;">●<span 
+	 style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Role Description (this should describe the permissions 
+ which this role has)</span></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .25in; text-indent: -13.5pt; 
+	 line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; 
+								 font-family: Arial, sans-serif; color: #000000;">●<span 
+	 style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Role Comments (the comments can be used for any important 
+ information, including for example a change request number requesting 
+ the role to be created, updated, suspended)</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;">&#160;</p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;"><b><span style="font-size: 10.0pt; line-height: 115%; 
+									 font-family: Arial, sans-serif; color: #000000;">To 
+ create a new Role</span></b><span style="font-size: 10.0pt; line-height: 115%; 
+									 font-family: Arial, sans-serif; color: #000000;">:</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">1.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Click</span> <img src="Ops-5PayRoll_files/image104.gif" alt="create-role-menu.png" border="0" style="width:100%; max-width:52px" /><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">icon and then select the <b>Create Roles</b> option.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image106.jpg" alt="create-role-menu-1.png" border="0" style="width:100%; max-width:387px" /></p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">2.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Next, click <b>New</b> on the resulting screen.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image108.jpg" alt="create-role-menu-2.png" border="0" style="width:100%; max-width:578px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">3.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">On the resulting screen, click <b>New</b>. The <b>Create 
+ a new role</b> screen gets displayed.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image109.jpg" alt="add role.jpg" border="0" style="width:100%; max-width:386px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">4.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Enter the role name, description, and comments (if 
+ any), and click <b>Save</b> to save the new role.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image111.jpg" alt="success.jpg" border="0" style="width:100%; max-width:284px" /></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -22.5pt; 
+	 line-height: 115%;">&#160;</p>
+<table style=" margin-left:-3.75pt; border:none; border-collapse:separate; width:100%; max-width:636px;" cellspacing="0">
+	<tr style="height: 15.0pt;">
+		<td style="vertical-align: top; border-left: solid #D52A0A 1.0px; 
+			 border-right: solid #ffffff 1.0px; border-top: solid #D52A0A 1.0px; 
+			 border-bottom: solid #D52A0A 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 height="20" width="72"><p style="margin-top: 0in; line-height: normal;"><img src="Ops-5PayRoll_files/image010.gif" alt="note1.PNG" border="0" style="width:100%; max-width:39px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #D52A0A 1.0px; 
+			 border-top: solid #D52A0A 1.0px; border-bottom: solid #D52A0A 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" height="20" width="564"><p 
+			 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+		 font-family: Arial, sans-serif; color: #000000;">In case the User 
+		 is not mapped to an Employee or if for any reason the application 
+		 is unable to retrieve the Employee’s Job, the user will automatically 
+		 be granted the Least Privileged user’s role.&#160;</span></p></td>
+	</tr>
+</table>
+<h3 style="margin-top: 16.0pt; margin-right: 0in; margin-bottom: 4.0pt; 
+	 margin-left: -.5in; line-height: 115%;"><span style="font-family: Arial, sans-serif; 
+													 color: #000000;">OPS- 
+ 6-6.2 Update a Role</span></h3>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; 
+								 font-family: Arial, sans-serif; color: #000000;">The 
+ user can update an existing role if required. The right to edit the fields 
+ depend on the privilege given to the administrative user.</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -22.5pt; 
+	 line-height: 115%;">&#160;</p>
+<table style=" margin-left:-3.75pt; border:none; border-collapse:separate; width:100%; max-width:636px;" cellspacing="0">
+	<tr style="height: 15.0pt;">
+		<td style="vertical-align: top; border-left: solid #D52A0A 1.0px; 
+			 border-right: solid #ffffff 1.0px; border-top: solid #D52A0A 1.0px; 
+			 border-bottom: solid #D52A0A 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 height="20" width="72"><p style="margin-top: 0in; line-height: normal;"><img src="Ops-5PayRoll_files/image010.gif" alt="note1.PNG" border="0" style="width:100%; max-width:39px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #D52A0A 1.0px; 
+			 border-top: solid #D52A0A 1.0px; border-bottom: solid #D52A0A 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" height="20" width="564"><p 
+			 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+		 font-family: Arial, sans-serif; color: #000000;">For the System 
+		 Administrator and Least Privilege User roles, only the Comments 
+		 field can be updated.&#160;</span></p></td>
+	</tr>
+</table>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -22.5pt; 
+	 line-height: 115%;">&#160;</p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;"><b><span style="font-size: 10.0pt; line-height: 115%; 
+									 font-family: Arial, sans-serif; color: #000000;">To 
+ update a Role</span></b><span style="font-size: 10.0pt; line-height: 115%; 
+								 font-family: Arial, sans-serif; color: #000000;">:</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">1.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Click <b>System Administration</b> and then select 
+ the <b>Create Roles</b> option.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image106.jpg" alt="create-role-menu-1.png" border="0" style="width:100%; max-width:387px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">2.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Next, click on any of the existing roles on the resulting 
+ screen.</span></p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image114.jpg" alt="edit-role1.png" border="0" style="width:100%; max-width:578px" /></p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">3.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Against the record you want to edit, click the</span><img src="Ops-5PayRoll_files/image116.jpg" alt="edit-icon.png" border="0" style="width:100%; max-width:35px" /> <span style="font-size: 10.0pt; line-height: 115%; 
+									 font-family: Arial, sans-serif; color: #000000;">icon. 
+ The record expands in the same screen in edit mode as shown:</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image118.jpg" alt="edit-role.png" border="0" style="width:100%; max-width:375px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">4.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Edit or make changes to the required fields (only 
+ those fields will be editable to which the logged in user has right to 
+ make changes) and click <b>Save</b>.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image120.jpg" alt="edit-role2.png" border="0" style="width:100%; max-width:244px" /></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -22.5pt; 
+	 line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">5.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Click <b>Confirm</b> after making the required changes 
+ to save the changes.</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;">&#160;</p>
+<h3 style="margin-top: 16.0pt; margin-right: 0in; margin-bottom: 4.0pt; 
+	 margin-left: -.5in; line-height: 115%;"><span style="font-family: Arial, sans-serif; 
+													 color: #000000;">OPS- 
+ 6-6.3 Suspend a Role</span></h3>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;"><b><span style="font-size: 10.0pt; line-height: 115%; 
+									 font-family: Arial, sans-serif; color: #000000;">To 
+ Suspend a Role</span></b><span style="font-size: 10.0pt; line-height: 115%; 
+								 font-family: Arial, sans-serif; color: #000000;">:</span></p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">1.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Click</span> <img src="Ops-5PayRoll_files/image104.gif" alt="create-role-menu.png" border="0" style="width:100%; max-width:52px" /><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">icon and then select the <b>Create Roles</b> option.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image106.jpg" alt="create-role-menu-1.png" border="0" style="width:100%; max-width:387px" /></p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">2.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Next, click on any of the existing roles on the resulting 
+ screen.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image114.jpg" alt="edit-role1.png" border="0" style="width:100%; max-width:578px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">3.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Against the record you want to edit, click the</span> 
+ <img src="Ops-5PayRoll_files/image116.jpg" alt="edit-icon.png" border="0" style="width:100%; max-width:35px" /><span style="font-size: 10.0pt; line-height: 115%; 
+										 font-family: Arial, sans-serif; 
+										 color: #000000;">&#160;link. The 
+ record expands in the same screen in edit mode as shown:</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image122.jpg" alt="suspend-1.png" border="0" style="width:100%; max-width:375px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">4.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Select the <b>Suspend</b> option to suspend the role 
+ as required and click <b>Save</b>. The following screen displays:</span></p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image124.jpg" alt="suspend-2.png" border="0" style="width:100%; max-width:211px" /></p>
+<p class="NormalCxSpLast" style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; 
+	 margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">5.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Click <b>Confirm</b> to proceed with the suspension 
+ and save the change.</span></p>
+<h3 style="margin-top: 16.0pt; margin-right: 0in; margin-bottom: 4.0pt; 
+	 margin-left: -.5in; line-height: 115%;"><span style="font-family: Arial, sans-serif; 
+													 color: #000000;">OPS- 
+ 6-6.4 Activate a Role</span></h3>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -22.5pt; 
+	 line-height: 115%;">&#160;</p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;"><b><span style="font-size: 10.0pt; line-height: 115%; 
+									 font-family: Arial, sans-serif; color: #000000;">To 
+ activate a Role</span></b><span style="font-size: 10.0pt; line-height: 115%; 
+								 font-family: Arial, sans-serif; color: #000000;">:</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">1.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Click</span> <img src="Ops-5PayRoll_files/image104.gif" alt="create-role-menu.png" border="0" style="width:100%; max-width:52px" /><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">icon and then select the <b>Create Roles</b> option.</span></p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image106.jpg" alt="create-role-menu-1.png" border="0" style="width:100%; max-width:387px" /></p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">2.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Next, click on any of the existing roles on the resulting 
+ screen.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image114.jpg" alt="edit-role1.png" border="0" style="width:100%; max-width:578px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">3.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Against the record you want to edit, click the</span> 
+ <img src="Ops-5PayRoll_files/image116.jpg" alt="edit-icon.png" border="0" style="width:100%; max-width:35px" /><span style="font-size: 10.0pt; line-height: 115%; 
+										 font-family: Arial, sans-serif; 
+										 color: #000000;">&#160;link. The 
+ record expands in the same screen in edit mode as shown:</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image126.gif" alt="activate-1.png" border="0" style="width:100%; max-width:323px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">4.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Enable the <b>Active</b> option and click <b>Save</b>. 
+ The following screen displays:</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image128.jpg" alt="activate-2.png" border="0" style="width:100%; max-width:212px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">5.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Click <b>Confirm</b> to proceed with the activation 
+ and save the change.</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -22.5pt; 
+	 line-height: 115%;">&#160;</p>
+<table style=" margin-left:-3.75pt; border:none; border-collapse:separate; width:100%; max-width:636px;" cellspacing="0">
+	<tr style="height: 15.0pt;">
+		<td style="vertical-align: top; border-left: solid #D52A0A 1.0px; 
+			 border-right: solid #ffffff 1.0px; border-top: solid #D52A0A 1.0px; 
+			 border-bottom: solid #D52A0A 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 height="20" width="72"><p style="margin-top: 0in; line-height: normal;"><img src="Ops-5PayRoll_files/image010.gif" alt="note1.PNG" border="0" style="width:100%; max-width:39px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #D52A0A 1.0px; 
+			 border-top: solid #D52A0A 1.0px; border-bottom: solid #D52A0A 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" height="20" width="564"><p 
+			 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+		 font-family: Arial, sans-serif; color: #000000;">The user may 
+		 require a certain privilege to activate a role.</span></p></td>
+	</tr>
+</table>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -22.5pt; 
+	 line-height: 115%;">&#160;</p>
+<table style=" margin-left:-3.75pt; border:none; border-collapse:separate; width:100%; max-width:636px;" cellspacing="0">
+	<tr style="height: 15.0pt;">
+		<td style="vertical-align: top; border-left: solid #D52A0A 1.0px; 
+			 border-right: solid #ffffff 1.0px; border-top: solid #D52A0A 1.0px; 
+			 border-bottom: solid #D52A0A 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 height="20" width="72"><p style="margin-top: 0in; line-height: normal;"><img src="Ops-5PayRoll_files/image010.gif" alt="note1.PNG" border="0" style="width:100%; max-width:39px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #D52A0A 1.0px; 
+			 border-top: solid #D52A0A 1.0px; border-bottom: solid #D52A0A 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" height="20" width="564"><p 
+			 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+		 font-family: Arial, sans-serif; color: #000000;">In case the message 
+		 “Full authentication is required to access this resource” is displayed 
+		 while trying to activate a role, please contact your administrator.</span></p></td>
+	</tr>
+</table>
+<h3 style="margin-top: 16.0pt; margin-right: 0in; margin-bottom: 4.0pt; 
+	 margin-left: -.5in; line-height: 115%;"><span style="font-family: Arial, sans-serif; 
+													 color: #000000;">OPS- 
+ 6-6.5 Mapping Jobs to Role</span></h3>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; 
+								 font-family: Arial, sans-serif; color: #000000;">Jobs 
+ are mastered in Oracle HCM and stored in the Employee module in OPS. In 
+ the Roles module, we utilise this reference data and display the list 
+ of Jobs in the Job Title to Role Mapping screen.</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;">&#160;</p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; 
+								 font-family: Arial, sans-serif; color: #000000;">Here, 
+ the System Administrator can map a Job Title to a Role. This allows a 
+ User to inherit a Role automatically based on their Primary Job Title 
+ in HCM.</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;">&#160;</p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;"><b><span style="font-size: 10.0pt; line-height: 115%; 
+									 font-family: Arial, sans-serif; color: #000000;">To 
+ map a job title to a Role</span></b><span style="font-size: 10.0pt; line-height: 115%; 
+											 font-family: Arial, sans-serif; 
+											 color: #000000;">:</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">1.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Click</span> <img src="Ops-5PayRoll_files/image104.gif" alt="create-role-menu.png" border="0" style="width:100%; max-width:52px" /><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">icon and then select the <b>Job Title to Role Mapping</b> 
+ menu.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image130.jpg" alt="title-to-role-1.png" border="0" style="width:100%; max-width:388px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">2.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">The following screen is displayed on clicking the 
+ <b>Job Title to Role Mapping</b> menu.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image132.jpg" alt="title-to-role-2.png" border="0" style="width:100%; max-width:578px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">3.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Click the</span><img src="Ops-5PayRoll_files/image116.jpg" alt="edit-icon.png" border="0" style="width:100%; max-width:35px" /> 
+ <span style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+		 color: #000000;">link against the job title that you want to assign 
+ a role. The record expands with the various fields that allows the logged 
+ in user to update the required information:</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image134.jpg" alt="title-to-role-3.png" border="0" style="width:100%; max-width:371px" /></p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">4.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">From the <b>Role</b> drop down list, select the appropriate 
+ role you want to assign to the selected job profile.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image136.jpg" alt="title-to-role-4.png" border="0" style="width:100%; max-width:375px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">5.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">After selecting the role to be mapped to the job 
+ profile, click <b>Update</b> to save the mapping. The following confirmation 
+ dialog displays.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image138.jpg" alt="update-1.png" border="0" style="width:100%; max-width:211px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">6.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Click <b>Confirm</b>.The role selected will be assigned 
+ to the job profile.</span></p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<h3 style="margin-top: 16.0pt; margin-right: 0in; margin-bottom: 4.0pt; 
+	 margin-left: -.5in; line-height: 115%;"><span style="font-family: Arial, sans-serif; 
+													 color: #000000;">OPS- 
+ 6-6.6 Update a Job to Role Mapping</span></h3>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; 
+								 font-family: Arial, sans-serif; color: #000000;">The 
+ System Administrator can update the mapping of a new role from the <i>Least 
+ Privileged User</i> to another role.</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -22.5pt; 
+	 line-height: 115%;">&#160;</p>
+<table style=" margin-left:-3.75pt; border:none; border-collapse:separate; width:100%; max-width:636px;" cellspacing="0">
+	<tr style="height: 15.0pt;">
+		<td style="vertical-align: top; border-left: solid #D52A0A 1.0px; 
+			 border-right: solid #ffffff 1.0px; border-top: solid #D52A0A 1.0px; 
+			 border-bottom: solid #D52A0A 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 height="20" width="72"><p style="margin-top: 0in; line-height: normal;"><img src="Ops-5PayRoll_files/image010.gif" alt="note1.PNG" border="0" style="width:100%; max-width:39px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #D52A0A 1.0px; 
+			 border-top: solid #D52A0A 1.0px; border-bottom: solid #D52A0A 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" height="20" width="564"><p 
+			 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+		 font-family: Arial, sans-serif; color: #000000;">If a Job Title 
+		 is updated in HCM in the reference list of Job Titles, then that 
+		 Job ID will be remapped to the Least Privileged User role automatically. 
+		 The System Administrator would need to then log into the system 
+		 and update the mapping to the relevant role.</span></p></td>
+	</tr>
+</table>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;"><b><span style="font-size: 10.0pt; line-height: 115%; 
+									 font-family: Arial, sans-serif; color: #000000;">To 
+ update job title to role mapping</span></b><span style="font-size: 10.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif; 
+													 color: #000000;">:</span></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">1.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Click</span> <img src="Ops-5PayRoll_files/image104.gif" alt="create-role-menu.png" border="0" style="width:100%; max-width:52px" /><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">icon and then select the <b>Job Title to Role Mapping</b> 
+ menu.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image130.jpg" alt="title-to-role-1.png" border="0" style="width:100%; max-width:388px" /></p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">2.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">The following screen is displayed on clicking the 
+ <b>Job Title to Role Mapping</b> option.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image139.jpg" alt="title-to-role-2.png" border="0" style="width:100%; max-width:578px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">3.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Click the</span> <img src="Ops-5PayRoll_files/image116.jpg" alt="edit-icon.png" border="0" style="width:100%; max-width:35px" /><b><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">&#160;</span></b><span style="font-size: 10.0pt; 
+											 line-height: 115%; font-family: Arial, sans-serif; 
+											 color: #000000;">icon against 
+ a record that belongs to the least privileged user. A screen displays 
+ with various fields that allows the logged in user to update the required 
+ role.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image136.jpg" alt="title-to-role-4.png" border="0" style="width:100%; max-width:375px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">4.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Select the required role to be mapped<b>.</b> The 
+ user can also edit the comments (if required). Click <b>Update</b>. The 
+ following confirmation message displays.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image138.jpg" alt="update-1.png" border="0" style="width:100%; max-width:211px" /></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -22.5pt; 
+	 line-height: 115%;">&#160;</p>
+<table style=" margin-left:1.5pt; border:none; border-collapse:separate; width:100%; max-width:613px;" cellspacing="0">
+	<tr style="height: 15.0pt;">
+		<td style="vertical-align: top; border-left: solid #D52A0A 1.0px; 
+			 border-right: solid #ffffff 1.0px; border-top: solid #D52A0A 1.0px; 
+			 border-bottom: solid #D52A0A 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 height="20" width="65"><p style="margin-top: 0in; line-height: normal;"><img src="Ops-5PayRoll_files/image010.gif" alt="note1.PNG" border="0" style="width:100%; max-width:39px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #D52A0A 1.0px; 
+			 border-top: solid #D52A0A 1.0px; border-bottom: solid #D52A0A 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" height="20" width="548"><p 
+			 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+		 font-family: Arial, sans-serif; color: #000000;">The System Administrator 
+		 can update the mapping from Least Privileged User to another role, 
+		 (which was created on the Create Roles page).</span></p></td>
+	</tr>
+</table>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p class="NormalCxSpLast" style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; 
+	 margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">5.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Click <b>Confirm</b>. The role selected will be updated 
+ for the job profile.</span></p>
+<h3 style="margin-top: 16.0pt; margin-right: 0in; margin-bottom: 4.0pt; 
+	 margin-left: -.5in; line-height: 115%;"><span style="font-family: Arial, sans-serif; 
+													 color: #000000;">OPS- 
+ 6-6.7 Suspending a Job Title</span></h3>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; 
+								 font-family: Arial, sans-serif; color: #000000;">The 
+ System Administrator cannot suspend a job title in OPS as Job Titles are 
+ mastered in HCM. If a Job Title is suspended in HCM, then it will also 
+ be suspended in OPS.</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;">&#160;</p>
+<h3 style="margin-top: 16.0pt; margin-right: 0in; margin-bottom: 4.0pt; 
+	 margin-left: -.5in; line-height: 115%;"><span style="font-family: Arial, sans-serif; 
+													 color: #000000;">OPS- 
+ 6-6.8 Configuring/Updating Menus For Role</span></h3>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; 
+								 font-family: Arial, sans-serif; color: #000000;">The 
+ System Administrator can view the list of available menus in the user 
+ interface and configure for each role, the menu items to be shown in the 
+ left hand bar in the Javelin OPS application.</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;">&#160;</p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; 
+								 font-family: Arial, sans-serif; color: #000000;">Then 
+ by selecting the checkboxes next to each of the menus you will grant or 
+ remove access to these menus for this role.</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;">&#160;</p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;"><b><span style="font-size: 10.0pt; line-height: 115%; 
+									 font-family: Arial, sans-serif; color: #000000;">To 
+ Configure/update Menus for a Role</span></b><span style="font-size: 10.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif; 
+													 color: #000000;">:</span></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">1.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Click</span> <img src="Ops-5PayRoll_files/image104.gif" alt="create-role-menu.png" border="0" style="width:100%; max-width:52px" /><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">icon and then select the <b>Roles Administration:Menus</b> 
+ menu.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image141.jpg" alt="role-admin-1.png" border="0" style="width:100%; max-width:411px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">2.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">The following screen is displayed on clicking the 
+ <b>Roles Administration: Menus</b> option.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image143.jpg" alt="role-admin-2.png" border="0" style="width:100%; max-width:578px" /></p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-family: Arial, sans-serif; color: #000000;">3.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-family: Arial, sans-serif; color: #000000;">From the <b>Roles</b> 
+ drop down list: select the role whose menu you would like to configure.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image145.jpg" alt="role-admin-3.png" border="0" style="width:100%; max-width:578px" /></p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">4.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">For the selected Role, the list of menu items are 
+ displayed against which the logged in user can enable or disable the access.</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -22.5pt; 
+	 line-height: 115%;">&#160;</p>
+<table style=" margin-left:-3.75pt; border:none; border-collapse:separate; width:100%; max-width:636px;" cellspacing="0">
+	<tr style="height: 15.0pt;">
+		<td style="vertical-align: top; border-left: solid #D52A0A 1.0px; 
+			 border-right: solid #ffffff 1.0px; border-top: solid #D52A0A 1.0px; 
+			 border-bottom: solid #D52A0A 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 height="20" width="72"><p style="margin-top: 0in; line-height: normal;"><img src="Ops-5PayRoll_files/image010.gif" alt="note1.PNG" border="0" style="width:100%; max-width:39px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #D52A0A 1.0px; 
+			 border-top: solid #D52A0A 1.0px; border-bottom: solid #D52A0A 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" height="20" width="564"><p 
+			 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+		 font-family: Arial, sans-serif; color: #000000;">Menus and menu 
+		 items are configured in a parent / child relationship. When the 
+		 parent is checked, the child items will automatically be checked, 
+		 unless otherwise overridden.</span></p></td>
+	</tr>
+</table>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -22.5pt; 
+	 line-height: 115%;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image147.jpg" alt="role-admin-4.png" border="0" style="width:100%; max-width:578px" /></p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">5.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Then by selecting the checkboxes next to each of 
+ the menu items listed, you can grant or remove access to these menus for 
+ this role.</span></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">6.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Click the <b>Save</b> button to confirm the changes.</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -22.5pt; 
+	 line-height: 115%;">&#160;</p>
+<table style=" margin-left:-3.75pt; border:none; border-collapse:separate; width:100%; max-width:636px;" cellspacing="0">
+	<tr style="height: 15.0pt;">
+		<td style="vertical-align: top; border-left: solid #D52A0A 1.0px; 
+			 border-right: solid #ffffff 1.0px; border-top: solid #D52A0A 1.0px; 
+			 border-bottom: solid #D52A0A 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 height="20" width="72"><p style="margin-top: 0in; line-height: normal;"><img src="Ops-5PayRoll_files/image010.gif" alt="note1.PNG" border="0" style="width:100%; max-width:39px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #D52A0A 1.0px; 
+			 border-top: solid #D52A0A 1.0px; border-bottom: solid #D52A0A 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" height="20" width="564"><p 
+			 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+		 font-family: Arial, sans-serif; color: #000000;">Once a change 
+		 has been made you must click <b>Save</b> in the top left hand 
+		 side of the screen to save the changes.</span></p></td>
+	</tr>
+</table>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -22.5pt; 
+	 line-height: 115%;">&#160;</p>
+<table style=" margin-left:-3.75pt; border:none; border-collapse:separate; width:100%; max-width:636px;" cellspacing="0">
+	<tr style="height: 15.0pt;">
+		<td style="vertical-align: top; border-left: solid #D52A0A 1.0px; 
+			 border-right: solid #ffffff 1.0px; border-top: solid #D52A0A 1.0px; 
+			 border-bottom: solid #D52A0A 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 height="20" width="72"><p style="margin-top: 0in; line-height: normal;"><img src="Ops-5PayRoll_files/image010.gif" alt="note1.PNG" border="0" style="width:100%; max-width:39px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #D52A0A 1.0px; 
+			 border-top: solid #D52A0A 1.0px; border-bottom: solid #D52A0A 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" height="20" width="564"><p 
+			 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+		 font-family: Arial, sans-serif; color: #000000;">When you select 
+		 a Role and then begin to make changes to the menu permissions, 
+		 an Undo Changes button will appear. This is so that BEFORE you 
+		 press save, it is possible to restore the permissions to the previously 
+		 saved version.</span></p>
+		<p style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+		 font-family: Arial, sans-serif; color: #000000;">Note: once you 
+		 press save, the Undo Changes is no longer possible.</span></p></td>
+	</tr>
+</table>
+<h3 style="margin-top: 16.0pt; margin-right: 0in; margin-bottom: 4.0pt; 
+	 margin-left: -.5in; line-height: 115%;"><span style="font-family: Arial, sans-serif; 
+													 color: #000000;">OPS- 
+ 6-6.9 Role Administration in CRUD</span></h3>
+<p style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+														 font-family: Arial, sans-serif; 
+														 color: #000000;">The 
+ System Administrator role can access the role administration page and 
+ manage the CRUD (Create, Read, Update and Delete) operations of all the 
+ users coming under the particular user role selected by the admin and 
+ change access to operations under the country.</span></p>
+<p style="margin-top: 0in; line-height: normal;">&#160;</p>
+<p style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+														 font-family: Arial, sans-serif; 
+														 color: #000000;">The 
+ CRUD functions are the user interfaces to databases permitting users to 
+ create, view, and alter data. CRUD works on and manipulates entities in 
+ databases.</span></p>
+<p style="margin-top: 0in; line-height: normal;">&#160;</p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-family: Arial, sans-serif; color: #000000;">1.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Click</span> <img src="Ops-5PayRoll_files/image104.gif" alt="create-role-menu.png" border="0" style="width:100%; max-width:52px" /><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">&#160;icon and then select <b>Roles Administration: 
+ Menus (CRUD)</b> menu</span><span style="font-family: Arial, sans-serif; 
+									 color: #000000;">.</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -.5in; 
+	 line-height: 115%;"><span style="font-family: Arial, sans-serif; color: #000000;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;<img src="Ops-5PayRoll_files/image149.gif" alt="role-admin-crud-1.png" border="0" style="width:100%; max-width:424px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">2.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">The following screen gets displayed on clicking <b>Roles 
+ Administration: Menus (CRUD)</b> menu.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image151.jpg" alt="role-admin-crud-2.png" border="0" style="width:100%; max-width:415px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">3.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Select the required role from the <b>Role</b> drop 
+ down list.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image153.jpg" alt="role-admin-crud-3.png" border="0" style="width:100%; max-width:578px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">4.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">For the selected Role, the list of menu items are 
+ displayed against which the logged in user can enable or disable the access.</span></p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image155.jpg" alt="role-admin-crud-4.png" border="0" style="width:100%; max-width:578px" /></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -22.5pt; 
+	 line-height: 115%;">&#160;</p>
+<table style=" margin-left:-3.75pt; border:none; border-collapse:separate; width:100%; max-width:623px;" cellspacing="0">
+	<tr style="height: 15.0pt;">
+		<td style="vertical-align: top; border-left: solid #D52A0A 1.0px; 
+			 border-right: solid #ffffff 1.0px; border-top: solid #D52A0A 1.0px; 
+			 border-bottom: solid #D52A0A 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 height="20" width="72"><p style="margin-top: 0in; line-height: normal;"><img src="Ops-5PayRoll_files/image010.gif" alt="note1.PNG" border="0" style="width:100%; max-width:39px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #D52A0A 1.0px; 
+			 border-top: solid #D52A0A 1.0px; border-bottom: solid #D52A0A 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" height="20" width="551"><p 
+			 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+		 font-family: Arial, sans-serif; color: #000000;">You can click 
+		 <b>Expand All</b> option to expand the root modules to their submenus. 
+		 Collapse all does the reverse.</span></p></td>
+	</tr>
+</table>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">5.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Select the checkboxes next to each of the menus, 
+ which you want to can grant or remove access for this role.</span></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -22.5pt; 
+	 line-height: 115%;">&#160;</p>
+<table style=" margin-left:-1.5pt; border:none; border-collapse:separate; width:100%; max-width:621px;" cellspacing="0">
+	<tr style="height: 15.0pt;">
+		<td style="vertical-align: top; border-left: solid #D52A0A 1.0px; 
+			 border-right: solid #ffffff 1.0px; border-top: solid #D52A0A 1.0px; 
+			 border-bottom: solid #D52A0A 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 height="20" width="69"><p style="margin-top: 0in; line-height: normal;"><img src="Ops-5PayRoll_files/image010.gif" alt="note1.PNG" border="0" style="width:100%; max-width:39px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #D52A0A 1.0px; 
+			 border-top: solid #D52A0A 1.0px; border-bottom: solid #D52A0A 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" height="20" width="552"><p 
+			 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+		 font-family: Arial, sans-serif; color: #000000;">Menus and menu 
+		 items are configured in a parent / child relationship. When the 
+		 parent is checked, the child items will automatically be checked, 
+		 unless otherwise overridden.</span></p></td>
+	</tr>
+</table>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -22.5pt; 
+	 line-height: 115%;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%;"><img src="Ops-5PayRoll_files/image157.jpg" alt="role-admin-crud-5.png" border="0" style="width:100%; max-width:578px" /></p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<table style=" margin-left:-3.75pt; border:none; border-collapse:separate; width:100%; max-width:636px;" cellspacing="0">
+	<tr style="height: 15.0pt;">
+		<td style="vertical-align: top; border-left: solid #D52A0A 1.0px; 
+			 border-right: solid #ffffff 1.0px; border-top: solid #D52A0A 1.0px; 
+			 border-bottom: solid #D52A0A 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 height="20" width="72"><p style="margin-top: 0in; line-height: normal;"><img src="Ops-5PayRoll_files/image010.gif" alt="note1.PNG" border="0" style="width:100%; max-width:39px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #D52A0A 1.0px; 
+			 border-top: solid #D52A0A 1.0px; border-bottom: solid #D52A0A 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" height="20" width="564"><p 
+			 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+		 font-family: Arial, sans-serif; color: #000000;">Once a change 
+		 has been made you must click <b>Save</b> in the top left hand 
+		 side of the screen to save the changes.</span></p></td>
+	</tr>
+</table>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: .0001pt; margin-left: -22.5pt; 
+	 line-height: 115%;">&#160;</p>
+<table style=" margin-left:-3.75pt; border:none; border-collapse:separate; width:100%; max-width:636px;" cellspacing="0">
+	<tr style="height: 15.0pt;">
+		<td style="vertical-align: top; border-left: solid #D52A0A 1.0px; 
+			 border-right: solid #ffffff 1.0px; border-top: solid #D52A0A 1.0px; 
+			 border-bottom: solid #D52A0A 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 height="20" width="72"><p style="margin-top: 0in; line-height: normal;"><img src="Ops-5PayRoll_files/image010.gif" alt="note1.PNG" border="0" style="width:100%; max-width:39px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #D52A0A 1.0px; 
+			 border-top: solid #D52A0A 1.0px; border-bottom: solid #D52A0A 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" height="20" width="564"><p 
+			 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+		 font-family: Arial, sans-serif; color: #000000;">When you select 
+		 a Role and then begin to make changes to the menu permissions, 
+		 an Undo Changes button will appear. This is so that BEFORE you 
+		 press save, it is possible to restore the permissions to the previously 
+		 saved version.</span></p>
+		<p style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+		 font-family: Arial, sans-serif; color: #000000;">Note: once you 
+		 press save, the Undo Changes is no longer possible.</span></p></td>
+	</tr>
+</table>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+	 margin-bottom: .0001pt; margin-left: .5in; text-indent: -.25in; line-height: 115%;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">6.<span style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Click <b>Save</b> to proceed with the changes, or 
+ <b>Undo Changes</b> to cancel the changes.</span></p>
+<span open="" style="font-size: 11.0pt; line-height: 115%; font-family: ;"><br 
+	 style="clear: all;" clear="all" />
+</span> 
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+<h1 style="margin-top: 20.0pt; margin-right: 0in; margin-bottom: 6.0pt; 
+	 margin-left: -22.5pt; text-indent: 4.5pt; line-height: 115%;"><span 
+	 style="font-size: 20.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000; font-weight: normal;">&#160;&#160;&#160;</span></h1>
+</body>
+</html>

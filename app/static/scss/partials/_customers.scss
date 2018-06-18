@@ -1,0 +1,93 @@
+//List Page
+.content-main-container {
+  //page specific override to adjust width
+  width: 87vw;
+}
+
+.customer-find-container {
+  //page specific override to adjust width
+  tr {
+    white-space: normal;
+  }
+  h4 {
+    margin-left: 0;
+  }
+}
+
+// to set width of customer tabs 
+.customer-view {
+  width: 100%;
+}
+
+.fixed-div {
+  position: fixed;
+  width: 34%;
+  margin-left: 5%;
+}
+
+.accounts-details-box {
+  background-color: $white;
+  border: thin solid #f1f1f1;
+  padding: 0 1.3rem 1.4rem 1.3rem;
+  border-radius: 5px;
+  h4 {
+    margin: 0;
+    padding-top: 0.5rem;
+  }
+}
+
+.selected-row {
+  background: $text;
+  color: $white;
+}
+
+//helper height class
+.height-84 {
+  min-height: 84.5%;
+}
+
+//helper width class
+.width-98 {
+  width: 98%;
+}
+
+.width-95 {
+  width: 95%;
+}
+
+.height-87 {
+  min-height: 87.5%;
+}
+
+.height-86 {
+  min-height: 86.5%;
+}
+
+.section-left-50 {
+  width: 50%;
+  padding: 0 2% 0 0;
+  float: left;
+}
+
+.section-right-50 {
+  width: 50%;
+  padding: 0 0 0 2%;
+}
+
+.value-span {
+  display: inline-block;
+  white-space: normal;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.country-audit-logs-popup .input-cluster div p {
+  color: #8fa5b2;
+}
+
+.md-dialog-container-add-customer {
+  width: 57%;
+  .form-element {
+    padding: 22px 0;
+  }
+}

@@ -1,0 +1,97 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18 Apr, 2017, 4:02:11 PM
+    Author     : claritus
+*/
+
+system-security-administer-menu-crud.ng-scope.ng-isolate-scope {
+    width: 100%;
+    float: left;
+}
+.my-dropdown
+{
+    width:460px;
+    height: auto;
+    float:left;
+    overflow:hidden;
+    
+    .label-dropdown{
+        width: 100%;
+        float:left;
+        font-family: DroidSans;
+        font-size: 12px;
+        color: #3e5766;
+    }
+    .drop-down-list {
+    width: 105%;
+    float: left;
+    border: 0px none;
+    border-bottom: solid 1px #c7c8ca;
+    outline: 0px none;
+    font-family: DroidSansMono;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 40px;
+    background: none;
+  }
+}
+
+.wrap-area
+{
+    width:100%;
+    float:left;
+    
+   .left-nav
+   {
+          width: 25.5%;
+    margin-right: 2%;
+    float: left;
+    padding: 2%;
+    background: #fff;
+    border-radius: 8px;
+    
+    .function-wrap{width:100%; float:left; text-align: left; margin-bottom: 30px}
+    ul.accordion-list {
+    width: 100%;
+    float: left;
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+    
+    
+    li {width:100%; float:left; font-size:14px; font-weight:bold;
+    span {
+    color: #ff5200;
+    font-weight: 100;
+    font-size: 24px;
+    vertical-align: sub;
+}}
+    
+}
+    .functions-div{
+        Width:auto;
+        font-family: DroidSans;
+  font-size: 14px;
+  color: #ff5200;
+  display: inline-block;
+  margin-right: 10px;
+        
+    }
+   }
+   .right-area{
+       width: 64.5%;
+       float:left;
+       padding: 2%;
+        background: #fff;
+   }
+}
+
+.group-selector--selected > i::before{
+    background-color:#ff5200;
+    border: none;
+    /*width: 13px;*/
+}

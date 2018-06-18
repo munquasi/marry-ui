@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"Add Employee Annual Leave Entitlement","url":"Add_Employee_Annual_Leave_Entitlement.htm"},{"type":"item","name":"Create Employee Sick Leave Entitlement","url":"Create_Employee_Sick_Leave_Entitlement.htm"},{"type":"item","name":"Add Average Pay Calculation Reference for Annual Leave","url":"Add_Average_Pay_Calculation_Reference_for_Annual_Leave.htm"},{"type":"item","name":"Add Average Pay Calculation for Sick Leave","url":"Add_Average_Pay_Calculation_for_Sick_Leave.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

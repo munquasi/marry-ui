@@ -1,0 +1,1129 @@
+  // --------- Color palette -------------- //
+  $white: #ffffff;
+  $bg-darkGrey: #2b3a42;
+  $text: #3e5766;
+  $text-disabled: #8fa5b3;
+  $g4s-red: #e51c2e;
+  $pinkish-red: #e91b27;
+  $dark: #2a3a42;
+  $slate: #3d5767;
+  $bluey-grey: #8ea5b3;
+  $blood-orange: #ff5200;
+  $black-16: rgba(0, 0, 0, .16);
+  $white-two: #f2f2f2;
+  $red-pink: #ee3943;
+  $pinkish-grey: #c0c0c0;
+  $black: #000000;
+  $container-background: #f3f5f6;
+  $placeholder: #231e20;
+  $at-risk: #f8e71c;
+  $overdue: #ee3641;
+  $jeopardy: #ff7f43;
+  $jeopardy-text: #4a4a4a;
+  $upcoming: #939598;
+  $thead-border: rgba(147, 149, 152, .25);
+  $bottom-border: rgba(199, 200, 202, .5);
+  $required-field: #dc0023;
+  $tab-bg-grey: #f6f6f6;
+  $tab-border-grey: #e1e1e1;
+  $grey: #cccccc;
+  $form-bg: #c7c8ca;
+  $table-bg-odd: #f1f1f1;
+  // -------- Global Elements --------- //
+  // Text styles
+  .subhead-1 {
+      font-family: 'DroidSans';
+      font-size: 32px;
+      font-weight: 400;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #333333;
+  }
+  
+  // Main app container dimensions, applies to content in all screens
+  .app-container {
+      padding-left: 3.5rem !important; //provides left buffer to all screens
+      padding-top: 1.5rem;
+  }
+  
+  .content-main-container {
+      //page specific override to adjust width
+      width: 89vw !important;
+  }
+  
+  //
+  .main-container-override {
+      width: 100vw !important;
+  }
+  
+  .hidden {
+      display: none;
+  }
+  
+  a {
+      color: $blood-orange;
+      transition: 300ms;
+       :hover {
+          color: $text;
+      }
+  }
+  
+  //Root Elements Definition
+  .screen-heading {
+      font-size: 2.25rem;
+      margin: -5.5rem 0 1.5rem;
+  }
+  
+  body {
+      background-color: $white-two; //risk
+      font-size: .875rem;
+      font-family: DroidSans;
+      //text-transform: capitalize;
+      text-transform: none;
+      line-height: 1.5;
+      color: $bg-darkGrey;
+  }
+  
+  html {
+      background-color: $white-two; //risk
+  }
+  
+  // Heading styles  
+  h1 {
+      color: $bg-darkGrey;
+      font-family: 'DroidSans';
+      font-size: 2.5rem;
+      font-stretch: normal;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      margin: 1rem;
+      color: $bg-darkGrey;
+  }
+  
+  h2 {
+      color: $bg-darkGrey;
+      font-family: 'DroidSans';
+      font-size: 2rem;
+      font-stretch: normal;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      margin: 1rem;
+      color: $bg-darkGrey;
+  }
+  
+  h3 {
+      color: $bg-darkGrey;
+      font-family: 'DroidSans';
+      font-size: 1.75rem;
+      font-stretch: normal;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      margin: 1rem;
+      color: $bg-darkGrey;
+  }
+  
+  h4 {
+      color: $bg-darkGrey;
+      font-family: 'DroidSans';
+      font-size: 1.5rem;
+      font-stretch: normal;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      margin: 1rem 1rem 1rem 0;
+      color: $bg-darkGrey;
+  }
+  
+  h5 {
+      color: $bg-darkGrey;
+      font-family: 'DroidSans';
+      font-size: 1.25rem;
+      font-stretch: normal;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      margin: 1rem;
+      color: $bg-darkGrey;
+  }
+  
+  h6 {
+      color: $bg-darkGrey;
+      font-family: 'DroidSans';
+      font-size: 1rem;
+      font-stretch: normal;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      margin: 1rem;
+      color: $bg-darkGrey;
+  }
+  
+  ul {
+      margin: 1rem 0;
+      li {
+          padding: .15rem 0;
+      }
+  }
+  
+  // Table specific global overrides
+  table {
+      font-size: .85rem;
+      display: table;
+      width: 100% !important;
+      margin-top: 0.8rem;
+  }
+  
+  thead,
+  .md-head {
+      border-bottom: 2px solid $thead-border;
+      color: $text;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: -0.7px;
+      padding: 1rem;
+      text-transform: uppercase;
+  }
+  
+  tr {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
+  
+  td {
+      padding: .5rem .6rem;
+      text-align: left;
+      font-family: 'DroidSansMono';
+      vertical-align: middle;
+  }
+  
+  .search-max-width-col {
+      white-space: pre-line;
+  }
+  
+  th {
+      letter-spacing: -0.7px;
+      padding: .5rem .6rem;
+      text-align: left;
+      font-family: DroidSans;
+      font-style: bold;
+  }
+  
+  // This class is used to introduce scroll in overflowing tables
+  .scroll {
+      overflow: scroll;
+  }
+  
+  .scroll-x {
+      overflow-x: scroll;
+  }
+  
+  //Clickable Class for Selected table row
+  .row-banded {
+      background: $white-two;
+  }
+  
+  .row-plain {
+      background: $white;
+  }
+  
+  .rowSelected {
+      background: $text;
+      color: $white;
+  }
+  
+  // Width class for address purpose table resizing issue 
+  .purpose-td-width {
+      width: 250px;
+  }
+  
+  //Class when a row is clicked in table
+  .table-active-class {
+      tr {
+          background: $text;
+      }
+      background: $text;
+      color: $white;
+  }
+  
+  .running-text-mono {
+      color: $bg-darkGrey;
+      font-family: 'DroidSansMono';
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      height: 95px;
+      letter-spacing: -1px;
+      font-style: normal;
+      line-height: normal;
+      width: 260px;
+  }
+  
+  // -------- Form related classes ------------ //
+  // Adds asterisks to required fields
+  .required-field:after {
+      content: " *";
+      color: $required-field;
+  }
+  
+  .disabled {
+      color: rgba(62, 87, 102, .6) !important;
+  }
+  
+  .error-message-content {
+      font-size: 0.7rem;
+      font-family: DroidSans;
+      color: $text-disabled;
+      margin-top: 1%;
+  }
+  
+  //Provides layout overrides to text fields and inputs in accordance with the new design
+  .input-cluster {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 1.2rem;
+      color: $text;
+      border-bottom: 1px solid $bottom-border;
+      md-autocomplete md-autocomplete-wrap md-progress-linear[md-mode="indeterminate"] {
+          position: absolute;
+          bottom: -0.3rem;
+      }
+      md-input-container.md-default-theme.md-input-invalid .md-input,
+      md-input-container .md-input,
+      md-input-container.md-input-invalid .md-input {
+          border-color: transparent !important;
+          color: $black;
+          ;
+      }
+      md-input-container {
+          display: inline-block;
+          margin: 0.5rem 0.5rem 0rem 0rem;
+          height: 2.2rem;
+          // width: inherit;
+          padding: 2px 0 2px 0;
+          width: inherit;
+          .md-errors-spacer {
+              float: left;
+              padding-left: 0.3rem;
+          }
+          .md-char-counter {
+              padding-top: 18px;
+          }
+      }
+      &.input-cluster-auto-height {
+          md-input-container {
+              height: auto;
+              width: 100%;
+          }
+      }
+      md-select.md-default-theme .md-select-value,
+      md-select .md-select-value {
+          border-bottom: transparent;
+          height: 1%;
+      }
+      md-select {
+          border-color: transparent !important;
+          margin: 0;
+      }
+      md-input-container.md-input-focused .md-input,
+      md-input-container .md-input.ng-invalid.ng-dirty,
+      md-input-container.md-input-resized .md-input {
+          padding-bottom: 0;
+          color: $black;
+          border-width: 0;
+          div {
+              span {
+                  color: $black;
+              }
+          }
+      }
+      //   input {
+      //       width: inherit;
+      //   }
+      .read-only-field {
+          text-align: left;
+          padding-bottom: 1rem;
+          .info-address {
+              padding-bottom: 30%;
+          }
+          p,
+          div {
+              // text-align: left;
+              display: inline-flex;
+              color: $black;
+              vertical-align: sub;
+              font-family: DroidSansMono;
+              // margin-left: 26%;
+              input {
+                  border: none;
+                  color: $black;
+                  font-size: 0.9rem;
+              }
+          }
+          label {
+              float: left;
+              width: 45%;
+          }
+      }
+      .editable-fields {
+          padding-bottom: 0.8rem;
+          textarea {
+              border: none;
+          }
+          select {
+              font-family: DroidSansMono;
+              max-width: 100%;
+              padding: .375rem 1.75rem .375rem .75rem;
+              background: transparent;
+              border: none;
+              color: #55595c;
+              // Pseudo overrides on dropdown arrows
+               :after {
+                  content: url('/static/img/dropdown.svg') !important;
+                  top: 2px;
+                  speak: none;
+                  left: 0.5rem !important;
+                  -webkit-transform: scaleY(.9) scaleX(.9) !important;
+                  transform: scaleY(.9) scaleX(.9) !important;
+              }
+          }
+          label {
+              float: left;
+              width: 25%; //Width needs to be defined to align to the design
+          }
+          small {
+              font-size: 0.7rem;
+              font-family: DroidSans;
+              color: $g4s-red;
+          }
+          span {
+              display: inline-block;
+              color: $black;
+              vertical-align: bottom;
+              font-family: DroidSansMono;
+              // margin-left: 26%;
+              input {
+                  border: none;
+                  color: $black;
+                  font-size: 0.9rem;
+                  font-family: DroidSansMono;
+              }
+          }
+      }
+      small {
+          font-size: 0.6rem;
+          font-family: DroidSans;
+          color: $g4s-red;
+      }
+      label {
+          border: none;
+          padding-top: 0.3rem;
+          font-size: 0.8rem;
+          color: $text;
+      }
+      input {
+          border: none;
+          padding-top: 0.3rem;
+          font-family: DroidSansMono;
+          color: $black;
+      }
+      // specific class for saluations like Mr, Ms etc
+      .salutation {
+          top: 2px;
+      }
+      // Use this class when input-cluster elements are not in required width, ex: text cuts off
+      .full-width-input {
+          width: inherit;
+      }
+      .disabled-text {
+          color: $text-disabled;
+      }
+      .md-default-theme .md-datepicker-input-container,
+      .md-datepicker-input-container {
+          border: none;
+          color: $text;
+      }
+      //checkbox color override
+      .indigo {
+          background-color: $blood-orange;
+      }
+      md-input-container.md-default-theme .md-input[disabled],
+      md-input-container .md-input[disabled],
+      [disabled] md-input-container.md-default-theme .md-input,
+      [disabled] md-input-container .md-input,
+      md-select[disabled] .md-select-value {
+          background-image: none;
+      }
+  }
+  
+  // Specific class to override some elements like dropdowns, risky behavior use sparingly
+  .input-override {
+      .btn.white,
+      .box__jls-variant1 .btn.box-body,
+      .box__jls-variant1 .box__feature-navigation .btn.box__box-body,
+      .box__feature-navigation .box__jls-variant1 .btn.box__box-body,
+      .box__jls-variant1 .box__feature-navigation .box__box-body.login__btn,
+      .box__feature-navigation .box__jls-variant1 .box__box-body.login__btn,
+      .box__jls-variant1 .box__feature-sub .btn.box__box-body,
+      .box__feature-sub .box__jls-variant1 .btn.box__box-body,
+      .box__jls-variant1 .box__feature-sub .box__box-body.login__btn,
+      .box__feature-sub .box__jls-variant1 .box__box-body.login__btn,
+      .box__jls-variant1 .box__ess-scheduler .btn.box__box-body,
+      .box__ess-scheduler .box__jls-variant1 .btn.box__box-body,
+      .box__jls-variant1 .box__ess-scheduler .box__box-body.login__btn,
+      .box__ess-scheduler .box__jls-variant1 .box__box-body.login__btn,
+      .box__jls-variant1 .box-body.login__btn,
+      .box__brand-red .btn.box-body,
+      .box__brand-red .box__feature-navigation .btn.box__box-body,
+      .box__feature-navigation .box__brand-red .btn.box__box-body,
+      .box__brand-red .box__feature-navigation .box__box-body.login__btn,
+      .box__feature-navigation .box__brand-red .box__box-body.login__btn,
+      .box__brand-red .box__feature-sub .btn.box__box-body,
+      .box__feature-sub .box__brand-red .btn.box__box-body,
+      .box__brand-red .box__feature-sub .box__box-body.login__btn,
+      .box__feature-sub .box__brand-red .box__box-body.login__btn,
+      .box__brand-red .box__ess-scheduler .btn.box__box-body,
+      .box__ess-scheduler .box__brand-red .btn.box__box-body,
+      .box__brand-red .box__ess-scheduler .box__box-body.login__btn,
+      .box__ess-scheduler .box__brand-red .box__box-body.login__btn,
+      .box__brand-red .box-body.login__btn,
+      .box__brand-black .btn.box-body,
+      .box__brand-black .box__feature-navigation .btn.box__box-body,
+      .box__feature-navigation .box__brand-black .btn.box__box-body,
+      .box__brand-black .box__feature-navigation .box__box-body.login__btn,
+      .box__feature-navigation .box__brand-black .box__box-body.login__btn,
+      .box__brand-black .box__feature-sub .btn.box__box-body,
+      .box__feature-sub .box__brand-black .btn.box__box-body,
+      .box__brand-black .box__feature-sub .box__box-body.login__btn,
+      .box__feature-sub .box__brand-black .box__box-body.login__btn,
+      .box__brand-black .box__ess-scheduler .btn.box__box-body,
+      .box__ess-scheduler .box__brand-black .btn.box__box-body,
+      .box__brand-black .box__ess-scheduler .box__box-body.login__btn,
+      .box__ess-scheduler .box__brand-black .box__box-body.login__btn,
+      .box__brand-black .box-body.login__btn,
+      .box__brand-neutral .btn.box-body,
+      .box__brand-neutral .box__feature-navigation .btn.box__box-body,
+      .box__feature-navigation .box__brand-neutral .btn.box__box-body,
+      .box__brand-neutral .box__feature-navigation .box__box-body.login__btn,
+      .box__feature-navigation .box__brand-neutral .box__box-body.login__btn,
+      .box__brand-neutral .box__feature-sub .btn.box__box-body,
+      .box__feature-sub .box__brand-neutral .btn.box__box-body,
+      .box__brand-neutral .box__feature-sub .box__box-body.login__btn,
+      .box__feature-sub .box__brand-neutral .box__box-body.login__btn,
+      .box__brand-neutral .box__ess-scheduler .btn.box__box-body,
+      .box__ess-scheduler .box__brand-neutral .btn.box__box-body,
+      .box__brand-neutral .box__ess-scheduler .box__box-body.login__btn,
+      .box__ess-scheduler .box__brand-neutral .box__box-body.login__btn,
+      .box__brand-neutral .box-body.login__btn,
+      .box__brand-neutral-light .btn.box-body,
+      .box__brand-neutral-light .box__feature-navigation .btn.box__box-body,
+      .box__feature-navigation .box__brand-neutral-light .btn.box__box-body,
+      .box__brand-neutral-light .box__feature-navigation .box__box-body.login__btn,
+      .box__feature-navigation .box__brand-neutral-light .box__box-body.login__btn,
+      .box__brand-neutral-light .box__feature-sub .btn.box__box-body,
+      .box__feature-sub .box__brand-neutral-light .btn.box__box-body,
+      .box__brand-neutral-light .box__feature-sub .box__box-body.login__btn,
+      .box__feature-sub .box__brand-neutral-light .box__box-body.login__btn,
+      .box__brand-neutral-light .box__ess-scheduler .btn.box__box-body,
+      .box__ess-scheduler .box__brand-neutral-light .btn.box__box-body,
+      .box__brand-neutral-light .box__ess-scheduler .box__box-body.login__btn,
+      .box__ess-scheduler .box__brand-neutral-light .box__box-body.login__btn,
+      .box__brand-neutral-light .box-body.login__btn,
+      .box__brand-neutral-lighter .btn.box-body,
+      .box__brand-neutral-lighter .box__feature-navigation .btn.box__box-body,
+      .box__feature-navigation .box__brand-neutral-lighter .btn.box__box-body,
+      .box__brand-neutral-lighter .box__feature-navigation .box__box-body.login__btn,
+      .box__feature-navigation .box__brand-neutral-lighter .box__box-body.login__btn,
+      .box__brand-neutral-lighter .box__feature-sub .btn.box__box-body,
+      .box__feature-sub .box__brand-neutral-lighter .btn.box__box-body,
+      .box__brand-neutral-lighter .box__feature-sub .box__box-body.login__btn,
+      .box__feature-sub .box__brand-neutral-lighter .box__box-body.login__btn,
+      .box__brand-neutral-lighter .box__ess-scheduler .btn.box__box-body,
+      .box__ess-scheduler .box__brand-neutral-lighter .btn.box__box-body,
+      .box__brand-neutral-lighter .box__ess-scheduler .box__box-body.login__btn,
+      .box__ess-scheduler .box__brand-neutral-lighter .box__box-body.login__btn,
+      .box__brand-neutral-lighter .box-body.login__btn,
+      .box__acordion .btn.box-body,
+      .box__acordion .box__feature-navigation .btn.box__box-body,
+      .box__feature-navigation .box__acordion .btn.box__box-body,
+      .box__acordion .box__feature-navigation .box__box-body.login__btn,
+      .box__feature-navigation .box__acordion .box__box-body.login__btn,
+      .box__acordion .box__feature-sub .btn.box__box-body,
+      .box__feature-sub .box__acordion .btn.box__box-body,
+      .box__acordion .box__feature-sub .box__box-body.login__btn,
+      .box__feature-sub .box__acordion .box__box-body.login__btn,
+      .box__acordion .box__ess-scheduler .btn.box__box-body,
+      .box__ess-scheduler .box__acordion .btn.box__box-body,
+      .box__acordion .box__ess-scheduler .box__box-body.login__btn,
+      .box__ess-scheduler .box__acordion .box__box-body.login__btn,
+      .box__acordion .box-body.login__btn,
+      .box__acordion .btn.box__contracts-row,
+      .box__acordion .box__contracts-row.login__btn,
+      .white.login__btn,
+      table.login__btn.table__accordion,
+      table.btn.table__accordion,
+      .btn.btn-default,
+      .btn-default.login__btn,
+      .dropdown-menu {
+          text-transform: capitalize;
+          box-shadow: none;
+          // background: transparent;
+          font-weight: 400;
+          font-family: DroidSansMono;
+          &:after {
+              content: url('/static/img/dropdown.svg') !important;
+              top: 2px;
+              speak: none;
+              left: 0.5rem !important;
+              -webkit-transform: scaleY(.9) scaleX(.9) !important;
+              transform: scaleY(.9) scaleX(.9) !important;
+          }
+      }
+      .md-datepicker-input {
+          min-width: 5.5rem !important;
+          &:after {
+              content: url('/static/img/dropdown.svg') !important;
+              top: 2px;
+              speak: none;
+              left: 0.5rem !important;
+              -webkit-transform: scaleY(.9) scaleX(.9) !important;
+              transform: scaleY(.9) scaleX(.9) !important;
+          }
+      }
+  }
+  
+  // Placeholder color change 
+   ::-webkit-input-placeholder {
+      /* WebKit, Blink, Edge */
+      color: $placeholder;
+  }
+  
+   :-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: $placeholder;
+      opacity: 1;
+  }
+  
+   ::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: $placeholder;
+      opacity: 1;
+  }
+  
+   :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: $placeholder;
+  }
+  
+  // Helper classes to adjust positioning 
+  .flex-18 {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 18%;
+      flex: 1 1 18%;
+      max-width: 18%;
+      max-height: 100%;
+      box-sizing: border-box;
+  }
+  
+  .flex-offset-2 {
+      margin-left: 2.5%;
+  }
+  
+  .flex-buffer-left-10 {
+      margin-left: 10% !important;
+  }
+  
+  .flex-buffer-left-20 {
+      margin-left: 20% !important;
+  }
+  
+  .flex-padding-buffer-left-8 {
+      padding-left: 8% !important;
+  }
+  
+  .flex-padding-buffer-left-7 {
+      padding-left: 7% !important;
+  }
+  
+  .flex-padding-buffer-left-6 {
+      padding-left: 6% !important;
+  }
+  
+  .flex-padding-buffer-left-5 {
+      padding-left: 5% !important;
+  }
+  
+  .flex-padding-buffer-left-3 {
+      padding-left: 3% !important;
+  }
+  
+  .flex-padding-buffer-left-2 {
+      padding-left: 2% !important;
+  }
+  
+  .flex-padding-buffer-left-1 {
+      padding-left: 1% !important;
+  }
+  
+  .flex-buffer-left-6 {
+      margin-left: 6% !important;
+  }
+  
+  .flex-buffer-left-5 {
+      margin-left: 5% !important;
+  }
+  
+  .flex-buffer-left-3 {
+      margin-left: 3% !important;
+  }
+  
+  .flex-buffer-left-2 {
+      margin-left: 2% !important;
+  }
+  
+  .flex-buffer-left-1 {
+      margin-left: 1% !important;
+  }
+  
+  .flex-buffer-right-4 {
+      margin-right: 4% !important;
+  }
+  
+  .flex-buffer-right-3 {
+      margin-right: 3% !important;
+  }
+  
+  .flex-buffer-top-10 {
+      margin-top: 10% !important;
+  }
+  
+  .flex-buffer-top-9 {
+      margin-top: 9% !important;
+  }
+  
+  .flex-buffer-top-8 {
+      margin-top: 8% !important;
+  }
+  
+  .flex-buffer-top-7 {
+      margin-top: 7% !important;
+  }
+  
+  .flex-buffer-top-6 {
+      margin-top: 6% !important;
+  }
+  
+  .flex-buffer-top-5 {
+      margin-top: 5% !important;
+  }
+  
+  .flex-buffer-top-4 {
+      margin-top: 4% !important;
+  }
+  
+  .flex-buffer-top-3 {
+      margin-top: 3% !important;
+  }
+  
+  .flex-buffer-top-2 {
+      margin-top: 2% !important;
+  }
+  
+  .flex-buffer-top-1 {
+      margin-top: 1% !important;
+  }
+  
+  .flex-buffer-top-08 {
+      margin-top: 0.8% !important;
+  }
+  
+  .flex-buffer-4 {
+      margin: 4% 0 !important;
+  }
+  
+  .flex-padding-bottom-3 {
+      padding-bottom: 3% !important;
+  }
+  
+  .flex-padding-bottom-2 {
+      padding-bottom: 2% !important;
+  }
+  
+  .flex-padding-bottom-1 {
+      padding-bottom: 1% !important;
+  }
+  
+  .flex-buffer-bottom-10 {
+      margin-bottom: 10% !important;
+  }
+  
+  .flex-buffer-bottom-5 {
+      margin-bottom: 5% !important;
+  }
+  
+  .flex-buffer-bottom-4 {
+      margin-bottom: 4% !important;
+  }
+  
+  .flex-buffer-bottom-3 {
+      margin-bottom: 3% !important;
+  }
+  
+  .flex-buffer-bottom-2 {
+      margin-bottom: 2% !important;
+  }
+  
+  .flex-buffer-bottom-1 {
+      margin-bottom: 1% !important;
+  }
+  
+  .width-30rem {
+      width: 30rem;
+  }
+  
+  .width-22rem {
+      width: 22rem;
+  }
+  
+  .width-8rem {
+      width: 8rem !important;
+  }
+  
+  .width-4rem {
+      width: 4rem !important;
+  }
+  
+  .report-select {
+      width: 70%;
+  }
+  
+  .margin-right-0 {
+      margin-right: 0 !important;
+  }
+  
+  md-content {
+      background: $white-two;
+  }
+  
+  input:focus,
+  textarea:focus,
+  keygen:focus,
+  select:focus {
+      outline-offset: -2px;
+      outline: none;
+  }
+  
+  input:focus~label {
+      color: #000;
+  }
+  
+  // Helper Classes
+  .layout-padding {
+      padding: 0 8px;
+  }
+  
+  .inline-block * {
+      display: inline-block;
+  }
+  
+  .transparent {
+      background: transparent;
+  }
+  
+  .width-100p {
+      width: 100% !important;
+  }
+  
+  .md-select-value .md-select-icon:after {
+      display: block;
+      content: url('/static/img/dropdown.svg') !important;
+      top: 2px;
+      speak: none;
+      -webkit-transform: scaleY(.9) scaleX(.9) !important;
+      transform: scaleY(.9) scaleX(.9) !important;
+  }
+  
+  // Sticky Bottom Bar
+  .sticky-bottom-bar {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+      height: 75px;
+      padding: 8px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: $white-two;
+      position: fixed;
+      border-left: 90px solid $text;
+      z-index: 9;
+      .md-button.md-default-theme[disabled],
+      .md-button[disabled] {
+          background-color: rgba(255, 81, 0, 0.2) !important;
+      }
+      .bottom-help-button {
+          font-size: 12px;
+          padding: 2px 10px;
+          background: #ff5200;
+          color: #fff;
+          border-radius: 10px;
+      }
+  }
+  
+  //spinner override 
+  .spinner-small .spinner__text {
+      display: inline-block;
+      padding: 0 0 5px 0px;
+      font-size: 1rem;
+      h3 {
+          font-size: 1rem;
+      }
+  }
+  
+  // ------- Angular Material overrides -------- // 
+  md-checkbox.md-default-theme.md-checked .md-icon:after,
+  md-checkbox.md-checked .md-icon:after {
+      /* border-color: rgba(0,0,0,0.87); */
+      border-color: white;
+  }
+  
+  //Global override for md-input-container 
+  md-input-container {
+      margin: .25rem 1rem;
+      span {
+          padding-bottom: 0.4rem;
+      }
+      label {
+          color: $text;
+          font-size: 0.8rem;
+      }
+  }
+  
+  // overrides
+  md-checkbox.md-default-theme.md-checked .md-icon,
+  md-checkbox.md-checked .md-icon {
+      background-color: $blood-orange;
+       :after {
+          border-color: rgba($white, 1) !important;
+      }
+  }
+  
+  //Material theme color override for blood-orange 
+  .indigo {
+      background-color: $blood-orange;
+      color: rgba(255, 255, 255, 0.87);
+  }
+  
+  .md-datepicker-calendar-pane.md-pane-open {
+      //Global width for calendar
+      width: 21.3rem !important;
+      table {
+          margin: 0; //Prevents global table styles from conflicting here
+      }
+  }
+  
+  .md-datepicker-expand-triangle {
+      display: block;
+      top: 10px;
+      -webkit-transform: scaleY(.9) scaleX(.9) !important;
+      transform: scaleY(.9) scaleX(.9) !important;
+      border: none;
+  }
+  
+  .md-datepicker-expand-triangle:after {
+      content: url('/static/img/dropdown.svg') !important;
+  }
+  
+  .md-dialog-container {
+      .duress-modal-top {
+          border-color: $g4s-red;
+      }
+      md-dialog {
+          border-top: 10px solid $blood-orange;
+          width: 37%;
+          //min-width: 320px;
+          min-height: 14rem;
+          background-color: $white-two;
+          padding-bottom: 0.6rem;
+          .md-text {
+              margin-right: 6.5rem;
+          }
+          h4 {
+              margin: 1rem 1rem 1rem 0rem;
+          }
+          &.popup-sm {
+              width: 60%;
+              //min-width: 320px;
+          }
+          &.audit-log {
+              width: 47%;
+          }
+      }
+  }
+  
+  .md-dialog-container-width-override {
+      md-dialog {
+          width: 80%;
+          min-height: 20rem;
+      }
+  }
+  
+  md-select.md-default-theme:not([disabled]):focus .md-select-value,
+  md-select:not([disabled]):focus .md-select-value {
+      border-bottom-color: $blood-orange;
+  }
+  
+  // Material disabled 
+  .md-input-container.md-default-theme .md-input[disabled],
+  md-input-container .md-input[disabled],
+  [disabled] md-input-container.md-default-theme .md-input,
+  [disabled] md-input-container .md-input {
+      color: $text !important;
+  }
+  
+  .md-input.disabled,
+  .md-input[disabled] {
+      opacity: 0.75;
+  }
+  
+  .leave-heading-counter {
+      color: $text;
+      p {
+          font-size: 0.9rem;
+          span {
+              font-size: 1.3rem;
+              font-weight: bold;
+          }
+      }
+  }
+  
+  md-select.md-default-theme .md-select-value.md-select-placeholder,
+  md-select .md-select-value.md-select-placeholder {
+      color: $black;
+  }
+  
+  md-select.md-default-theme .md-select-value,
+  md-select .md-select-value {
+      border-bottom-color: rgba(0, 0, 0, 0.12);
+  }
+  
+  // Content
+  .content-create-cards {
+      background: $white;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      width: 96%;
+      min-height: 37%;
+      max-height: 100%;
+      box-sizing: inherit;
+  }
+  
+  .content-container-search-box {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      height: 2.2rem;
+      width: 25rem;
+      background-color: $white;
+      input {
+          background-color: $white;
+          border: 0;
+          vertical-align: middle;
+          margin: 0.3rem;
+          width: 70%;
+      }
+      md-icon svg {
+          width: 1rem;
+      }
+      button {
+          width: 3.6rem;
+          height: 1.6rem;
+          border-radius: 5px;
+          border: 0;
+          margin: 0.23rem;
+          float: right;
+          background-color: #ff5200;
+          color: $white;
+          background-color: $blood-orange;
+          vertical-align: middle;
+          text-align: -webkit-center;
+      }
+  }
+  
+  .input-dropdown {
+      display: flex;
+      border-bottom: 1px solid $bottom-border;
+      p {
+          padding-top: 0.3rem;
+          font-size: 0.8rem;
+          color: $text;
+      }
+      md-select {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: flex;
+          margin: 0 auto;
+          font-family: DroidSansMono;
+          width: 34%;
+           :after {
+              margin-left: 6.5rem;
+          }
+      }
+      .md-select-value>span:not(.md-select-icon) {
+          text-overflow: initial;
+      }
+  }
+  
+  .tab-margin {
+      margin-left: 12px;
+  }
+  
+  h4 {
+      margin: 1rem 1rem 1rem 0;
+  }
+  
+  .margin-left-adjust {
+      margin-left: 0.7rem;
+  }
+  
+  // error class for full width error
+  .error-block {
+      display: block;
+      width: 100%;
+  }
+  
+  .table-white-space {
+      tr {
+          text-overflow: ellipsis;
+          white-space: normal;
+      }
+  }
+  
+  .vertical-align-sub {
+      vertical-align: sub;
+  }
+  
+  .margin-zero {
+      margin: 0 !important;
+  }
+  
+  .margin-bottom-zero {
+      margin-bottom: 0 !important;
+  }
+
+  .center-aligned-box{
+  overflow: auto; 
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+  }

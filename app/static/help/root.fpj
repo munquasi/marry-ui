@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rhpml majorversion="7" minorversion="13">
+	<folders>
+		<folder>
+			<name>Payroll</name>
+		</folder>
+		<folder>
+			<name>Reports</name>
+		</folder>
+		<folder>
+			<name>Customers</name>
+		</folder>
+		<folder>
+			<name>!ScreenLayout!</name>
+		</folder>
+		<folder>
+			<name>!Language!</name>
+		</folder>
+	</folders>
+</rhpml>

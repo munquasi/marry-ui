@@ -1,0 +1,50 @@
+﻿[OPTIONS]
+Compiled File=Javelin-Project.chm
+Title=Javelin-Project
+Contents File=WebAppHelp.hhc
+Index File=WebAppHelp.hhk
+Default topic=
+Default Window=NewWindow1
+Error log file=
+Display compile progress=No
+Display compile notes=No
+Full-text search=No
+Binary Index=No
+Auto Index=No
+Enhanced decompilation=No
+Binary TOC=No
+Flat=No
+LANG_ID=1033
+LANG_NAME=English (US)
+Custom tab="&Glossary", HHActiveX.GlossaryPane
+
+[WINDOWS]
+NewWindow1="Web Application Help","WebAppHelp.hhc","WebAppHelp.hhk","","",,,,,0x40080120,0,0x3006,[5,5,512,384],0x0,0x0,,0,0,0,[Glossary,HHActiveX.GlossaryPane]
+
+[FILES]
+Reports\Billage_Ratio_Report.htm
+Payroll\Create_Pay_Rule.htm
+Payroll\Create_New_Payroll.htm
+!ScreenLayout!\Ocean\fonts\icomoon.eot
+!ScreenLayout!\Ocean\fonts\icomoon.svg
+!ScreenLayout!\Ocean\fonts\icomoon.ttf
+!ScreenLayout!\Ocean\fonts\icomoon.woff
+!ScreenLayout!\Ocean\dot.svg
+!ScreenLayout!\Ocean\usersettings.js
+!ScreenLayout!\Indigo\usersettings.js
+!ScreenLayout!\Charcoal_Grey\usersettings.js
+
+WebAppHelp.glo
+Javelin-Project.brs
+[ALIAS]
+#include Javelin-Project.ali
+
+[MAP]
+#include BSSCDefault.h
+#include WidgetMax.h
+
+[TEXT POPUPS]
+BSSCDefault.h
+WidgetMax.h
+
+

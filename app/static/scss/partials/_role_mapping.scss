@@ -1,0 +1,311 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 Apr, 2017, 3:18:22 PM
+    Author     : claritus
+*/
+.group-selector--selected > i::before{
+    background-color:#2b3a42;
+    border: none;
+}
+
+.custom-checkbox input:checked + i:before {
+      border-width: 0;
+      background-color: #ff5200;
+}
+      
+.profile-page-radio input:checked + i:before {
+      border-width: 0;
+      background-color: #ff5200;
+}
+
+.Oval {
+  width: 10px;
+  height: 10px;
+  background-color: #7ed321;
+  border-radius: 5px;
+}
+
+.contract-status{
+    font-size: 14px;color: #2b3a42; text-transform: uppercase;
+}
+
+.contract-active{
+    width: 64px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: #7ed321;
+    border: solid 1px #7ed321;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+.contract-draft{
+    width: 60px;
+    height: 36px;
+    border-radius: 5px;
+    border: solid 1px #3e5766;
+    font-size: 14px;
+    color: #2b3a42;
+}
+
+.contract-completed{
+    width: 96px;
+    height: 36px;
+    border-radius: 5px;
+    border: solid 1px #4990e2;
+    font-size: 14px;
+    color: #2b3a42;
+}
+
+.contract-closed{
+    width: 69px;
+    height: 36px;
+    border-radius: 5px;
+    border: solid 1px #d0011b;
+    font-size: 14px;
+    color: #2b3a42;
+}
+      
+.half-width-select{
+    margin-top: 0.6rem; padding-bottom: 5px;
+    label{
+        width: 50%; float: left;
+    }
+    .md-text{
+        color: $black;
+    }
+}
+
+
+.box-section{
+    margin-top: 2%;
+    box-shadow: none;    
+    .edit-button{
+       min-width: inherit;
+       width:40px;
+    }
+}
+.add-multiplier{
+    display: inline-block;
+    width: 100%;
+    h6{margin: 10px 0px;}
+}
+
+.no-end-date{
+    border-bottom: 1px solid rgba(199, 200, 202, 0.5); 
+    margin-bottom: 8px; 
+    color: #3e5766;
+    padding: 0px 0px 8px 0px;
+}
+
+.error-block{
+    border-radius: 2px;
+    background-color: #e91b27;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    box-shadow: 0 2px 10px 0 var(--black-16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    
+    
+    background: #e91b27 none repeat scroll 0 0;
+    h6{
+        border-bottom: 1px solid #c0c0c0;
+        font-size: 16px;
+        letter-spacing: -0.1px;
+        text-align: left;
+        color: $white;
+        padding: 13px 0px 13px 0px;
+    }
+    p{
+        font-size: 13px;
+        letter-spacing: -0.1px;
+        text-align: left;
+        color: $white;
+    }
+    .error-section-header{
+        padding: 10px;
+    }
+    .error-section-body{
+        padding: 10px;
+    }
+}
+
+.group-selector--selected > i::before{
+    background-color:#2b3a42;
+    border: none;
+}
+
+.input-group__filter {
+    .input-group__filter--btn-group {
+        .btn__text {
+            font-size: 14px;
+            color: $blood-orange;
+            text-decoration: none;
+            font-weight: normal;
+            font-family: 'DroidSans';
+        }
+    }
+}
+.nav-tree {
+    li {
+        list-style: none;
+        .nav-text {
+            color:$placeholder!important;
+            font-size: 12px;
+            padding:2px 0;
+        }
+        &:hover, &:active, &:visited {
+            color:$placeholder!important;
+        }
+        .nav-text--push btn {
+            color:$placeholder;
+            font-size: 12px;
+            padding:2px 0;
+        }
+    }
+    > li {
+        > .nav-text {
+            font-weight: bold;
+            font-size: 14px;
+            background: url("/static/img/sprite_image.png") left 10px no-repeat;
+            padding: 5px 0 5px 16px;
+        }
+        > a {
+            .nav-text, .nav-text--push {
+                font-weight: bold;
+                font-size: 14px;
+            }
+        }
+        > .nav-tree-sub {
+            .nav-text {
+                padding: 0 0 0 12px;
+                background: url("/static/img/sprite_image.png") left -42px no-repeat;
+            }
+        }
+    }
+}
+.plus-icon {
+    color: $blood-orange;
+    font-weight: normal;
+    font-size: 22px;
+}
+.rulesTable {
+    font-family: 'DroidSans';
+    .row-plain {
+        border-top: solid 3px rgba(147,149,152,.25);
+    }
+    .row-child {
+        td {
+            border-color:$form-bg;
+            color:$bg-darkGrey;
+        }
+    }
+    .footable-sort-indicator {
+        display: none!important;
+    }
+    thead {
+        th {
+            font-size: 16px;
+            letter-spacing: -0.7px;
+            color: $text;
+            .checkbox-inline {
+                //display:none;
+                display:block;
+            }
+        }
+    }
+}
+.first-item-sub {
+    padding: 0 0 0 18px;
+    background: url("/static/img/sprite_image.png") left -85px no-repeat;
+}
+.nav-tree-container {
+    background:$white;
+    border-radius: 8px;
+    .input-group__filter {
+        .input-group__filter--btn-group {
+            padding: 20px 0 0;
+            .btn {
+                padding: 0 20px;
+            }
+        }
+    }
+}
+.input-dropdown-role-select {
+    border-bottom: 0 none;
+    display: block;
+    width:37%;
+    text-transform: none;
+    > p {
+        width:100%;
+        color: #3e5766;
+        font-size: 0.8rem;
+        padding-top: 0.3rem;
+    }
+    md-select {
+        display:block;
+        margin:0;
+    }
+}
+
+.file-drop-zone{
+    margin-left: 20px;
+    height: 180px;
+    border-radius: 8px;
+    border: 2px solid $blood-orange;
+    border-style: dashed;
+    background-color: $white;
+    h4{
+        text-align: center;
+        color: $blood-orange;
+        margin-top: 7%;
+    }
+    .upload-section{
+        text-align: center;
+    }
+}
+
+.start-date-field{
+     width: 25%; float: left; margin-right: 5%; padding-bottom: 10px;
+}
+
+.end-date-field{
+     width: 25%; padding-bottom: 10px; float: left;
+}
+
+.checkbox-field{
+    width: 14.5%;float: left; padding: 10px 0px; margin: 0px 5% 0px 0px;
+    border-bottom: none;
+}
+
+
+.orange-checkbox{
+    //color: #ff5200; 
+    //border: 1px solid #ccc;
+}
+
+.start-date-field{
+    .datepicker.dropdown-menu{
+        height: 400px;
+        overflow: hidden;
+    }
+}
+
+.end-date-field{
+    .datepicker.dropdown-menu{
+        height: 400px;
+        overflow: hidden;
+    }
+}
+.contract-active-oracle{
+    width: 120px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: #7ed321;
+    border: solid 1px #7ed321;
+    color: #fff;
+    font-size: 14px;
+}

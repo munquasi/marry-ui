@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc4.js\"  name=\"Holiday\"><item name=\"Holidays\" url=\"Holidays.htm\" /><item name=\"Add New Holiday\" url=\"Add_New_Holiday.htm\" /></data>";

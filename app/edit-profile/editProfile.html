@@ -1,0 +1,909 @@
+<div class="container">
+  <div class="row" ng-hide="$ctrl.basicDetailFlage">
+    <div class="listusrdtl">
+      <h3>Basic Detail</h3>
+      <ul class="listusr_dtl">
+        <li>
+          <span>Full Name</span>
+         <label>{{user.fullName}}</label>
+        </li>
+        
+       <li>
+          <span>Addhar No.</span>
+          <label>{{user.adharNo}}</label>
+        <li>
+        <li>
+          <span>Gender</span>
+           <label>{{user.gender}}</label>
+        </li>
+        
+        <li>
+          <span>Height</span>
+           <label>{{user.height}}</label> 
+        </li>
+         <li>
+          <span>Date of Birth</span>
+           <label> {{user.dateOfBirth}}></label>
+        </li>
+        <li>
+          <span>Marital Status</span>
+           <label> {{user.maritalStatus}}</label>
+        </li>
+   
+        <li>
+          <span>Religion</span>
+          <label> {{user.religion}}</label>
+        </li>
+
+        <li>
+          <span>Mother Tongue</span>
+           <label> {{user.motherTongue}}</label>
+        </li>
+
+        <li>
+          <span>Section</span>
+           <label> {{user.section}}</label>
+        </li>
+   
+        <li>
+          <span>Jammat</span>
+          <label> {{user.jammat}}</label>
+        </li>
+
+        <li>
+          <span>Cast</span>
+          <label> {{user.cast}}</label>
+        </li>
+       
+      </ul>
+      <ul class="listusr_dtl">
+        
+        <li>
+          <span>Country Living in</span>
+          <label> {{user.country}}</label>
+        </li>
+       <li>
+          <span>State Living in</span>
+          <label>{{user.state}}</label>
+        </li>
+     
+        <li>
+          <span>City Living in</span>
+          <label >{{user.city}}</label>
+        </li>
+
+        <li>
+          <span>Annual Income</span>
+         <label>{{user.annualIncome}}</label>
+        </li>
+
+        <li>
+          <span>Profile Managed by</span>
+           <label>{{user.manageBy}}</label>
+        </li>
+           
+      </ul>
+      <button type="button" class="btn btn-info" ng-click="$ctrl.editBasicDetail()">Edit</button>
+    </div>
+  </div>
+
+  <div class="row" ng-show="$ctrl.basicDetailFlage">
+    <div class="listusrdtl">
+      <h3>Basic Detail</h3>
+      <ul class="listusr_dtl">
+        <li>
+          <span> Full Name</span>
+          <input type="text" ng-model="user.fullName">
+        </li>
+
+        <li>
+          <span>Addhar No.</span>
+          <input type="text" ng-model="user.adharNo">
+
+        <li>
+          <span>Gender</span>
+            <input type="text" ng-model="user.gender">
+        </li>
+        
+        <li>
+          <span>Height</span>
+           <input type="text" ng-model="user.height">
+        </li>
+
+         <li>
+          <span>Date of Birth</span>
+           <input type="text" ng-model="user.dateOfBirth">  
+        </li>
+        <li>
+          <span>Marital Status</span>
+            <select id="">
+            <option value = "0" label = "Please Select"></option>
+            <option ng-repeat="maritalStatus in maritalStatusList" value="{{maritalStatus.Id}}"
+                        ng-selected="{{ maritalStatus.Name == user.maritalStatus }}">
+                {{maritalStatus.Name}}
+            </option>
+           </select> 
+        </li>
+       
+   
+        <li>
+          <span>Religion</span>
+         <input type="text" ng-model="user.religion">
+        </li>
+
+        <li>
+          <span>Mother Tongue</span>
+         <input type="text" ng-model="user.motherTongue">
+        </li>
+
+        <li>
+          <span>Section</span>
+        <input type="text" ng-model="user.section">
+        </li>
+   
+        <li>
+          <span>Jammat</span>
+         <input type="text" ng-model="user.jammat">
+        </li>
+
+        <li>
+          <span>Cast</span>
+        <input type="text" ng-model="user.cast">
+        </li>
+       
+      </ul>
+      <ul class="listusr_dtl">
+        
+        <li>
+          <span>Country Living in</span>
+         <input type="text" ng-model="user.country">
+        </li>
+     
+     
+        <li>
+          <span>State Living in</span>
+         <input type="text" ng-model="user.state">
+        </li>
+     
+        <li>
+          <span>City Living in</span>
+         <input type="text" ng-model="user.city">
+        </li>
+
+        <li>
+          <span>Annual Income</span>
+          <input type="text" ng-model="user.annualIncome">
+        </li>
+
+        <li>
+          <span>Profile Managed by</span>
+          <input type="text" ng-model="user.manageBy">
+        </li>
+           
+      </ul>
+    </div>
+    <div class="editSaveButton">
+      <button type="button" class="btn btn-primary" ng-click="$ctrl.saveBasicDetail(user)">Save</button>
+      <button type="button" class="btn btn-warning" ng-click="$ctrl.cancelBasicDetail()">Cancel</button>
+    </div>
+  </div>
+
+  <!-- ..........About Me Start... -->
+  <div class="row" ng-hide="$ctrl.editCondition1">
+    <div class="listusrdtl">
+      <h3>About me</h3>
+
+      <ul class="listusr_dtl1">
+        <li>
+          <span>About me</span>
+          <label> it is a pleasure sharing a few words about my son. he has completed his bachelors.his optimistic personality is adored by one and all.we are looking for someone who has to be a family person, knowing her responsibilities towards both the families. He is senior software associate at Sapient and former software engineer at Siemens</label>
+        </li>
+
+        <li>
+          <span>About My Family</span>
+          <label>upper middle class educated and jamindar family having agricultural land in native village two brother younger one working in HP as software engineer and youngest one doing b tech from jamiya milia islamia delhi.we have  settled in delhi last 10 years.</label>
+        </li>
+
+        <li>
+          <span>Education</span>
+          <label>B.Tech</label>
+        </li>
+        
+        <li>
+          <span>Occupation</span>
+          <label>Software Engineer</label>    
+        </li>
+      </ul>
+      <button type="button" class="btn btn-info" ng-click="$ctrl.editAboutMe()">Edit</button>
+    </div>
+  </div>
+
+  <div class="row" ng-show="$ctrl.editCondition1">
+    <div class="listusrdtl">
+      <h3>About me</h3>
+      <ul class="listusr_dtl1">
+        <li>
+          <span>About me</span>
+          <textarea rows="7" cols="80"></textarea>
+        </li>
+
+        <li>
+          <span>About My Family</span>
+          <textarea rows="5" cols="80"></textarea>
+        </li>
+
+        <li>
+          <span>About My Education</span>
+          <textarea rows="5" cols="80"></textarea>
+        </li>
+        
+        <li>
+          <span>About My Career</span>
+          <textarea rows="5" cols="80"></textarea> 
+        </li>
+      </ul>
+    </div>
+    <div class="editSaveButton">
+      <button type="button" class="btn btn-primary" ng-click="$ctrl.saveEditProfile()">Save</button>
+      <button type="button" class="btn btn-warning" ng-click="$ctrl.cancelEditAboutMe()">Cancel</button>
+    </div>
+  </div>
+
+  <!-- ..........Edication and Career Start... -->
+  <div class="row" ng-hide="$ctrl.editCondition2">
+    <div class="listusrdtl">
+      <h3>Education &amp Career</h3>
+
+      <ul class="listusr_dtl">
+        <li>
+          <span>Highest Education</span>
+          <label>B.tch</label>
+        </li>
+
+        <li>
+          <span>School Name</span>
+          <label></label>
+        </li>
+
+        <li>
+          <span>UG Degree</span>
+          <label>B.Tech</label>
+        </li>
+        
+        <li>
+          <span>UG college</span>
+          <label>Software Engineer</label>    
+        </li>
+
+        <li>
+          <span>Other UG Degree</span>
+          <label>Software Engineer</label>    
+        </li>
+
+        <li>
+          <span>Occupation</span>
+          <label>Software Engineer</label>    
+        </li>
+
+        <li>
+          <span>Organization Name</span>
+          <label>Software Engineer</label>    
+        </li>
+
+        <li>
+          <span>Annual Income</span>
+          <label>Software Engineer</label>    
+        </li>
+
+        <li>
+          <span>Interested in settling abroad?</span>
+          <label>Software Engineer</label>    
+        </li>
+      </ul>
+      <button type="button" class="btn btn-info" ng-click="$ctrl.editEducationCareer()">Edit</button>
+    </div>
+  </div>
+
+  <div class="row" ng-show="$ctrl.editCondition2">
+    <div class="listusrdtl">
+      <h3>Education &amp Career</h3>
+      <ul class="listusr_dtl">
+        <li>
+          <span>Highest Education</span>
+          <input type="text" nd-model="">
+        </li>
+
+        <li>
+          <span>School Name</span>
+          <input type="text" nd-model="">
+        </li>
+
+        <li>
+          <span>UG Degree</span>
+          <input type="text" nd-model="">
+        </li>
+        
+        <li>
+          <span>UG college</span>
+          <input type="text" nd-model="">
+        </li>
+
+        <li>
+          <span>Other UG Degree</span>
+          <input type="text" nd-model="">    
+        </li>
+
+        <li>
+          <span>Occupation</span>
+          <input type="text" nd-model="">  
+        </li>
+
+        <li>
+          <span>Organization Name</span>
+          <input type="text" nd-model="">  
+        </li>
+
+        <li>
+          <span>Annual Income</span>
+          <input type="text" nd-model="">    
+        </li>
+
+        <li>
+          <span>Interested in settling abroad?</span>
+          <input type="text" nd-model="">   
+        </li>
+      </ul>
+    </div>
+    <div class="editSaveButton">
+      <button type="button" class="btn btn-primary" ng-click="$ctrl.saveEditProfile()">Save</button>
+      <button type="button" class="btn btn-warning" ng-click="$ctrl.cancelEducationCareer()">Cancel</button>
+    </div>
+  </div>
+
+
+  <!-- ..........Family Detail Start... -->
+  <div class="row" ng-hide="$ctrl.editCondition3">
+    <div class="listusrdtl">
+      <h3>Familt Detail</h3>
+
+      <ul class="listusr_dtl">
+        <li>
+          <span>Mother is</span>
+          <label>House Wife</label>
+        </li>
+
+        <li>
+          <span>Father is</span>
+          <label> Business Man</label>
+        </li>
+
+        <li>
+          <span>Sister(s)</span>
+          <label>none</label>
+        </li>
+        
+        <li>
+          <span>Brther(s)</span>
+          <label>2</label>    
+        </li>
+
+        <li>
+          <span>FamilyDetail Status</span>
+          <label>---</label>    
+        </li>
+
+        <li>
+          <span>FamilyDetail Income</span>
+          <label>---</label>    
+        </li>
+
+        <li>
+          <span>Faimlt type</span>
+          <label>Software Engineer</label>    
+        </li>
+
+        <li>
+          <span>FamilyDetail Values</span>
+          <label>Software Engineer</label>    
+        </li>
+
+        <li>
+          <span>FamilyDetail Based out of</span>
+          <label>Software Engineer</label>    
+        </li>
+
+        <li>
+          <span>Select City</span>
+          <label>Purnea</label>    
+        </li>
+
+        <li>
+          <span>Living with parents?</span>
+          <label>yes</label>    
+        </li>
+      </ul>
+      <button type="button" class="btn btn-info" ng-click="$ctrl.editFamilyDetail()">Edit</button>
+    </div>
+  </div>
+
+  <div class="row" ng-show="$ctrl.editCondition3">
+    <div class="listusrdtl">
+      <h3>Family Detail</h3>
+      <ul class="listusr_dtl">
+        <li>
+          <span>Mother is</span>
+          <input type="text" >
+        </li>
+
+        <li>
+          <span>Father is</span>
+          <input type="text" >
+        </li>
+
+        <li>
+          <span>Sister(s)</span>
+          <input type="text" >
+        </li>
+        
+        <li>
+          <span>Brther(s)</span>
+          <input type="text" >   
+        </li>
+
+        <li>
+          <span>FamilyDetail Status</span>
+          <input type="text" >    
+        </li>
+
+        <li>
+          <span>FamilyDetail Income</span>
+          <input type="text" >  
+        </li>
+
+        <li>
+          <span>Faimlt type</span>
+          <input type="text" >  
+        </li>
+
+        <li>
+          <span>FamilyDetail Values</span>
+          <input type="text" >    
+        </li>
+
+        <li>
+          <span>FamilyDetail Based out of</span>
+          <input type="text" >    
+        </li>
+
+        <li>
+          <span>Select City</span>
+          <input type="text" >  
+        </li>
+
+        <li>
+          <span>Living with parents?</span>
+          <input type="text" >
+        </li>
+      </ul>
+    </div>
+    <div class="editSaveButton">
+      <button type="button" class="btn btn-primary" ng-click="$ctrl.saveEditProfile()">Save</button>
+      <button type="button" class="btn btn-warning" ng-click="$ctrl.cancelFamilyDetail()">Cancel</button>
+    </div>
+  </div>
+
+  <!-- ..........LifeStyle Start... -->
+  <div class="row" ng-hide="$ctrl.editCondition4">
+    <div class="listusrdtl">
+      <h3>LifeStyle</h3>
+
+      <ul class="listusr_dtl">
+        <li>
+          <span>Dietary Habits</span>
+          <label>Non-veg</label>
+        </li>
+
+        <li>
+          <span>Drinking Habits</span>
+          <label> Business Man</label>
+        </li>
+
+        <li>
+          <span>Smoking Habits(s)</span>
+          <label>none</label>
+        </li>
+        
+        <li>
+          <span>Open to Pets?</span>
+          <label>2</label>    
+        </li>
+
+        <li>
+          <span>Own a house?</span>
+          <label>---</label>    
+        </li>
+
+        <li>
+          <span>Own a car?</span>
+          <label>---</label>    
+        </li>
+
+        <li>
+          <span>Residental Status</span>
+          <label>----</label>    
+        </li>
+
+        <li>
+          <span>Languages | Speak</span>
+          <label>Hindi</label>    
+        </li>
+
+        <li>
+          <span>Ma'thab</span>
+          <label>Not Filled</label>    
+        </li>
+
+        <li>
+          <span>Namaz</span>
+          <label>Yes</label>    
+        </li>
+
+        <li>
+          <span>Zakat</span>
+          <label>yes</label>    
+        </li>
+
+        <li>
+          <span>Fasting</span>
+          <label>yes</label>    
+        </li>
+
+        <li>
+          <span>Hajj/Umrah</span>
+          <label>yes</label>    
+        </li>
+
+        <li>
+          <span>Reading Quran</span>
+          <label>yes</label>    
+        </li>
+
+        <li>
+          <span>Sunnah Beard</span>
+          <label>yes</label>    
+        </li>
+
+        <li>
+          <span>Sunnah Cap</span>
+          <label>yes</label>    
+        </li>
+        <li>
+          <span>Hijab</span>
+          <label>yes</label>    
+        </li>
+        <li>
+          <span>Can the girl work after marriage?</span>
+          <label>yes</label>    
+        </li>
+        <li>
+          <span>Body Type</span>
+          <label>yes</label>    
+        </li>
+        <li>
+          <span>Complexion</span>
+          <label>yes</label>    
+        </li>
+        <li>
+          <span>Weight(kgs)</span>
+          <label>yes</label>    
+        </li>
+        <li>
+          <span>Blood Group</span>
+          <label>yes</label>    
+        </li>
+        <li>
+          <span>HIV+</span>
+          <label>not Filled</label>    
+        </li>
+        <li>
+          <span>Thalassemia</span>
+          <label>yes</label>    
+        </li>
+        <li>
+          <span>Challanged</span>
+          <label>No</label>    
+        </li>
+      </ul>
+      <button type="button" class="btn btn-info" ng-click="$ctrl.editLifeStyle()">Edit</button>
+    </div>
+  </div>
+
+  <div class="row" ng-show="$ctrl.editCondition4">
+    <div class="listusrdtl">
+      <h3>LifeStyle</h3>
+      <ul class="listusr_dtl">
+        <li>
+          <span>Dietary Habits</span>
+          <input type="text" >
+        </li>
+
+        <li>
+          <span>Drinking Habits</span>
+          <input type="text" >
+        </li>
+
+        <li>
+          <span>Smoking Habits(s)</span>
+          <input type="text" >
+        </li>
+        
+        <li>
+          <span>Open to Pets?</span>
+          <input type="text" >
+
+        <li>
+          <span>Own a house?</span>
+          <input type="text" >  
+        </li>
+
+        <li>
+          <span>Own a car?</span>
+          <input type="text" >   
+        </li>
+
+        <li>
+          <span>Residental Status</span>
+          <input type="text" >
+        </li>
+
+        <li>
+          <span>Languages | Speak</span>
+          <input type="text" >  
+        </li>
+
+        <li>
+          <span>Ma'thab</span>
+          <input type="text" > 
+        </li>
+
+        <li>
+          <span>Namaz</span>
+          <input type="text" >
+        </li>
+
+        <li>
+          <span>Zakat</span>
+          <input type="text" >
+        </li>
+
+        <li>
+          <span>Fasting</span>
+          <input type="text" >
+        </li>
+
+        <li>
+          <span>Hajj/Umrah</span>
+          <input type="text" >
+        </li>
+
+        <li>
+          <span>Reading Quran</span>
+          <input type="text" >
+        </li>
+
+        <li>
+          <span>Sunnah Beard</span>
+          <input type="text" > 
+        </li>
+
+        <li>
+          <span>Sunnah Cap</span>
+          <input type="text" > 
+        </li>
+        <li>
+          <span>Hijab</span>
+          <input type="text" >
+        </li>
+        <li>
+          <span>Can the girl work after marriage?</span>
+          <input type="text" >
+        </li>
+        <li>
+          <span>Body Type</span>
+          <input type="text" > 
+        </li>
+        <li>
+          <span>Complexion</span>
+          <input type="text" >
+        </li>
+        <li>
+          <span>Weight(kgs)</span>
+          <input type="text" > 
+        </li>
+        <li>
+          <span>Blood Group</span>
+          <input type="text" > 
+        </li>
+        <li>
+          <span>HIV+</span>
+          <input type="text" >
+        </li>
+        <li>
+          <span>Thalassemia</span>
+          <input type="text" > 
+        </li>
+        <li>
+          <span>Challanged</span>
+          <input type="text" >
+        </li>
+      </ul>
+    </div>
+    <div class="editSaveButton">
+      <button type="button" class="btn btn-primary" ng-click="$ctrl.saveEditProfile()">Save</button>
+      <button type="button" class="btn btn-warning" ng-click="$ctrl.cancelLifeStyle()">Cancel</button>
+    </div>
+  </div>
+
+  <!-- ..........Contact Details Start... -->
+  <div class="row" ng-hide="$ctrl.contactDetailFlage">
+    <div class="listusrdtl">
+      <h3>Contact Details</h3>
+
+      <ul class="listusr_dtl">
+        <li>
+          <span>Primary Email Id</span>
+          <label>abc@gmail.com</label>
+        </li>
+
+        <li>
+          <span>Secondary Email Id</span>
+          <label>abcf@gmail.com</label>
+        </li>
+
+        <li>
+          <span>Mobile No</span>
+          <label>8882570130/label>
+        </li>
+        
+        <li>
+          <span>AlternateMobile No </span>
+          <label>8860525328</label>    
+        </li>
+
+        <li>
+          <span>Landline No</span>
+          <label>---</label>    
+        </li>
+
+        <li>
+          <span>Suitable Time To Call</span>
+          <label>6pm to 10pm</label>    
+        </li>
+
+        <li>
+          <span>Contact Address</span>
+          <label>Delhi</label>    
+        </li>
+
+        <li>
+          <span>Permanent address</span>
+          <label>Bihar</label>    
+        </li>
+        </ul>
+      <button type="button" class="btn btn-info" ng-click="$ctrl.editContactDetail()">Edit</button>
+    </div>
+  </div>
+
+   <div class="row" ng-show="$ctrl.contactDetailFlage">
+    <div class="listusrdtl">
+      <h3>LifeStyle</h3>
+      <ul class="listusr_dtl">
+        <li>
+           <span>Primary Email Id</span>
+          <input type="text" >
+        </li>
+
+        <li>
+            <span>Secondary Email Id</span>
+          <input type="text" >
+        </li>
+
+        <li>
+           <span>Mobile No</span>
+          <input type="text" >
+        </li>
+        
+        <li>
+          <span>AlternateMobile No </span>
+          <input type="text" >
+
+        <li>
+          <span>Landline No</span>
+          <input type="text" >  
+        </li>
+
+        <li>
+          <span>Suitable Time To Call</span>
+          <input type="text" >   
+        </li>
+
+        <li>
+         <span>Contact Address</span>
+          <input type="text" >
+        </li>
+
+        <li>
+          <span>Permanent address</span>
+          <input type="text" >  
+        </li>
+
+       
+      </ul>
+    </div>
+    <div class="editSaveButton">
+      <button type="button" class="btn btn-primary" ng-click="$ctrl.saveContactDetail()">Save</button>
+      <button type="button" class="btn btn-warning" ng-click="$ctrl.cancellContactDetail()">Cancel</button>
+    </div>
+  </div>
+
+   <!-- ..........ID And Address Proof DStart... -->
+  <div class="row" ng-hide="$ctrl.idAndAddressProofFlage">
+    <div class="listusrdtl">
+      <h3>ID And Address Proof</h3>
+
+      <ul class="listusr_dtl">
+        <li>
+          <span>ID Proof</span>
+          <label>abc@gmail.com</label>
+        </li>
+
+        <li>
+          <span>Address Proof</span>
+          <label>abcf@gmail.com</label>
+        </li>
+
+        
+        </ul>
+      <button type="button" class="btn btn-info" ng-click="$ctrl.editIdAndAddressProof()">Edit</button>
+    </div>
+  </div>
+
+   <div class="row" ng-show="$ctrl.idAndAddressProofFlage">
+    <div class="listusrdtl">
+      <h3>ID And Address Proof</h3>
+      <ul class="listusr_dtl">
+        <li>
+           <span>ID Proof</span>
+          <select id="">
+            <option value="pancard">Pancard</option>
+            <option value="passport">Passport</option>
+             <option value="drivingLicense">Driving Licence</option>
+              <option value="votercard">Voter Card</option>
+               <option value="adharcard">Adhar Card</option>
+                <option value="other">Other</option>
+          </select>
+        </li>
+
+        <li>
+             <span>ID Proof</span>
+          <select id="">
+           <option value="votercard">Voter Card</option>
+            <option value="ratiocard">RationCard</option>
+            <option value="propertytaxReceive">Property Tax Receipt</option>
+             <option value="rentagreement">Rent agreement</option>
+              <option value="telephonebill">Telephone Bill</option>
+               <option value="Electricitybill">Electricity Bill</option>
+                <option value="other">Other</option>
+          </select>
+        </li>
+
+       
+      </ul>
+    </div>
+    <div class="editSaveButton">
+      <button type="button" class="btn btn-primary" ng-click="$ctrl.saveIdAndAddressProof()">Save</button>
+      <button type="button" class="btn btn-warning" ng-click="$ctrl.cancellIdAndAddressProof()">Cancel</button>
+    </div>
+  </div>
+
+</div>

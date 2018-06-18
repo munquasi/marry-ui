@@ -1,0 +1,962 @@
+/***** Color settings *****/
+/****** Mixins ******/
+/****** Common ******/
+body {
+  font-family: "Myriad Pro", Verdana, Arial, sans-serif;
+  background: #eee;
+}
+
+.loading {
+  background-image: url("loading.gif") !important;
+}
+
+div.overlay input[type=text]::-ms-clear {
+  color: #fff;
+}
+
+div.overlay.search input[type=text]::-ms-clear {
+  margin-right: 1.25rem;
+}
+
+div.header h1 {
+  color: #fff;
+}
+div.header div.header-project-info {
+  background: #3BBCE0;
+}
+div.header div.header-project-info a {
+  color: #fff;
+  text-decoration: none;
+}
+div.header div.header-project-info a:active {
+  text-decoration: underline;
+}
+div.header div.header-nav {
+  background: #12A7CB;
+}
+div.header a.breadcrumb-link {
+  color: #fff;
+}
+div.header a.breadcrumb-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+div.header span.separator {
+  color: #fff;
+}
+div.header div.custom-link a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: .95em;
+}
+div.header div.custom-link a:active, div.header div.custom-link a:hover {
+  text-decoration: underline;
+}
+
+body.media-tablet div.header-hamburger,
+body.media-mobile div.header-hamburger {
+  background-color: #3BBCE0;
+  cursor: pointer;
+  background-image: url("theme-1-menu.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+div.footer {
+  color: #bec2c4;
+}
+
+/****** Topic page ******/
+div.topic-content {
+  background: #fff;
+}
+
+body.media-desktop div.topic-content {
+  background: #fff;
+  border-radius: .25rem;
+}
+
+/****** Homepage ******/
+div.frontpage-welcome {
+  text-align: center;
+}
+div.frontpage-welcome h1 {
+  color: #444;
+  font-size: 1.2rem;
+}
+div.frontpage-welcome p {
+  color: #444;
+}
+
+body.media-desktop div.frontpage-welcome {
+  text-align: center;
+}
+body.media-desktop div.frontpage-welcome h1 {
+  font-size: 2rem;
+}
+body.media-desktop div.frontpage-welcome p {
+  font-size: 1rem;
+}
+
+div.topicpage-search-field,
+div.frontpage-search-field {
+  background: #12A7CB;
+}
+div.topicpage-search-field input.wSearchField,
+div.frontpage-search-field input.wSearchField {
+  border: none;
+  padding: 0 .625rem;
+  color: #999999;
+  font-size: 1rem;
+  border-radius: .25rem;
+}
+div.topicpage-search-field a.wSearchLink,
+div.frontpage-search-field a.wSearchLink {
+  background-image: url("theme-1-search.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+div.topicpage-search-field div.search-list,
+div.frontpage-search-field div.search-list {
+  background-color: #fff;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  color: #444;
+}
+div.topicpage-search-field div.search-list table,
+div.frontpage-search-field div.search-list table {
+  border-collapse: collapse;
+}
+div.topicpage-search-field div.search-list tr,
+div.frontpage-search-field div.search-list tr {
+  border: 0px solid;
+  border-top-width: 0.0625rem;
+  border-color: #DDDDDD;
+}
+div.topicpage-search-field div.search-list tr:first-child,
+div.frontpage-search-field div.search-list tr:first-child {
+  border-top: none;
+}
+div.topicpage-search-field div.search-list tr.search-selected,
+div.frontpage-search-field div.search-list tr.search-selected {
+  text-decoration: underline !important;
+}
+div.topicpage-search-field div.search-list div:hover,
+div.frontpage-search-field div.search-list div:hover {
+  text-decoration: underline;
+}
+div.topicpage-search-field div.search-list div.search-delete,
+div.frontpage-search-field div.search-list div.search-delete {
+  background-image: url("theme-1-search-remove.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+body.media-desktop div.frontpage-search-field {
+  background: transparent;
+}
+body.media-desktop div.frontpage-search-field input.wSearchField {
+  -webkit-border-radius: .4em;
+  -moz-border-radius: .4em;
+  border-radius: .4em;
+  border: none;
+  padding: 1em .625rem;
+}
+body.media-desktop div.frontpage-search-field a {
+  background-image: url("theme-1-search-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+body.media-desktop div.frontpage-search-field div.search-list {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+body.media-desktop div.topicpage-search-field {
+  background: transparent;
+}
+body.media-desktop div.topicpage-search-field input.wSearchField {
+  border: none;
+  border-radius: .4rem;
+  padding: 0 .625rem;
+}
+body.media-desktop div.topicpage-search-field a {
+  background-image: url("theme-1-search-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+body.media-desktop div.topicpage-search-field div.search-list {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+body.media-tablet div.topicpage-function-buttons,
+body.media-tablet div.frontpage-function-buttons,
+body.media-mobile div.topicpage-function-buttons,
+body.media-mobile div.frontpage-function-buttons {
+  background-color: #2C3D4F;
+}
+body.media-tablet div.topicpage-function-buttons div.overlay-header div.title,
+body.media-tablet div.frontpage-function-buttons div.overlay-header div.title,
+body.media-mobile div.topicpage-function-buttons div.overlay-header div.title,
+body.media-mobile div.frontpage-function-buttons div.overlay-header div.title {
+  color: #fff;
+  text-transform: uppercase;
+}
+body.media-tablet div.topicpage-function-buttons div.overlay-header div.overlay-close a,
+body.media-tablet div.frontpage-function-buttons div.overlay-header div.overlay-close a,
+body.media-mobile div.topicpage-function-buttons div.overlay-header div.overlay-close a,
+body.media-mobile div.frontpage-function-buttons div.overlay-header div.overlay-close a {
+  cursor: pointer;
+  background-image: url("theme-1-cross-overlay.png");
+  background-repeat: no-repeat;
+  background-position: 100% center;
+}
+body.media-tablet div.topicpage-function-buttons div.overlay-header div.overlay-close a:hover,
+body.media-tablet div.frontpage-function-buttons div.overlay-header div.overlay-close a:hover,
+body.media-mobile div.topicpage-function-buttons div.overlay-header div.overlay-close a:hover,
+body.media-mobile div.frontpage-function-buttons div.overlay-header div.overlay-close a:hover {
+  background-image: url("theme-1-cross-overlay-over.png");
+}
+body.media-tablet div.topicpage-function-buttons div.no-grid:first-child,
+body.media-tablet div.frontpage-function-buttons div.no-grid:first-child,
+body.media-mobile div.topicpage-function-buttons div.no-grid:first-child,
+body.media-mobile div.frontpage-function-buttons div.no-grid:first-child {
+  border-top: .0625rem solid;
+  border-top-color: #616e7c;
+}
+body.media-tablet div.topicpage-function-buttons div.overlay-body div:not(.no-grid),
+body.media-tablet div.frontpage-function-buttons div.overlay-body div:not(.no-grid),
+body.media-mobile div.topicpage-function-buttons div.overlay-body div:not(.no-grid),
+body.media-mobile div.frontpage-function-buttons div.overlay-body div:not(.no-grid) {
+  border-bottom: .0625rem solid;
+  border-bottom-color: #616e7c;
+}
+body.media-tablet div.topicpage-function-buttons div.overlay-body div:not(.no-grid) a,
+body.media-tablet div.frontpage-function-buttons div.overlay-body div:not(.no-grid) a,
+body.media-mobile div.topicpage-function-buttons div.overlay-body div:not(.no-grid) a,
+body.media-mobile div.frontpage-function-buttons div.overlay-body div:not(.no-grid) a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: .25rem .625rem;
+  color: #fff;
+  text-decoration: none;
+}
+body.media-tablet div.topicpage-function-buttons div.overlay-body div:not(.no-grid) a:active, body.media-tablet div.topicpage-function-buttons div.overlay-body div:not(.no-grid) a:hover,
+body.media-tablet div.frontpage-function-buttons div.overlay-body div:not(.no-grid) a:active,
+body.media-tablet div.frontpage-function-buttons div.overlay-body div:not(.no-grid) a:hover,
+body.media-mobile div.topicpage-function-buttons div.overlay-body div:not(.no-grid) a:active,
+body.media-mobile div.topicpage-function-buttons div.overlay-body div:not(.no-grid) a:hover,
+body.media-mobile div.frontpage-function-buttons div.overlay-body div:not(.no-grid) a:active,
+body.media-mobile div.frontpage-function-buttons div.overlay-body div:not(.no-grid) a:hover {
+  color: #969fa8;
+}
+body.media-tablet div.topicpage-function-buttons div.overlay-body div:not(.no-grid).filter-applied,
+body.media-tablet div.frontpage-function-buttons div.overlay-body div:not(.no-grid).filter-applied,
+body.media-mobile div.topicpage-function-buttons div.overlay-body div:not(.no-grid).filter-applied,
+body.media-mobile div.frontpage-function-buttons div.overlay-body div:not(.no-grid).filter-applied {
+  background-image: url("theme-1-tick-overlay.png");
+  background-repeat: no-repeat;
+  background-position: 100% center;
+}
+
+body.media-desktop div.frontpage-function-buttons div.grid-buttons div,
+body.media-desktop div.topicpage-function-buttons div.grid-buttons div {
+  -webkit-border-radius: .2em;
+  -moz-border-radius: .2em;
+  border-radius: .2em;
+  background: #3BBCE0;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+body.media-desktop div.frontpage-function-buttons div.grid-buttons div.filter-applied a,
+body.media-desktop div.topicpage-function-buttons div.grid-buttons div.filter-applied a {
+  background-image: url("theme-1-tick-button.png");
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+body.media-desktop div.frontpage-function-buttons div.grid-buttons div a,
+body.media-desktop div.topicpage-function-buttons div.grid-buttons div a {
+  color: #fff;
+  text-decoration: none;
+}
+body.media-desktop div.frontpage-function-buttons div.grid-buttons div a:hover,
+body.media-desktop div.topicpage-function-buttons div.grid-buttons div a:hover {
+  color: #fff;
+}
+body.media-desktop div.frontpage-function-buttons div.grid-buttons div:hover,
+body.media-desktop div.topicpage-function-buttons div.grid-buttons div:hover {
+  background: #12A7CB;
+}
+
+/***** Widgets *****/
+div.topicpage-toc li {
+  color: #444;
+}
+div.topicpage-toc li.selected {
+  font-weight: bold;
+  color: #111;
+  background-image: url("theme-1-topic-active.png");
+  background-repeat: no-repeat;
+  background-position: 0% center;
+}
+div.topicpage-toc a {
+  text-decoration: none;
+  color: inherit;
+}
+div.topicpage-toc a:hover {
+  color: #12a7cb;
+}
+
+body.media-mobile div.topicpage-toc ul.page-toc {
+  border-top: .1rem solid;
+  border-top-color: #616e7c;
+}
+body.media-mobile div.topicpage-toc li {
+  color: #fff;
+}
+body.media-mobile div.topicpage-toc li:not(.inactive):not(.child) {
+  border-bottom: .1rem solid;
+  border-bottom-color: #616e7c;
+}
+body.media-mobile div.topicpage-toc li a {
+  color: #fff;
+  text-decoration: none;
+}
+body.media-mobile div.topicpage-toc li a:active, body.media-mobile div.topicpage-toc li a:hover {
+  color: #969fa8;
+}
+body.media-mobile div.topicpage-toc li.selected {
+  background-image: none;
+  color: #fff;
+}
+body.media-mobile div.topicpage-toc li.book:not(.expanded) {
+  background-image: url("theme-1-arrow-toc-drill-down.png");
+  background-repeat: no-repeat;
+  background-position: 100% center;
+}
+body.media-mobile div.topicpage-toc li.book:not(.expanded):hover, body.media-mobile div.topicpage-toc li.book:not(.expanded):active {
+  background-image: url("theme-1-arrow-toc-drill-down-over.png");
+}
+body.media-mobile div.topicpage-toc li.book.expanded {
+  background-image: url("theme-1-arrow-toc-back.png");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+body.media-mobile div.topicpage-toc li.book.expanded:hover, body.media-mobile div.topicpage-toc li.book.expanded:active {
+  background-image: url("theme-1-arrow-toc-back-over.png");
+}
+
+body.media-tablet div.topicpage-toc li {
+  color: #fff;
+}
+body.media-tablet div.topicpage-toc li.selected {
+  background-image: url("theme-1-topic-active-overlay.png");
+  color: #fff;
+}
+body.media-tablet div.topicpage-toc a:hover {
+  color: #fff;
+}
+
+body.media-mobile div.topicpage-toc li.book.expanded {
+  font-weight: bold;
+}
+
+div.frontpage-toc div {
+  /**
+  	We need different radius for the borders to avoid the background of the parent bleeding through the label.
+  **/
+  border-top-right-radius: .4rem;
+  border-top-left-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+  border-bottom-left-radius: .4rem;
+  background-color: #425B71;
+  background-position: center 1.75rem;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+div.frontpage-toc div:hover {
+  background-color: #2C3E50;
+}
+div.frontpage-toc div.book {
+  background-image: url("theme-1-toc-book.png");
+}
+div.frontpage-toc div.book:hover {
+  background-image: url("theme-1-toc-book-over.png");
+}
+div.frontpage-toc div.book.expanded {
+  background-image: url("theme-1-toc-back.png");
+}
+div.frontpage-toc div.book.expanded:hover {
+  background-image: url("theme-1-toc-back-over.png");
+}
+div.frontpage-toc div.item {
+  background-image: url("theme-1-toc-topic.png");
+}
+div.frontpage-toc div.item:hover {
+  background-image: url("theme-1-toc-topic-over.png");
+}
+div.frontpage-toc div.url {
+  background-image: url("theme-1-toc-external.png");
+}
+div.frontpage-toc div.url:hover {
+  background-image: url("theme-1-toc-external-over.png");
+}
+div.frontpage-toc a {
+  text-decoration: none;
+}
+div.frontpage-toc span.label {
+  font-size: 1.125rem;
+  background: #fff;
+  color: #444;
+  /**
+  	We include bottom border radius to avoid pixels from the background bleeding through
+  **/
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+div.frontpage-toc span.label:hover {
+  background: #fff;
+  color: #444;
+}
+
+body.media-tablet div.topicpage-toc,
+body.media-mobile div.topicpage-toc,
+div.overlay.index,
+div.overlay.glossary,
+div.overlay.filter,
+div.overlay.search,
+div.overlay.favorites,
+div.overlay.frontpage-search {
+  background-color: #2C3D4F;
+}
+body.media-tablet div.topicpage-toc div.overlay-header,
+body.media-mobile div.topicpage-toc div.overlay-header,
+div.overlay.index div.overlay-header,
+div.overlay.glossary div.overlay-header,
+div.overlay.filter div.overlay-header,
+div.overlay.search div.overlay-header,
+div.overlay.favorites div.overlay-header,
+div.overlay.frontpage-search div.overlay-header {
+  color: #fff;
+}
+body.media-tablet div.topicpage-toc div.overlay-header div.title,
+body.media-mobile div.topicpage-toc div.overlay-header div.title,
+div.overlay.index div.overlay-header div.title,
+div.overlay.glossary div.overlay-header div.title,
+div.overlay.filter div.overlay-header div.title,
+div.overlay.search div.overlay-header div.title,
+div.overlay.favorites div.overlay-header div.title,
+div.overlay.frontpage-search div.overlay-header div.title {
+  text-transform: uppercase;
+}
+body.media-tablet div.topicpage-toc div.overlay-header div.overlay-close a,
+body.media-mobile div.topicpage-toc div.overlay-header div.overlay-close a,
+div.overlay.index div.overlay-header div.overlay-close a,
+div.overlay.glossary div.overlay-header div.overlay-close a,
+div.overlay.filter div.overlay-header div.overlay-close a,
+div.overlay.search div.overlay-header div.overlay-close a,
+div.overlay.favorites div.overlay-header div.overlay-close a,
+div.overlay.frontpage-search div.overlay-header div.overlay-close a {
+  cursor: pointer;
+  background-image: url("theme-1-cross-overlay.png");
+  background-repeat: no-repeat;
+  background-position: 100% center;
+}
+body.media-tablet div.topicpage-toc div.overlay-header div.overlay-close a:hover,
+body.media-mobile div.topicpage-toc div.overlay-header div.overlay-close a:hover,
+div.overlay.index div.overlay-header div.overlay-close a:hover,
+div.overlay.glossary div.overlay-header div.overlay-close a:hover,
+div.overlay.filter div.overlay-header div.overlay-close a:hover,
+div.overlay.search div.overlay-header div.overlay-close a:hover,
+div.overlay.favorites div.overlay-header div.overlay-close a:hover,
+div.overlay.frontpage-search div.overlay-header div.overlay-close a:hover {
+  background-image: url("theme-1-cross-overlay-over.png");
+}
+body.media-tablet div.topicpage-toc div.overlay-footer:before,
+body.media-mobile div.topicpage-toc div.overlay-footer:before,
+div.overlay.index div.overlay-footer:before,
+div.overlay.glossary div.overlay-footer:before,
+div.overlay.filter div.overlay-footer:before,
+div.overlay.search div.overlay-footer:before,
+div.overlay.favorites div.overlay-footer:before,
+div.overlay.frontpage-search div.overlay-footer:before {
+  background: #616e7c;
+}
+body.media-tablet div.topicpage-toc div.overlay-footer div,
+body.media-mobile div.topicpage-toc div.overlay-footer div,
+div.overlay.index div.overlay-footer div,
+div.overlay.glossary div.overlay-footer div,
+div.overlay.filter div.overlay-footer div,
+div.overlay.search div.overlay-footer div,
+div.overlay.favorites div.overlay-footer div,
+div.overlay.frontpage-search div.overlay-footer div {
+  text-transform: uppercase;
+  background: #3BBCE0;
+  border-radius: .2rem;
+  text-align: center;
+  cursor: pointer;
+}
+body.media-tablet div.topicpage-toc div.overlay-footer div:hover,
+body.media-mobile div.topicpage-toc div.overlay-footer div:hover,
+div.overlay.index div.overlay-footer div:hover,
+div.overlay.glossary div.overlay-footer div:hover,
+div.overlay.filter div.overlay-footer div:hover,
+div.overlay.search div.overlay-footer div:hover,
+div.overlay.favorites div.overlay-footer div:hover,
+div.overlay.frontpage-search div.overlay-footer div:hover {
+  background: #12A7CB;
+}
+body.media-tablet div.topicpage-toc div.overlay-footer div a,
+body.media-mobile div.topicpage-toc div.overlay-footer div a,
+div.overlay.index div.overlay-footer div a,
+div.overlay.glossary div.overlay-footer div a,
+div.overlay.filter div.overlay-footer div a,
+div.overlay.search div.overlay-footer div a,
+div.overlay.favorites div.overlay-footer div a,
+div.overlay.frontpage-search div.overlay-footer div a {
+  color: #fff;
+  text-decoration: none;
+}
+body.media-tablet div.topicpage-toc div.overlay-footer div a:hover,
+body.media-mobile div.topicpage-toc div.overlay-footer div a:hover,
+div.overlay.index div.overlay-footer div a:hover,
+div.overlay.glossary div.overlay-footer div a:hover,
+div.overlay.filter div.overlay-footer div a:hover,
+div.overlay.search div.overlay-footer div a:hover,
+div.overlay.favorites div.overlay-footer div a:hover,
+div.overlay.frontpage-search div.overlay-footer div a:hover {
+  color: #fff;
+}
+
+div.overlay.search div.search-list {
+  background: #425262;
+  color: #ffffff;
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+div.overlay.search div.search-list table {
+  border-collapse: collapse;
+}
+div.overlay.search div.search-list tr {
+  border-style: solid;
+  border-width: 0;
+  border-top-width: 0.0625rem;
+  border-color: #616e7c;
+}
+div.overlay.search div.search-list tr.search-selected {
+  text-decoration: underline !important;
+}
+div.overlay.search div.search-list tr div:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+div.overlay.search div.search-list tr:first-child {
+  border-top-width: 0;
+}
+div.overlay.search div.search-list tr div.search-delete {
+  background-image: url("theme-1-search-remove.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+div.overlay.search div.search-options {
+  font-size: .9rem;
+  color: #fff;
+}
+div.overlay.search label.highlight-search {
+  position: relative;
+}
+div.overlay.search label.highlight-search input[type=checkbox] {
+  display: none;
+}
+div.overlay.search label.highlight-search span.checkbox-bg {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: transparent;
+  background-image: url("theme-1-check-box.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+div.overlay.search label.highlight-search input[type=checkbox]:checked + span.checkbox-bg {
+  background-image: url("theme-1-check-box-selected.png");
+}
+div.overlay.search label.highlight-search span.checkbox-bg + span {
+  position: relative;
+  top: -.02rem;
+}
+div.overlay.search input.wSearchField {
+  background: #425262;
+  color: #ffffff;
+  border: none;
+  border-radius: .25rem !important;
+  padding: 0 .625rem;
+}
+div.overlay.search a.wSearchLink {
+  background-image: url("theme-1-search.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+div.overlay.search a.nolink {
+  /*
+  	Please note that the order of these selectors is important.
+  	If a file is something like myfile.docx.htm, we want to show the topic icon.
+  	In this order, the last applied rule wins.
+  */
+}
+div.overlay.search a.nolink[href^='http'] div.wSearchResultTitle {
+  background-image: url("theme-1-search-results-topics.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  padding-left: 1.5rem;
+  min-height: 1rem;
+  line-height: 1rem;
+}
+div.overlay.search a.nolink[href^='file'] div.wSearchResultTitle {
+  background-image: url("theme-1-search-results-topics.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  padding-left: 1.5rem;
+  min-height: 1rem;
+  line-height: 1rem;
+}
+div.overlay.search a.nolink[href*='.doc'] div.wSearchResultTitle {
+  background-image: url("theme-1-search-results-documents.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  padding-left: 1.5rem;
+  min-height: 1rem;
+  line-height: 1rem;
+}
+div.overlay.search a.nolink[href*='.odt'] div.wSearchResultTitle {
+  background-image: url("theme-1-search-results-documents.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  padding-left: 1.5rem;
+  min-height: 1rem;
+  line-height: 1rem;
+}
+div.overlay.search a.nolink[href*='.rtf'] div.wSearchResultTitle {
+  background-image: url("theme-1-search-results-documents.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  padding-left: 1.5rem;
+  min-height: 1rem;
+  line-height: 1rem;
+}
+div.overlay.search a.nolink[href*='.ppt'] div.wSearchResultTitle {
+  background-image: url("theme-1-search-results-presentations.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  padding-left: 1.5rem;
+  min-height: 1rem;
+  line-height: 1rem;
+}
+div.overlay.search a.nolink[href*='.odp'] div.wSearchResultTitle {
+  background-image: url("theme-1-search-results-presentations.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  padding-left: 1.5rem;
+  min-height: 1rem;
+  line-height: 1rem;
+}
+div.overlay.search a.nolink[href*='.xls'] div.wSearchResultTitle {
+  background-image: url("theme-1-search-results-spreadsheets.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  padding-left: 1.5rem;
+  min-height: 1rem;
+  line-height: 1rem;
+}
+div.overlay.search a.nolink[href*='.ods'] div.wSearchResultTitle {
+  background-image: url("theme-1-search-results-spreadsheets.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  padding-left: 1.5rem;
+  min-height: 1rem;
+  line-height: 1rem;
+}
+div.overlay.search a.nolink[href*='.txt'] div.wSearchResultTitle {
+  background-image: url("theme-1-search-results-text-files.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  padding-left: 1.5rem;
+  min-height: 1rem;
+  line-height: 1rem;
+}
+div.overlay.search a.nolink[href*='.pdf'] div.wSearchResultTitle {
+  background-image: url("theme-1-search-results-pdfs.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  padding-left: 1.5rem;
+  min-height: 1rem;
+  line-height: 1rem;
+}
+div.overlay.search a.nolink[href*='.htm'] div.wSearchResultTitle {
+  background-image: url("theme-1-search-results-topics.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  padding-left: 1.5rem;
+  min-height: 1rem;
+  line-height: 1rem;
+}
+div.overlay.search div.wSearchMessage {
+  font-size: .9rem;
+  color: #fff;
+  border-bottom-width: .1rem;
+  border-bottom-style: solid;
+  border-bottom-color: #616e7c;
+}
+div.overlay.search div.wSearchResultItem a {
+  color: inherit;
+  text-decoration: none;
+}
+div.overlay.search div.wSearchResultItem div.wSearchResultTitle {
+  color: #fff;
+  font-weight: bold;
+}
+div.overlay.search div.wSearchResultItem span.wSearchContext {
+  color: #969fa8;
+}
+div.overlay.search div.wSearchResultItem div.wSearchURL {
+  color: #fff;
+}
+div.overlay.search div.wSearchResultsEnd {
+  font-size: .9rem;
+  color: #fff;
+}
+
+div.overlay.filter div.title.filter-applied:after {
+  background-image: url("theme-1-tick-overlay.png");
+}
+div.overlay.filter div.reset-button a {
+  background-color: #3BBCE0;
+  color: #fff;
+  border-radius: .2rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+div.overlay.filter label.tag-parent {
+  color: #fff;
+  border-bottom: 1px solid;
+  border-bottom-color: #616e7c;
+}
+div.overlay.filter li.item {
+  color: #969fa8;
+}
+div.overlay.filter ul.checkbox li.item label {
+  background-image: url("theme-1-check-box.png");
+}
+div.overlay.filter ul.checkbox li.item label.checked {
+  background-image: url("theme-1-check-box-selected.png");
+}
+div.overlay.filter ul.radio li.item label {
+  background-image: url("theme-1-radio-button.png");
+}
+div.overlay.filter ul.radio li.item label.checked {
+  background-image: url("theme-1-radio-button-selected.png");
+}
+
+div.overlay.index a,
+div.overlay.glossary a {
+  cursor: pointer;
+}
+div.overlay.index a:focus,
+div.overlay.glossary a:focus {
+  border: .0625rem solid;
+  border-color: #3BB4D5;
+}
+div.overlay.index li.IndexAlphabet,
+div.overlay.index li.GloAlphabet,
+div.overlay.glossary li.IndexAlphabet,
+div.overlay.glossary li.GloAlphabet {
+  display: none;
+}
+div.overlay.index input.IdxFilter,
+div.overlay.index input.GloFilter,
+div.overlay.glossary input.IdxFilter,
+div.overlay.glossary input.GloFilter {
+  background: #425262;
+  color: #ffffff;
+  border: none;
+  border-radius: .25rem !important;
+}
+div.overlay.index span:not(.GlossDefinitionText),
+div.overlay.index div.overlay-body a,
+div.overlay.glossary span:not(.GlossDefinitionText),
+div.overlay.glossary div.overlay-body a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+}
+div.overlay.index span:not(.GlossDefinitionText):hover,
+div.overlay.index div.overlay-body a:hover,
+div.overlay.glossary span:not(.GlossDefinitionText):hover,
+div.overlay.glossary div.overlay-body a:hover {
+  background: #3BB4D5;
+  border-radius: 0.125rem;
+}
+div.overlay.index span.GlossDefinitionText,
+div.overlay.glossary span.GlossDefinitionText {
+  color: #969fa8;
+  font-size: .9rem;
+}
+
+/** Favorites **/
+div.overlay.favorites div.overlay-body span {
+  color: #fff;
+}
+div.overlay.favorites div.favoritestableintro {
+  color: #fff;
+  border-bottom: 1px solid #616e7c;
+}
+
+table.favoritesholder td.favorite a {
+  text-decoration: none;
+  color: #fff;
+}
+table.favoritesholder td.favorite a:hover {
+  color: #fff;
+  background: #3BB4D5;
+  border-radius: 0.125rem;
+}
+table.favoritesholder td.removelink a {
+  background-image: url("theme-1-bin-overlay.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+table.favoritesholder td.removelink a:hover {
+  background-image: url("theme-1-bin-overlay-over.png");
+}
+
+div.favorites.toggle-button a {
+  cursor: pointer;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+div.favorites.toggle-button a.favorite {
+  background-image: url("theme-1-bookmark-added.png");
+}
+div.favorites.toggle-button a.favorite:hover {
+  background-image: url("theme-1-bookmark-added-over.png");
+}
+div.favorites.toggle-button a.unfavorite {
+  background-image: url("theme-1-bookmark-add.png");
+}
+div.favorites.toggle-button a.unfavorite:hover {
+  background-image: url("theme-1-bookmark-add-over.png");
+}
+
+div.favorites.sidebar-button a {
+  background-image: url("theme-1-bookmarks.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+div.favorites.sidebar-button a:hover {
+  background-image: url("theme-1-bookmarks-over.png");
+}
+
+div.brs_next a {
+  text-decoration: none;
+  background-color: #12A7CB;
+  background-image: url("theme-1-arrow-next.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  border-radius: .25rem;
+}
+div.brs_next a:hover, div.brs_next a:active {
+  background-image: url("theme-1-arrow-next-over.png");
+}
+
+div.brs_previous a {
+  text-decoration: none;
+  background-color: #12A7CB;
+  background-image: url("theme-1-arrow-prev.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  border-radius: .25rem;
+}
+div.brs_previous a:hover, div.brs_previous a:active {
+  background-image: url("theme-1-arrow-prev-over.png");
+}
+
+/** Make sure we have enough contrast for the outline **/
+div.grid-buttons a:focus,
+div.grid-buttons div:focus,
+div.header a:focus,
+div.header div:focus {
+  outline-color: #fff;
+}
+
+div.grid-buttons a:focus {
+  border: 0.13rem outset #425B71;
+}
+
+div.frontpage-toc div.book a:focus,
+div.frontpage-toc div.item a:focus,
+div.frontpage-toc div.url a:focus {
+  border: 0.13rem solid #3BBCE0;
+}
+
+/** Specific changes for RTL languages **/
+body[dir=rtl] div.overlay-close a {
+  background-position: 0 center !important;
+}
+body[dir=rtl] div.topicpage-toc li.selected {
+  background-position: 100% center !important;
+}
+body[dir=rtl] body.media-mobile div.topicpage-toc li.book:not(.expanded) {
+  background-position: 0% center;
+}
+body[dir=rtl] body.media-mobile div.topicpage-toc li.book.expanded {
+  background-position: 100% center;
+}
+body[dir=rtl] body.media-desktop div.frontpage-function-buttons div.grid-buttons div.filter-applied a,
+body[dir=rtl] body.media-desktop div.topicpage-function-buttons div.grid-buttons div.filter-applied a {
+  background-position: 5% center;
+}
+body[dir=rtl] div.brs_next a {
+  background-image: url("theme-1-arrow-prev.png");
+}
+body[dir=rtl] div.brs_previous a {
+  background-image: url("theme-1-arrow-next.png");
+}
+body[dir=rtl] div.overlay.search a.nolink[href^='http'] div.wSearchResultTitle, body[dir=rtl] div.overlay.search a.nolink[href^='file'] div.wSearchResultTitle, body[dir=rtl] div.overlay.search a.nolink[href*='.doc'] div.wSearchResultTitle, body[dir=rtl] div.overlay.search a.nolink[href*='.odt'] div.wSearchResultTitle, body[dir=rtl] div.overlay.search a.nolink[href*='.rtf'] div.wSearchResultTitle, body[dir=rtl] div.overlay.search a.nolink[href*='.ppt'] div.wSearchResultTitle, body[dir=rtl] div.overlay.search a.nolink[href*='.odp'] div.wSearchResultTitle, body[dir=rtl] div.overlay.search a.nolink[href*='.xls'] div.wSearchResultTitle, body[dir=rtl] div.overlay.search a.nolink[href*='.ods'] div.wSearchResultTitle, body[dir=rtl] div.overlay.search a.nolink[href*='.txt'] div.wSearchResultTitle, body[dir=rtl] div.overlay.search a.nolink[href*='.pdf'] div.wSearchResultTitle, body[dir=rtl] div.overlay.search a.nolink[href*='.htm'] div.wSearchResultTitle {
+  background-position: right top;
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+
+/*# sourceMappingURL=theme-1.css.map */

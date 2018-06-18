@@ -1,0 +1,225 @@
+// Previous calendar styles
+.calender-header {
+    border-bottom: 1px solid $pinkish-grey;
+    font-size: 0.9rem;
+    padding-bottom: 0.7rem;
+}
+
+.fc-event.unavailability {
+    background-color: transparent;
+}
+
+.fc-event.public-holiday,
+.fc-event.holiday {
+    background-color: #4cd6e2;
+    cursor: inherit;
+}
+
+.employee-calendar {
+    .md-button {
+        margin: 0;
+         :active {
+            border: 1px solid $pinkish-grey;
+            border-radius: 8px;
+            color: $bg-darkGrey;
+        }
+    }
+    .md-check>i:before {
+        content: "";
+        position: absolute;
+        width: 0.7rem;
+        top: 0.2rem;
+        height: 0.7rem;
+        border: 2px solid #9e9e9e;
+        border-radius: 0;
+    }
+    #legend .nav-item {
+        font-size: 0.9rem;
+        .unavailable,
+        .fc-event.public-holiday {
+            background-color: #e54c4f;
+        }
+        .public-holiday,
+        .fc-event.public-holiday {
+            background-color: #3ed6e3;
+        }
+        .scheduled-shift,
+        .fc-event.scheduled-shift {
+            background-color: #ff7e4f;
+        }
+        .shift,
+        .fc-event.shift {
+            background-color: #4c687e;
+        }
+        .planned-absence,
+        .fc-event.planned-absence {
+            background-color: #ce6967;
+            cursor: inherit;
+        }
+    }
+}
+
+.fc {
+    background-color: $white-two;
+}
+
+.fc-view-container {
+    table {
+        margin: 0;
+        thead {
+            border: none;
+            tr {
+                td {
+                    padding-right: 1rem;
+                    padding-right: 2% !important;
+                    padding-top: 0.5rem !important;
+                    text-align: right;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+    .fc-today,
+    .fc-state-highlight,
+    .fc-unthemed {
+        background: $white !important;
+        opacity: 0.9;
+    }
+    .fc-state-highlight {
+        background: $white !important;
+        opacity: 0.9;
+    }
+    .fc-unthemed {
+        background: $white !important;
+        opacity: 0.9;
+    }
+    .fc-other-month {
+        background: $text-disabled !important;
+        opacity: 0.6;
+    }
+    .fc-unthemed .fc-today {
+        background: $white !important;
+        opacity: 0.9;
+    }
+    .fc-view .fc-widget-header,
+    .fc-view .fc-widget-content {
+        border-color: $text-disabled !important;
+        font-weight: normal;
+        font-size: 0.9rem;
+        color: $bg-darkGrey !important;
+        .fc-ltr .fc-basic-view .fc-day-number {
+            padding-right: 2% !important;
+            padding-top: 0.5rem !important;
+            text-align: right;
+            font-size: 0.9rem;
+        }
+        .fc-event {
+            border: none;
+        }
+    }
+    .fc-view .fc-widget-header {
+        background-color: transparent !important;
+    }
+}
+
+.employee-calendar #legend {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.fc-time-grid-event>.fc-content {
+    white-space: normal !important;
+    // overflow: hidden !important;
+}
+
+.fc-time-grid-event .fc-time {
+    white-space: normal !important;
+}
+
+.calendar-loading-icon {
+    position: absolute;
+    left: 47%;
+    top: 165px;
+    z-index: 99;
+}
+
+.fc-event .night-shift-indicator {
+    float: right;
+}
+
+.fc-toolbar {
+    background-color: $white-two !important;
+    margin: 1rem 0;
+    h2 {
+        font-size: 24px;
+        text-transform: capitalize;
+    }
+    .fc-button {
+        width: 34px;
+        height: 29px;
+        color: #fff;
+        background: $blood-orange;
+        padding: 4px;
+        .fc-icon {
+            margin: 0;
+            top: 0rem;
+        }
+    }
+}
+
+// Modal Classes. Warning: These are not proper overrides, behavior might be inconsistent  // 
+.modal-content {
+    background-color: $white-two;
+    form {
+        border-top: 10px solid $blood-orange;
+        padding: 0.6rem 0.6rem;
+    }
+    h4 {
+        margin: 1rem;
+    }
+    .datepicker.dropdown-menu {
+        width: 350px !important;
+        height: 300px !important;
+        overflow: scroll;
+    }
+}
+
+//Global Override for calendar text
+md-input-container:not(.md-input-has-value) input:not(:focus),
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-ampm-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-day-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-hour-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-millisecond-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-minute-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-month-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-second-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-week-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-year-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-text {
+    color: $black;
+}
+
+// Override class for calendar icon width
+.width-inherit-all * {
+    width: inherit !important;
+}
+
+// Datepicker triangle global override
+.md-datepicker-expand-triangle {
+    width: initial !important;
+}
+
+.buttonborder {
+    border: 1px solid $pinkish-grey;
+    border-radius: 8px;
+    color: $bg-darkGrey !important;
+    margin-bottom: 9px;
+}
+
+.history-box{
+    border-bottom: 1px solid rgba(199, 200, 202, .5);
+    margin-bottom: 1.2rem;
+    padding-bottom: 1.0rem;
+    color: #3e5766; 
+    padding-left: 8rem
+}

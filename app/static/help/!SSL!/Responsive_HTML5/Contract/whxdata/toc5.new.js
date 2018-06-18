@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"Work Order Details","url":"contract-work_order-details.htm"},{"type":"item","name":"Billing Information","url":"wo-Billing_Information.htm"},{"type":"item","name":"Skills","url":"wo-skills.htm"},{"type":"item","name":"Licenses","url":"wo-licenses.htm"},{"type":"item","name":"Equipment","url":"wo-equipments.htm"},{"type":"item","name":"Associated Contact","url":"wo-associated_contact.htm"},{"type":"book","name":"Location","key":"toc6","url":"wo-location.htm"},{"type":"item","name":"Audit Log","url":"wo-audit_log.htm"},{"type":"item","name":"Public Holidays","url":"wo-public_holidays.htm"},{"type":"item","name":"Invoice/Credits","url":"wo-invoice_credits.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

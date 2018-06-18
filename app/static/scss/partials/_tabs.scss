@@ -1,0 +1,118 @@
+/* 
+    Created on : 6 Apr, 2017, 4:54:33 PM
+    Author     : claritus
+    Committed again by adding comments to move latest code on server.
+*/
+
+
+/* Tabs starts here */
+
+.tabsdemoDynamicHeight md-content {
+  md-tabs {
+    background: #f6f6f6;
+    border: 1px solid #e1e1e1;
+    md-tabs-wrapper {
+      background: white;
+    }
+  }
+  h1:first-child {
+    margin-top: 0;
+  }
+}
+
+md-tabs md-content {
+  top: 0;
+}
+
+md-tabs.md-default-theme .md-tab,
+md-tabs .md-tab {
+  color: $blood-orange;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+  margin-right: -1px;
+  background: $white;
+  padding: 11px 24px;
+}
+
+md-tabs.md-default-theme .md-tab.md-active,
+md-tabs .md-tab.md-active,
+md-tabs.md-default-theme .md-tab.md-active md-icon,
+md-tabs .md-tab.md-active md-icon,
+md-tabs.md-default-theme .md-tab.md-focused,
+md-tabs .md-tab.md-focused,
+md-tabs.md-default-theme .md-tab.md-focused md-icon,
+md-tabs .md-tab.md-focused md-icon {
+  color: #000;
+  background: $white-two;
+  border-bottom: 1px solid transparent;
+}
+
+md-tabs {
+  &.md-default-theme md-ink-bar {
+    display: none;
+  }
+  md-ink-bar {
+    display: none;
+  }
+  &[md-border-bottom] md-tabs-wrapper {
+    border-width: 0;
+  }
+}
+
+md-tabs-canvas {
+  background: #fff none repeat scroll 0 0;
+}
+
+// md-content {             ---Causing layout breaks in md-select-----
+//     top: -5.5rem;
+// }
+calendar-list {
+  width: 100%;
+}
+
+// sub-tab override
+.sub-tab-override {
+  md-tabs {
+    border-bottom: solid 1px $pinkish-grey;
+  }
+  md-tabs.md-default-theme .md-tab,
+  md-tabs .md-tab {
+    font-size: 0.8rem;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem 0.5rem;
+  }
+  md-tabs.md-default-theme .md-tab.md-active,
+  md-tabs .md-tab.md-active,
+  md-tabs.md-default-theme .md-tab.md-active md-icon,
+  md-tabs .md-tab.md-active md-icon,
+  md-tabs.md-default-theme .md-tab.md-focused,
+  md-tabs .md-tab.md-focused,
+  md-tabs.md-default-theme .md-tab.md-focused md-icon,
+  md-tabs .md-tab.md-focused md-icon {
+    color: $bg-darkGrey;
+    border: 1px solid $pinkish-grey;
+  }
+}
+
+// Fixes tab positioning and top border issues
+.negative-top-offset-tabs {
+  margin-top: -4.5rem;
+  md-content {
+    background: transparent;
+    padding-bottom: 50px;
+    md-tabs-canvas {
+      background: transparent;
+    }
+  }
+}
+
+.no-top-offset-tabs {
+  md-content {
+    padding-bottom: 50px;
+  }
+}
+
+
+/* Tabs ends here */

@@ -1,0 +1,2725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rhlayout majorversion="1" minorversion="0">
+	<flags>1</flags>
+	<media>
+		<query css_selector="@SCREEN" id="dummy" name="dummy"/>
+	</media>
+	<groups>
+		<group layoutimage="preview/layout-media-queries.png" res_ID="ID_GROUP_BREAKPOINTS">Media Query</group>
+		<group layoutimage="preview/basic-settings.png" res_ID="ID_GROUP_GENERIC">Basic settings</group>
+		<group layoutimage="preview/header.png" res_ID="ID_GROUP_HEADER">Header</group>
+		<group layoutimage="preview/home-shared.png" res_ID="ID_GROUP_HOME_SHARED">Home (Shared)</group>
+		<group layoutimage="preview/home-desktop.png" res_ID="ID_GROUP_HOME_DESKTOP">Home (Desktop)</group>
+		<group layoutimage="preview/home-custom-icons.png" res_ID="ID_GROUP_TOC_CUSTOM">Home (Custom icons)</group>
+		<group layoutimage="preview/topic-shared.png" res_ID="ID_GROUP_TOPIC_SHARED">Topic (Shared)</group>
+		<group layoutimage="preview/topic-desktop.png" res_ID="ID_GROUP_TOPIC_DESKTOP">Topic (Desktop)</group>
+		<group layoutimage="preview/sidebar-shared.png" res_ID="ID_GROUP_SIDEBAR_SHARED">Sidebar (Shared)</group>
+		<group layoutimage="preview/sidebar-contents.png" res_ID="ID_GROUP_SIDEBAR_CONTENTS">Sidebar (Contents)</group>
+		<group layoutimage="preview/sidebar-index.png" res_ID="ID_GROUP_SIDEBAR_INDEX">Sidebar (Index)</group>
+		<group layoutimage="preview/sidebar-glossary.png" res_ID="ID_GROUP_SIDEBAR_GLOSSARY">Sidebar (Glossary)</group>
+		<group layoutimage="preview/sidebar-search.png" res_ID="ID_GROUP_SIDEBAR_SEARCH">Sidebar (Search)</group>
+		<group layoutimage="preview/sidebar-filter.png" res_ID="ID_GROUP_SIDEBAR_FILTER">Sidebar (Filter)</group>
+		<group layoutimage="preview/sidebar-favorites.png" res_ID="ID_GROUP_SIDEBAR_FAVORITES">Sidebar (Favorites)</group>
+	</groups>
+	<variables>
+		<variable>
+			<name>breakpoint_mobile</name>
+			<uiname>Phone maximum width</uiname>
+			<type>LITERAL</type>
+			<value>667</value>
+			<group res_ID="ID_GROUP_BREAKPOINTS"/>
+			<visual_properties height="10px" left="15px" top="11px" width="80px"/>
+			<description>The maximum width of a device (in pixels) that is served the mobile layout. Devices with a width smaller than specified will see the mobile layout. Devices with a higher width will see the tablet or desktop layout.</description>
+			<default-value>667</default-value>
+			<allowedvalues/>
+			<sources>
+				<source filename="usersettings.js" variable="phone_max_width"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>breakpoint_tablet</name>
+			<uiname>Tablet maximum width</uiname>
+			<type>LITERAL</type>
+			<value>1155</value>
+			<group res_ID="ID_GROUP_BREAKPOINTS"/>
+			<visual_properties height="10px" left="260px" top="11px" width="80px"/>
+			<description>The maximum width of a device (in pixels) that is served the tablet layout. Devices with a screen width between the Mobile phone maximum width and the Tablet maximum width will see the tablet layout. Devices with a higher width will see the desktop layout.</description>
+			<default-value>1155</default-value>
+			<allowedvalues/>
+			<sources>
+				<source filename="usersettings.js" variable="tablet_max_width"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>body_font</name>
+			<uiname>Layout font</uiname>
+			<type>CSS_FONT_FAMILY</type>
+			<value>"Myriad Pro", Verdana, Arial, sans-serif</value>
+			<group res_ID="ID_GROUP_GENERIC"/>
+			<visual_properties height="10px" left="243px" top="29px" width="80px"/>
+			<description>The font used in the layout. Changing this setting will affect the entire layout but will not change your topic content.</description>
+			<default-value>"Myriad Pro", Verdana, Arial, sans-serif</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body" cssproperty="font-family" filename="theme-1.css"/>
+				<source filename="usersettings.js" variable="fontFamily"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>body_bgcolor</name>
+			<uiname>Page Background Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#eeeeee</value>
+			<group res_ID="ID_GROUP_GENERIC"/>
+			<visual_properties height="10px" left="31px" top="127px" width="80px"/>
+			<description>The background color of the page</description>
+			<default-value>#eeeeee</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>us_loading_image</name>
+			<uiname>Loading image</uiname>
+			<type>FILE</type>
+			<value>loading.gif</value>
+			<group res_ID="ID_GROUP_GENERIC"/>
+			<visual_properties height="10px" left="545px" top="352px" width="80px"/>
+			<description>The image shown when loading a topic or other resource. Use an animated GIF for best effect.</description>
+			<default-value>loading.gif</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>ftr_font_color</name>
+			<uiname>Footer Text Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#bec2c4</value>
+			<group res_ID="ID_GROUP_GENERIC"/>
+			<visual_properties height="10px" left="579px" top="560px" width="80px"/>
+			<description>The color of the footer text</description>
+			<default-value>#bec2c4</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.footer" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>us_useIDX</name>
+			<uiname>Show Index</uiname>
+			<type>BOOLEAN</type>
+			<value>true</value>
+			<group res_ID="ID_GROUP_GENERIC"/>
+			<visual_properties height="10px" left="90px" top="257px" width="80px"/>
+			<description>Do you want to show the index in the output?</description>
+			<default-value>true</default-value>
+			<allowedvalues/>
+			<sources>
+				<source variable="useIDX" filename="usersettings.js"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>us_useGLO</name>
+			<uiname>Show Glossary</uiname>
+			<type>BOOLEAN</type>
+			<value>true</value>
+			<group res_ID="ID_GROUP_GENERIC"/>
+			<visual_properties height="10px" left="355px" top="191px" width="80px"/>
+			<description>Do you want to show the Glossary in the output?</description>
+			<default-value>true</default-value>
+			<allowedvalues/>
+			<sources>
+				<source variable="useGLO" filename="usersettings.js"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>us_useFilter</name>
+			<uiname>Show Filter</uiname>
+			<type>BOOLEAN</type>
+			<value>true</value>
+			<group res_ID="ID_GROUP_GENERIC"/>
+			<visual_properties height="10px" left="554px" top="288px" width="80px"/>
+			<description>Do you want to show the filter option in the output? Setting this to false will only hide the filter for the reader. You can still use the filter through a context sensitive help call. (If you enable dynamic filters in your output settings.)</description>
+			<default-value>true</default-value>
+			<allowedvalues/>
+			<sources>
+				<source variable="useFilter" filename="usersettings.js"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>customlink_1_text</name>
+			<uiname>Text for custom link (1)</uiname>
+			<type>STRING</type>
+			<value>Custom URL1</value>
+			<group res_ID="ID_GROUP_GENERIC"/>
+			<visual_properties height="10px" left="617px" top="101px" width="80px"/>
+			<description>The text for a custom link in the header/mobile menu. Leave at - Link text - to hide custom link.</description>
+			<default-value>- Link text -</default-value>
+			<allowedvalues/>
+			<sources>
+				<source filename="usersettings.js" variable="customlink_1_text"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>customlink_1_href</name>
+			<uiname>URL for custom link (1)</uiname>
+			<type>STRING</type>
+			<value>http://</value>
+			<group res_ID="ID_GROUP_GENERIC"/>
+			<visual_properties height="10px" left="616px" top="135px" width="80px"/>
+			<description>The link target for a custom link in the header/mobile menu.</description>
+			<default-value>http://</default-value>
+			<allowedvalues/>
+			<sources>
+				<source filename="usersettings.js" variable="customlink_1_href"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>customlink_2_text</name>
+			<uiname>Text for custom link (2)</uiname>
+			<type>STRING</type>
+			<value>Custom URL2</value>
+			<group res_ID="ID_GROUP_GENERIC"/>
+			<visual_properties height="10px" left="425px" top="29px" width="80px"/>
+			<description>The text for a custom link in the header/mobile menu. Leave at - Link text - to hide custom link.</description>
+			<default-value>- Link text -</default-value>
+			<allowedvalues/>
+			<sources>
+				<source filename="usersettings.js" variable="customlink_2_text"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>customlink_2_href</name>
+			<uiname>URL for custom link (2)</uiname>
+			<type>STRING</type>
+			<value>http://</value>
+			<group res_ID="ID_GROUP_GENERIC"/>
+			<visual_properties height="10px" left="425px" top="64px" width="80px"/>
+			<description>The link target for a custom link in the header/mobile menu.</description>
+			<default-value>http://</default-value>
+			<allowedvalues/>
+			<sources>
+				<source filename="usersettings.js" variable="customlink_2_href"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>hdr_bgcolor</name>
+			<uiname>Background Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#3BBCE0</value>
+			<group res_ID="ID_GROUP_HEADER"/>
+			<visual_properties height="10px" left="349px" top="29px" width="80px"/>
+			<description>The background color of the header</description>
+			<default-value>#3BBCE0</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.header div.header-project-info" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="body.media-tablet div.header-hamburger" cssproperty="background-color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.header-hamburger" cssproperty="background-color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>hdr_font_color</name>
+			<uiname>Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_HEADER"/>
+			<visual_properties height="10px" left="254px" top="134px" width="80px"/>
+			<description>The color of the header font</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.header h1" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.header div.header-project-info a" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.header div.custom-link a" cssproperty="color" filename="theme-1.css"></source>
+				<source filename="usersettings.js" variable="titleColor"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>hdr_bread_font_color</name>
+			<uiname>Breadcrumb Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_HEADER"/>
+			<visual_properties height="10px" left="22px" top="134px" width="80px"/>
+			<description>The color of the breadcrumb font</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.header a.breadcrumb-link" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.header span.separator" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>hdr_logo</name>
+			<uiname>Logo</uiname>
+			<type>FILE</type>
+			<value>logo.png</value>
+			<group res_ID="ID_GROUP_HEADER"/>
+			<visual_properties height="10px" left="95px" top="28px" width="80px"/>
+			<description>The company logo displayed in the header (48 x 48px)</description>
+			<default-value>logo.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source filename="usersettings.js" variable="logo"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>hdr_nav_bgcolor</name>
+			<uiname>Navigation Background Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#12A7CB</value>
+			<group res_ID="ID_GROUP_HEADER"/>
+			<visual_properties height="10px" left="352px" top="77px" width="80px"/>
+			<description>The background color of the header navigation bar</description>
+			<default-value>#12A7CB</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.header div.header-nav" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.topicpage-search-field" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.frontpage-search-field" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>hdr_hamburger</name>
+			<uiname>Menu icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-menu.png</value>
+			<group res_ID="ID_GROUP_HEADER"/>
+			<visual_properties height="10px" left="669px" top="24px" width="80px"/>
+			<description>The icon used for the menu on mobile (18 x 18px)</description>
+			<default-value>theme-1-menu.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>title_color</name>
+			<uiname>Title Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#444</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="143px" top="131px" width="80px"/>
+			<description>The color of the main heading on the home page</description>
+			<default-value>#444</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-welcome h1" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>subtitle_color</name>
+			<uiname>Subtitle Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#444</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="556px" top="171px" width="80px"/>
+			<description>The color of the subtitle on the home page</description>
+			<default-value>#444</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-welcome p" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_list_font_color</name>
+			<uiname>Search List Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#444444</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="40px" top="918px" width="80px"/>
+			<description>The color of text displayed in the search suggestions on the home page</description>
+			<default-value>#444444</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.topicpage-search-field div.search-list" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.frontpage-search-field div.search-list" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_list_bgcolor</name>
+			<uiname>Search List Background Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#FFFFFF</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="515px" top="973px" width="80px"/>
+			<description>The background color of the search suggestions on the home page</description>
+			<default-value>#FFFFFF</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.topicpage-search-field div.search-list" cssproperty="background-color" filename="theme-1.css"></source>
+				<source css_selector="div.frontpage-search-field div.search-list" cssproperty="background-color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_list_divider_color</name>
+			<uiname>Search List Divider Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#DDDDDD</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="361px" top="804px" width="80px"/>
+			<description>The color of the dividing line between search suggestions on the home page</description>
+			<default-value>#DDDDDD</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.topicpage-search-field div.search-list tr" cssproperty="border-color" filename="theme-1.css"></source>
+				<source css_selector="div.frontpage-search-field div.search-list tr" cssproperty="border-color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_list_remove_icon</name>
+			<uiname>Remove icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-search-remove.png</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="665px" top="871px" width="80px"/>
+			<description>The icon used for deleting search suggestions (12 x 12px)</description>
+			<default-value>theme-1-menu.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>toc_grid_items</name>
+			<uiname>Number of TOC tiles in a row</uiname>
+			<type>LITERAL</type>
+			<value>5</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="350px" top="525px" width="80px"/>
+			<description>The number of TOC items shown on a single row on the home page. Fewer items make for wider TOC buttons allowing more text and wider images.</description>
+			<default-value>5</default-value>
+			<allowedvalues>
+				<value>2</value>
+				<value>3</value>
+				<value>4</value>
+				<value>5</value>
+				<value>6</value>
+				<value>7</value>
+				<value>8</value>
+			</allowedvalues>
+			<sources>
+				<source filename="usersettings.js" variable="numberOfTOCItemsInRow"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_item_color</name>
+			<uiname>TOC Item Background Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#425B71</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="658px" top="115px" width="80px"/>
+			<description>The background color of table of contents items on the home page</description>
+			<default-value>#425B71</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-toc div" cssproperty="background-color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_item_hover_color</name>
+			<uiname>TOC Item Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#2C3E50</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="21px" top="177px" width="80px"/>
+			<description>The color used when hovering over a table of contents item on the home page</description>
+			<default-value>#2C3E50</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-toc div:hover" cssproperty="background-color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_book_icon</name>
+			<uiname>TOC Book Icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-toc-book.png</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="619px" top="253px" width="80px"/>
+			<description>The icon used for books in the TOC on the home page (64 x 64px)</description>
+			<default-value>theme-1-toc-book.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-toc div.book" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_book_icon_hover</name>
+			<uiname>TOC Book Hover Icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-toc-book-over.png</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="588px" top="222px" width="80px"/>
+			<description>The icon used for books in the TOC on the home page when hovering (64 x 64px)</description>
+			<default-value>theme-1-toc-book-over.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-toc div.book:hover" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_back_icon</name>
+			<uiname>TOC Back Icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-toc-back.png</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="155px" top="252px" width="80px"/>
+			<description>The image used to indicate the back up a level in TOC on the home page (64 x 64px)</description>
+			<default-value>theme-1-toc-back.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-toc div.book.expanded" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_back_icon_hover</name>
+			<uiname>TOC Back Hover Icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-toc-back-over.png</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="116px" top="221px" width="80px"/>
+			<description>The image used to indicate the back up a level in TOC on the home page when hovering (64 x 64px)</description>
+			<default-value>theme-1-toc-back-over.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-toc div.book.expanded:hover" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_topic_icon</name>
+			<uiname>TOC Topic Icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-toc-topic.png</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="353px" top="252px" width="80px"/>
+			<description>The icon used for topics in the TOC on the home page (64 x 64px)</description>
+			<default-value>theme-1-toc-topic.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-toc div.item" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_topic_icon_hover</name>
+			<uiname>TOC Topic Hover Icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-toc-topic-over.png</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="321px" top="221px" width="80px"/>
+			<description>The icon used for topics in the TOC on the home page when hovering (64 x 64px)</description>
+			<default-value>theme-1-toc-topic-over.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-toc div.item:hover" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_url_icon</name>
+			<uiname>TOC Remote URL Icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-toc-external.png</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="515px" top="428px" width="80px"/>
+			<description>The icon used for remote URLs in the TOC on the home page (64 x 64px)</description>
+			<default-value>theme-1-toc-external.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-toc div.url" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_url_icon_hover</name>
+			<uiname>TOC Remote URL Hover Icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-toc-external-over.png</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="513px" top="460px" width="80px"/>
+			<description>The icon used for remote URLs in the TOC on the home page when hovering (64 x 64px)</description>
+			<default-value>theme-1-toc-external-over.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-toc div.url:hover" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_item_label_bgcolor</name>
+			<uiname>TOC Label Background Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="62px" top="429px" width="80px"/>
+			<description>The background color of the text label associated with table of contents items on the home page</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-toc span.label" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_item_label_bgcolor_hover</name>
+			<uiname>TOC Label Background Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="64px" top="460px" width="80px"/>
+			<description>The background color of the text label associated with table of contents items on the home page when hovering</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-toc span.label:hover" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_item_label_color</name>
+			<uiname>TOC Label Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#444</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="313px" top="429px" width="80px"/>
+			<description>The color of the text label for each table of contents item on the home page</description>
+			<default-value>#444</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-toc span.label" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_item_label_color_hover</name>
+			<uiname>TOC Label Font Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#444</value>
+			<group res_ID="ID_GROUP_HOME_SHARED"/>
+			<visual_properties height="10px" left="318px" top="460px" width="80px"/>
+			<description>The color of the text label for each table of contents item on the home page when hovering</description>
+			<default-value>#444</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-toc span.label:hover" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_bgcolor</name>
+			<uiname>Search Field Background Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_HOME_DESKTOP"/>
+			<visual_properties height="10px" left="216px" top="143px" width="80px"/>
+			<description>The background color of the search field on the home page</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-search-field" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_font_color</name>
+			<uiname>Search Field Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#999999</value>
+			<group res_ID="ID_GROUP_HOME_DESKTOP"/>
+			<visual_properties height="10px" left="20px" top="208px" width="80px"/>
+			<description>The color of text typed into the search field on the home page</description>
+			<default-value>#999999</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.frontpage-search-field input.wSearchField" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_icon</name>
+			<uiname>Search Icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-search-desktop.png</value>
+			<group res_ID="ID_GROUP_HOME_DESKTOP"/>
+			<visual_properties height="10px" left="681px" top="206px" width="80px"/>
+			<description>The icon used for the search field on the home page (18 x 18px)</description>
+			<default-value>theme-1-search-desktop.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-desktop div.frontpage-search-field a" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>function_btn_bgcolor</name>
+			<uiname>Function Button Background Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#3BBCE0</value>
+			<group res_ID="ID_GROUP_HOME_DESKTOP"/>
+			<visual_properties height="10px" left="124px" top="322px" width="80px"/>
+			<description>The background color of the function buttons on the home page</description>
+			<default-value>#3BBCE0</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-desktop div.frontpage-function-buttons div.grid-buttons div" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>function_btn_font_color</name>
+			<uiname>Function Button Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_HOME_DESKTOP"/>
+			<visual_properties height="10px" left="170px" top="370px" width="80px"/>
+			<description>The font color of the function buttons on the home page</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-desktop div.frontpage-function-buttons div.grid-buttons div a" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>function_btn_hover_color</name>
+			<uiname>Function Button Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#12A7CB</value>
+			<group res_ID="ID_GROUP_HOME_DESKTOP"/>
+			<visual_properties height="10px" left="352px" top="322px" width="80px"/>
+			<description>The background color used when the mouse is hovered over the function buttons on the home page</description>
+			<default-value>#12A7CB</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-desktop div.frontpage-function-buttons div.grid-buttons div:hover" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>function_btn_font_hover_color</name>
+			<uiname>Function Button Font Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#FFFFFF</value>
+			<group res_ID="ID_GROUP_HOME_DESKTOP"/>
+			<visual_properties height="10px" left="416px" top="143px" width="80px"/>
+			<description>The font color used when the mouse is hovered over the function buttons on the home page</description>
+			<default-value>#FFFFFF</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-desktop div.frontpage-function-buttons div.grid-buttons div a:hover " cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>filter_applied_image_home</name>
+			<uiname>Filter Applied Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-tick-button.png</value>
+			<group res_ID="ID_GROUP_HOME_DESKTOP"/>
+			<visual_properties height="10px" left="572px" top="322px" width="80px"/>
+			<description>The image used to indicate that a filter has been applied (16 x 16px)</description>
+			<default-value>theme-1-tick-button.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-desktop div.topicpage-function-buttons div.grid-buttons div.filter-applied a" cssproperty="background-image" filename="theme-1.css"></source>
+				<source css_selector="body.media-desktop div.frontpage-function-buttons div.grid-buttons div.filter-applied a" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>us_custom_toc_icons</name>
+			<uiname>Use custom TOC icons</uiname>
+			<type>BOOLEAN</type>
+			<value>false</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="30px" top="146px" width="80px"/>
+			<description>Do you want to use custom TOC icons instead of generic book, link and topic icons? This only applies to the first level of the TOC on the homepage. The number applies to the item number in the TOC.</description>
+			<default-value>false</default-value>
+			<allowedvalues/>
+			<sources>
+				<source filename="usersettings.js" variable="useCustomTOCLinks"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>us_custom_css</name>
+			<uiname>Custom CSS for TOC</uiname>
+			<type>FILE</type>
+			<value>toc_c_images.css</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="664px" top="146px" width="80px"/>
+			<description>CSS file to set the custom icons of your TOC. Use this instead of the options below if you want to control the TOC in CSS instead of through the editor. You can also use this custom CSS to change any other formatting in the layout. Note: After choosing a custom CSS file, you can no longer use the options below to apply custom TOC icons.</description>
+			<default-value>toc_c_images.css</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_1</name>
+			<uiname>Icon 1</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-1.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="130px" top="383px" width="80px"/>
+			<description>Custom icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-1.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_2</name>
+			<uiname>Icon 2</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-2.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="263px" top="383px" width="80px"/>
+			<description>Custom icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-2.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_3</name>
+			<uiname>Icon 3</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-3.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="393px" top="383px" width="80px"/>
+			<description>Custom icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-3.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_4</name>
+			<uiname>Icon 4</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-4.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="526px" top="383px" width="80px"/>
+			<description>Custom icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-4.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_5</name>
+			<uiname>Icon 5</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-5.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="656px" top="383px" width="80px"/>
+			<description>Custom icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-5.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_6</name>
+			<uiname>Icon 6</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-6.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="131px" top="515px" width="80px"/>
+			<description>Custom icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-6.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_7</name>
+			<uiname>Icon 7</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-7.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="262px" top="515px" width="80px"/>
+			<description>Custom icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image7.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_8</name>
+			<uiname>Icon 8</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-8.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="394px" top="515px" width="80px"/>
+			<description>Custom icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-8.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_9</name>
+			<uiname>Icon 9</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-9.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="526px" top="515px" width="80px"/>
+			<description>Custom icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-9.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_10</name>
+			<uiname>Icon 10</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-10.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="654px" top="515px" width="80px"/>
+			<description>Custom icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-10.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_11</name>
+			<uiname>Icon 11</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-11.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="125px" top="647px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-11.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_12</name>
+			<uiname>Icon 12</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-12.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="258px" top="647px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-12.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_13</name>
+			<uiname>Icon 13</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-13.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="390px" top="647px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-13.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_14</name>
+			<uiname>Icon 14</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-14.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="522px" top="647px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-14.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_15</name>
+			<uiname>Icon 15</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-15.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="653px" top="647px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-15.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_16</name>
+			<uiname>Icon 16</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-16.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="126px" top="778px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-16.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_17</name>
+			<uiname>Icon 17</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-17.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="258px" top="778px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image7.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_18</name>
+			<uiname>Icon 18</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-18.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="390px" top="778px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-18.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_19</name>
+			<uiname>Icon 19</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-19.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="522px" top="778px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-19.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_20</name>
+			<uiname>Icon 20</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-20.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="653px" top="778px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-20.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_21</name>
+			<uiname>Icon 21</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-21.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="126px" top="910px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-21.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_22</name>
+			<uiname>Icon 22</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-22.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="259px" top="910px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-22.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_23</name>
+			<uiname>Icon 23</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-23.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="391px" top="910px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-23.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_24</name>
+			<uiname>Icon 24</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-24.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="522px" top="910px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-24.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_25</name>
+			<uiname>Icon 25</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-25.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="654px" top="910px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-25.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_26</name>
+			<uiname>Icon 26</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-26.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="126px" top="1041px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-26.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_27</name>
+			<uiname>Icon 27</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-27.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="258px" top="1041px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image7.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_28</name>
+			<uiname>Icon 28</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-28.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="391px" top="1041px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-28.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_29</name>
+			<uiname>Icon 29</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-29.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="521px" top="1041px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-29.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_30</name>
+			<uiname>Icon 30</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-30.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="654px" top="1041px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-30.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_31</name>
+			<uiname>Icon 31</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-31.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="126px" top="1173px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-31.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_32</name>
+			<uiname>Icon 32</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-32.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="256px" top="1173px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-32.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_33</name>
+			<uiname>Icon 33</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-33.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="389px" top="1173px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-33.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_34</name>
+			<uiname>Icon 34</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-34.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="522px" top="1173px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-34.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_35</name>
+			<uiname>Icon 35</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-35.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="655px" top="1173px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-35.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_36</name>
+			<uiname>Icon 36</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-36.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="127px" top="1304px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-36.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_37</name>
+			<uiname>Icon 37</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-37.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="257px" top="1304px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image7.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_38</name>
+			<uiname>Icon 38</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-38.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="391px" top="1304px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-38.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_39</name>
+			<uiname>Icon 39</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-39.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="522px" top="1304px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-39.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_40</name>
+			<uiname>Icon 40</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-40.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="655px" top="1304px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-40.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_41</name>
+			<uiname>Icon 41</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-41.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="128px" top="1436px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-41.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_42</name>
+			<uiname>Icon 42</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-42.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="259px" top="1436px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-42.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_43</name>
+			<uiname>Icon 43</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-43.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="392px" top="1436px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-43.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_44</name>
+			<uiname>Icon 44</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-44.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="523px" top="1436px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-44.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_45</name>
+			<uiname>Icon 45</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-45.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="656px" top="1436px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-45.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_46</name>
+			<uiname>Icon 46</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-46.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="127px" top="1566px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-46.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_47</name>
+			<uiname>Icon 47</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-47.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="260px" top="1566px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image7.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_48</name>
+			<uiname>Icon 48</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-48.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="392px" top="1566px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-48.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_49</name>
+			<uiname>Icon 49</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-49.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="522px" top="1566px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-49.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>custom_toc_icon_50</name>
+			<uiname>Icon 50</uiname>
+			<type>FILE</type>
+			<value>custom-toc-image-50.png</value>
+			<group res_ID="ID_GROUP_TOC_CUSTOM"/>
+			<visual_properties height="10px" left="654px" top="1566px" width="80px"/>
+			<description>Custom Icon in the TOC on the home page (64 x 64px)</description>
+			<default-value>custom-toc-image-50.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>topic_bgcolor</name>
+			<uiname>Background Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_TOPIC_SHARED"/>
+			<visual_properties height="10px" left="309px" top="69px" width="80px"/>
+			<description>The background color of the topic container</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.topic-content" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="body.media-desktop div.topic-content" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>browse_button_bgcolor</name>
+			<uiname>Browse Button Background Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#12A7CB</value>
+			<group res_ID="ID_GROUP_TOPIC_SHARED"/>
+			<visual_properties height="10px" left="83px" top="549px" width="80px"/>
+			<description>The background color of the browse buttons</description>
+			<default-value>#12A7CB</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.brs_next a" cssproperty="background-color" filename="theme-1.css"></source>
+				<source css_selector="div.brs_previous a" cssproperty="background-color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>browse_next_image</name>
+			<uiname>Browse Next Button Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-arrow-next.png</value>
+			<group res_ID="ID_GROUP_TOPIC_SHARED"/>
+			<visual_properties height="10px" left="601px" top="247px" width="80px"/>
+			<description>The image used for the next browse button (16 x 16px)</description>
+			<default-value>theme-1-arrow-next.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.brs_next a" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>browse_next_hover_image</name>
+			<uiname>Browse Next Button Hover Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-arrow-next-over.png</value>
+			<group res_ID="ID_GROUP_TOPIC_SHARED"/>
+			<visual_properties height="10px" left="601px" top="276px" width="80px"/>
+			<description>The image used when the mouse is hovered over the next browse button (16 x 16px)</description>
+			<default-value>theme-1-arrow-next-over.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.brs_next a:hover" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>browse_previous_image</name>
+			<uiname>Browse Previous Button Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-arrow-prev.png</value>
+			<group res_ID="ID_GROUP_TOPIC_SHARED"/>
+			<visual_properties height="10px" left="590px" top="38px" width="80px"/>
+			<description>The image used for the previous browse button (16 x 16px)</description>
+			<default-value>theme-1-arrow-prev.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.brs_previous a" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>browse_previous_hover_image</name>
+			<uiname>Browse Previous Button Hover Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-arrow-prev-over.png</value>
+			<group res_ID="ID_GROUP_TOPIC_SHARED"/>
+			<visual_properties height="10px" left="590px" top="8px" width="80px"/>
+			<description>The image used when the mouse is hovered over the previous browse button (16 x 16px)</description>
+			<default-value>theme-1-arrow-prev-over.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.brs_previous a:hover" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>favorite_image</name>
+			<uiname>Favorite Button Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-bookmarks.png</value>
+			<group res_ID="ID_GROUP_TOPIC_SHARED"/>
+			<visual_properties height="10px" left="491px" top="410px" width="80px"/>
+			<description>The image used for the favorite button (16 x 16px)</description>
+			<default-value>theme-1-bookmarks.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.favorites.sidebar-button a" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>favorite_hover_image</name>
+			<uiname>Favorite Button Hover Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-bookmarks-over.png</value>
+			<group res_ID="ID_GROUP_TOPIC_SHARED"/>
+			<visual_properties height="10px" left="488px" top="441px" width="80px"/>
+			<description>The image used when the mouse is hovered over the favorite button (16 x 16px)</description>
+			<default-value>theme-1-bookmarks-over.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.favorites.sidebar-button a:hover" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>favorite_add_image</name>
+			<uiname>Favorite Add Button Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-bookmark-add.png</value>
+			<group res_ID="ID_GROUP_TOPIC_SHARED"/>
+			<visual_properties height="10px" left="552px" top="199px" width="80px"/>
+			<description>The image used for the add favorite button (16 x 16px)</description>
+			<default-value>theme-1-bookmark-add.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.favorites.toggle-button a.unfavorite" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>favorite_add_hover_image</name>
+			<uiname>Favorite Add Button Hover Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-bookmark-add-over.png</value>
+			<group res_ID="ID_GROUP_TOPIC_SHARED"/>
+			<visual_properties height="10px" left="552px" top="169px" width="80px"/>
+			<description>The image used when the mouse is hovered over the add favorite button (16 x 16px)</description>
+			<default-value>theme-1-bookmark-add-over.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.favorites.toggle-button a.unfavorite:hover" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>favorite_added_image</name>
+			<uiname>Favorite Added Button Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-bookmark-added.png</value>
+			<group res_ID="ID_GROUP_TOPIC_SHARED"/>
+			<visual_properties height="10px" left="510px" top="354px" width="80px"/>
+			<description>The image used to indicate a favorite has been added (16 x 16px)</description>
+			<default-value>theme-1-bookmark-added.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.favorites.toggle-button a.favorite" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>favorite_added_hover_image</name>
+			<uiname>Favorite Added Button Hover Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-bookmark-added-over.png</value>
+			<group res_ID="ID_GROUP_TOPIC_SHARED"/>
+			<visual_properties height="10px" left="510px" top="324px" width="80px"/>
+			<description>The image used when the mouse is hovered over the favorite has been button (16 x 16px)</description>
+			<default-value>theme-1-bookmark-added-over.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.favorites.toggle-button a.favorite:hover" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>function_btn_bgcolor_topic</name>
+			<uiname>Function Button Background Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#3BBCE0</value>
+			<group res_ID="ID_GROUP_TOPIC_DESKTOP"/>
+			<visual_properties height="10px" left="669px" top="26px" width="80px"/>
+			<description>The background color of the function buttons on the topic page</description>
+			<default-value>#3BBCE0</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-desktop div.topicpage-function-buttons div.grid-buttons div" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>function_btn_font_color_topic</name>
+			<uiname>Function Button Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_TOPIC_DESKTOP"/>
+			<visual_properties height="10px" left="670px" top="58px" width="80px"/>
+			<description>The font color of the function buttons on the topic page</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-desktop div.topicpage-function-buttons div.grid-buttons div a" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>function_btn_hover_color_topic_hover</name>
+			<uiname>Function Button Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#12A7CB</value>
+			<group res_ID="ID_GROUP_TOPIC_DESKTOP"/>
+			<visual_properties height="10px" left="399px" top="90px" width="80px"/>
+			<description>The font color used when the mouse is hovered over the function buttons on the topic page</description>
+			<default-value>#12A7CB</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-desktop div.topicpage-function-buttons div.grid-buttons div:hover" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>function_btn_font_color_hover</name>
+			<uiname>Function Button Font Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_TOPIC_DESKTOP"/>
+			<visual_properties height="10px" left="399px" top="58px" width="80px"/>
+			<description>The font color of the function buttons when hovered on the topic page</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-desktop div.topicpage-function-buttons div.grid-buttons div a:hover" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>topic_toc_item_font_color</name>
+			<uiname>TOC Item Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#444</value>
+			<group res_ID="ID_GROUP_TOPIC_DESKTOP"/>
+			<visual_properties height="10px" left="409px" top="387px" width="80px"/>
+			<description>The color of table of contents items in topics</description>
+			<default-value>#444</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.topicpage-toc li" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>topic_toc_item_hover_color</name>
+			<uiname>TOC Item Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#12a7cb</value>
+			<group res_ID="ID_GROUP_TOPIC_DESKTOP"/>
+			<visual_properties height="10px" left="394px" top="305px" width="80px"/>
+			<description>The color of table of contents items in topics when hovered</description>
+			<default-value>#12a7cb</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.topicpage-toc a:hover" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>topic_toc_item_selected_color</name>
+			<uiname>TOC Item Selected Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#111</value>
+			<group res_ID="ID_GROUP_TOPIC_DESKTOP"/>
+			<visual_properties height="10px" left="403px" top="259px" width="80px"/>
+			<description>The color of table of contents items in topics when selected</description>
+			<default-value>#111</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.topicpage-toc li.selected" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>topic_toc_item_selected_image</name>
+			<uiname>TOC Item Selected Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-topic-active.png</value>
+			<group res_ID="ID_GROUP_TOPIC_DESKTOP"/>
+			<visual_properties height="10px" left="402px" top="193px" width="80px"/>
+			<description>The image used for the selected table of contents item in topics (16 x 16px)</description>
+			<default-value>theme-1-topic-active.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.topicpage-toc li.selected" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>sidebar_bgcolor</name>
+			<uiname>Background Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#2C3D4F</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SHARED"/>
+			<visual_properties height="10px" left="140px" top="420px" width="80px"/>
+			<description>The background color of the sidebar</description>
+			<default-value>#2C3D4F</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-tablet div.topicpage-toc" cssproperty="background-color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-toc" cssproperty="background-color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.index" cssproperty="background-color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.glossary" cssproperty="background-color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.filter" cssproperty="background-color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.search" cssproperty="background-color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.favorites" cssproperty="background-color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.frontpage-search" cssproperty="background-color" filename="theme-1.css"></source>
+				<source css_selector="body.media-tablet div.topicpage-function-buttons" cssproperty="background-color" filename="theme-1.css"></source>
+				<source css_selector="body.media-tablet div.topicpage-function-buttons" cssproperty="background-color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.frontpage-function-buttons" cssproperty="background-color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-function-buttons" cssproperty="background-color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>sidebar_title_font_color</name>
+			<uiname>Title Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SHARED"/>
+			<visual_properties height="10px" left="176px" top="20px" width="80px"/>
+			<description>The color of the sidebar title</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-tablet div.topicpage-toc div.overlay-header" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-toc div.overlay-header" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.index div.overlay-header" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.glossary div.overlay-header" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.filter div.overlay-header" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.favorites div.overlay-header" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.search div.overlay-header" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.frontpage-search div.overlay-header" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-tablet div.topicpage-function-buttons div.overlay-header div.title" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-tablet div.frontpage-function-buttons div.overlay-header div.title" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-function-buttons div.overlay-header div.title" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.frontpage-function-buttons div.overlay-header div.title" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>sidebar_item_font_color</name>
+			<uiname>Menu Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SHARED"/>
+			<visual_properties height="10px" left="136px" top="81px" width="80px"/>
+			<description>The color of the menu options in the sidebar</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-tablet div.topicpage-function-buttons div.overlay-body div:not(.no-grid) a" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-tablet div.frontpage-function-buttons div.overlay-body div:not(.no-grid) a" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-function-buttons div.overlay-body div:not(.no-grid) a" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.frontpage-function-buttons div.overlay-body div:not(.no-grid) a" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>sidebar_item_font_color_hover</name>
+			<uiname>Menu Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#969fa8</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SHARED"/>
+			<visual_properties height="10px" left="452px" top="108px" width="80px"/>
+			<description>The color of the menu options when when hovered in the sidebar</description>
+			<default-value>#969fa8</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-tablet div.topicpage-function-buttons div.overlay-body div:not(.no-grid) a:active" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-tablet div.topicpage-function-buttons div.overlay-body div:not(.no-grid) a:hover" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-tablet div.frontpage-function-buttons div.overlay-body div:not(.no-grid) a:active" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-tablet div.frontpage-function-buttons div.overlay-body div:not(.no-grid) a:hover" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-function-buttons div.overlay-body div:not(.no-grid) a:active" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-function-buttons div.overlay-body div:not(.no-grid) a:hover" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.frontpage-function-buttons div.overlay-body div:not(.no-grid) a:active" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.frontpage-function-buttons div.overlay-body div:not(.no-grid) a:hover" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>sidebar_close_icon</name>
+			<uiname>Close Icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-cross-overlay.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SHARED"/>
+			<visual_properties height="10px" left="628px" top="54px" width="80px"/>
+			<description>The icon used for the close icon in the sidebar (16 x 16px)</description>
+			<default-value>theme-1-cross-overlay.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-tablet div.topicpage-toc div.overlay-header div.overlay-close a" cssproperty="background-image" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-toc div.overlay-header div.overlay-close a" cssproperty="background-image" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.index div.overlay-header div.overlay-close a" cssproperty="background-image" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.glossary div.overlay-header div.overlay-close a" cssproperty="background-image" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.filter div.overlay-header div.overlay-close a" cssproperty="background-image" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.search div.overlay-header div.overlay-close a" cssproperty="background-image" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.frontpage-search div.overlay-header div.overlay-close a" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>sidebar_close_icon_hover</name>
+			<uiname>Close Icon Hover Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-cross-overlay-over.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SHARED"/>
+			<visual_properties height="10px" left="628px" top="90px" width="80px"/>
+			<description>The icon used when the mouse is hovered over the close icon in the sidebar (16 x 16px)</description>
+			<default-value>theme-1-cross-overlay-over.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-tablet div.topicpage-toc div.overlay-header div.overlay-close a:hover" cssproperty="background-image" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-toc div.overlay-header div.overlay-close a:hover" cssproperty="background-image" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.index div.overlay-header div.overlay-close a:hover" cssproperty="background-image" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.glossary div.overlay-header div.overlay-close a:hover" cssproperty="background-image" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.filter div.overlay-header div.overlay-close a:hover" cssproperty="background-image" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.search div.overlay-header div.overlay-close a:hover" cssproperty="background-image" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.frontpage-search div.overlay-header div.overlay-close a:hover" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>sidebar_footer_button_background</name>
+			<uiname>Footer Button Background</uiname>
+			<type>HTML_COLOR</type>
+			<value>#3BBCE0</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SHARED"/>
+			<visual_properties height="10px" left="460px" top="528px" width="90px"/>
+			<description>The background color of buttons in the footer of the sidebar</description>
+			<default-value>#3BBCE0</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-tablet div.topicpage-toc div.overlay-footer div" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-toc div.overlay-footer div" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.index div.overlay-footer div" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.glossary div.overlay-footer div" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.filter div.overlay-footer div" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.search div.overlay-footer div" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.favorites div.overlay-footer div" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.frontpage-search div.overlay-footer div" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>sidebar_footer_button_color</name>
+			<uiname>Footer Button Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SHARED"/>
+			<visual_properties height="10px" left="65px" top="560px" width="90px"/>
+			<description>The color of buttons in the footer of the sidebar</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-tablet div.topicpage-toc div.overlay-footer div a" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-toc div.overlay-footer div a" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.index div.overlay-footer div a" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.glossary div.overlay-footer div a" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.filter div.overlay-footer div a" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.search div.overlay-footer div a" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.favorites div.overlay-footer div a" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.frontpage-search div.overlay-footer div a" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>sidebar_footer_button_color_hover</name>
+			<uiname>Footer Button Color Hover</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SHARED"/>
+			<visual_properties height="10px" left="65px" top="528px" width="80px"/>
+			<description>The color of buttons in the footer of the sidebar</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-tablet div.topicpage-toc div.overlay-footer div a:hover" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-toc div.overlay-footer div a:hover" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.index div.overlay-footer div a:hover" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.glossary div.overlay-footer div a:hover" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.filter div.overlay-footer div a:hover" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.search div.overlay-footer div a:hover" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.favorites div.overlay-footer div a:hover" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.frontpage-search div.overlay-footer div a:hover" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>sidebar_footer_button_background_hover</name>
+			<uiname>Footer Button Background Hover</uiname>
+			<type>HTML_COLOR</type>
+			<value>#12A7CB</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SHARED"/>
+			<visual_properties height="10px" left="458px" top="568px" width="80px"/>
+			<description>The background color of buttons when hovered in the footer of the sidebar</description>
+			<default-value>#12A7CB</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-tablet div.topicpage-toc div.overlay-footer div:hover" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-toc div.overlay-footer div:hover" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.index div.overlay-footer div:hover" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.glossary div.overlay-footer div:hover" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.filter div.overlay-footer div:hover" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.search div.overlay-footer div:hover" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.favorites div.overlay-footer div:hover" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.frontpage-search div.overlay-footer div:hover" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>sidebar_separator_color</name>
+			<uiname>Sidebar Divider Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#616e7c</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SHARED"/>
+			<visual_properties height="10px" left="582px" top="175px" width="80px"/>
+			<description>The color of the dividing line between menu options in the sidebar</description>
+			<default-value>#616e7c</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-tablet div.topicpage-function-buttons div.no-grid:first-child" cssproperty="border-top-color" filename="theme-1.css"></source>
+				<source css_selector="body.media-tablet div.frontpage-function-buttons div.no-grid:first-child" cssproperty="border-top-color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-function-buttons div.no-grid:first-child" cssproperty="border-top-color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.frontpage-function-buttons div.no-grid:first-child" cssproperty="border-top-color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-toc ul.page-toc" cssproperty="border-top-color" filename="theme-1.css"></source>
+				<source css_selector="body.media-tablet div.topicpage-function-buttons div.overlay-body div:not(.no-grid)" cssproperty="border-bottom-color" filename="theme-1.css"></source>
+				<source css_selector="body.media-tablet div.frontpage-function-buttons div.overlay-body div:not(.no-grid)" cssproperty="border-bottom-color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-function-buttons div.overlay-body div:not(.no-grid)" cssproperty="border-bottom-color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.frontpage-function-buttons div.overlay-body div:not(.no-grid)" cssproperty="border-bottom-color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-toc li:not(.inactive):not(.child)" cssproperty="border-bottom-color" filename="theme-1.css"></source>
+				<source css_selector="body.media-tablet div.topicpage-toc div.overlay-footer:before" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-toc div.overlay-footer:before" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.index div.overlay-footer:before" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.glossary div.overlay-footer:before" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.filter div.overlay-footer:before" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.search div.overlay-footer:before" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.favorites div.overlay-footer:before" cssproperty="background" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.frontpage-search div.overlay-footer:before" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>mobile_toc_item_font_color</name>
+			<uiname>Mobile TOC Item Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_CONTENTS"/>
+			<visual_properties height="10px" left="94px" top="268px" width="80px"/>
+			<description>The font color of contents items in the sidebar</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-mobile div.topicpage-toc li" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-toc li a" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>mobile_toc_item_hover_color</name>
+			<uiname>Mobile TOC Item Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#969fa8</value>
+			<group res_ID="ID_GROUP_SIDEBAR_CONTENTS"/>
+			<visual_properties height="10px" left="80px" top="53px" width="80px"/>
+			<description>The font color of contents items when hovered in the sidebar</description>
+			<default-value>#969fa8</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-mobile div.topicpage-toc li a:active" cssproperty="color" filename="theme-1.css"></source>
+				<source css_selector="body.media-mobile div.topicpage-toc li a:hover" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>mobile_toc_item_selected_color</name>
+			<uiname>Mobile TOC Item Selected Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_CONTENTS"/>
+			<visual_properties height="10px" left="94px" top="304px" width="80px"/>
+			<description>The color of table of contents items in the sidebar when selected</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-mobile div.topicpage-toc li.selected" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>mobile_toc_item_drill_down_image</name>
+			<uiname>Mobile TOC Item Drill Down Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-arrow-toc-drill-down.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_CONTENTS"/>
+			<visual_properties height="10px" left="45px" top="174px" width="80px"/>
+			<description>The image used to indicate a submenu in the contents sidebar (16 x 16px)</description>
+			<default-value>theme-1-arrow-toc-drill-down.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-mobile div.topicpage-toc li.book:not(.expanded)" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>mobile_toc_item_drill_down_hover_image</name>
+			<uiname>Mobile TOC Item Drill Down Hover Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-arrow-toc-drill-down-over.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_CONTENTS"/>
+			<visual_properties height="10px" left="45px" top="104px" width="80px"/>
+			<description>The image used to when a submenu is hovered in the contents sidebar (16 x 16px)</description>
+			<default-value>theme-1-arrow-toc-drill-down-over.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-mobile div.topicpage-toc li.book:not(.expanded):hover" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>mobile_toc_item_back_image</name>
+			<uiname>Mobile TOC Item Back Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-arrow-toc-back.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_CONTENTS"/>
+			<visual_properties height="10px" left="363px" top="129px" width="80px"/>
+			<description>The image used to indicate the back up a level in the contents sidebar (16 x 16px)</description>
+			<default-value>theme-1-arrow-toc-back.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-mobile div.topicpage-toc li.book.expanded" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>mobile_toc_item_back_hover_image</name>
+			<uiname>Mobile TOC Item Back Hover Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-arrow-toc-back-over.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_CONTENTS"/>
+			<visual_properties height="10px" left="363px" top="167px" width="80px"/>
+			<description>The image used when the back up a level item is hovered in the contents sidebar (16 x 16px)</description>
+			<default-value>theme-1-arrow-toc-back-over.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-mobile div.topicpage-toc li.book.expanded:hover" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>tablet_toc_item_font_color</name>
+			<uiname>Tablet TOC Item Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_CONTENTS"/>
+			<visual_properties height="10px" left="717px" top="233px" width="80px"/>
+			<description>The font color of contents items in the sidebar</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-tablet div.topicpage-toc li" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>tablet_toc_item_hover_color</name>
+			<uiname>Tablet TOC Item Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#969fa8</value>
+			<group res_ID="ID_GROUP_SIDEBAR_CONTENTS"/>
+			<visual_properties height="10px" left="717px" top="278px" width="80px"/>
+			<description>The font color of contents items when hovered in the sidebar</description>
+			<default-value>#969fa8</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-tablet div.topicpage-toc a:hover" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>tablet_toc_item_selected_color</name>
+			<uiname>Tablet TOC Item Selected Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_CONTENTS"/>
+			<visual_properties height="10px" left="732px" top="140px" width="80px"/>
+			<description>The color of table of contents items in the sidebar when selected</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-tablet div.topicpage-toc li.selected" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>tablet_toc_item_selected_image</name>
+			<uiname>Tablet TOC Item Selected Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-topic-active-overlay.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_CONTENTS"/>
+			<visual_properties height="10px" left="678px" top="81px" width="80px"/>
+			<description>The image used to indicate the selected contents item in the contents sidebar (16 x 16px)</description>
+			<default-value>theme-1-topic-active-overlay.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="body.media-tablet div.topicpage-toc li.selected" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>index_input_bgcolor</name>
+			<uiname>Index Field Background Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#425262</value>
+			<group res_ID="ID_GROUP_SIDEBAR_INDEX"/>
+			<visual_properties height="10px" left="535px" top="73px" width="80px"/>
+			<description>The background color of the index input</description>
+			<default-value>#425262</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.index input.IdxFilter" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>index_input_font_color</name>
+			<uiname>Index Field Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_INDEX"/>
+			<visual_properties height="10px" left="160px" top="87px" width="80px"/>
+			<description>The color of the font in the index input</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.index input.IdxFilter" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>index_keyword_font_color</name>
+			<uiname>Index Keyword Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_INDEX"/>
+			<visual_properties height="10px" left="122px" top="162px" width="80px"/>
+			<description>The color of keywords in the index</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.index div.overlay-body a" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>index_keyword_hover_color</name>
+			<uiname>Index Keyword Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_INDEX"/>
+			<visual_properties height="10px" left="121px" top="191px" width="80px"/>
+			<description>The font color displayed when the mouse is hovered over keywords in the index</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.index div.overlay-body a:hover" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>index_keyword_hover_bgcolor</name>
+			<uiname>Index Keyword Background Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#3BB4D5</value>
+			<group res_ID="ID_GROUP_SIDEBAR_INDEX"/>
+			<visual_properties height="10px" left="397px" top="215px" width="80px"/>
+			<description>The background color displayed when the mouse is hovered over keywords in the index</description>
+			<default-value>#3BB4D5</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.index div.overlay-body a:hover" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>glossary_input_bgcolor</name>
+			<uiname>Glossary Field Background Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#425262</value>
+			<group res_ID="ID_GROUP_SIDEBAR_GLOSSARY"/>
+			<visual_properties height="10px" left="542px" top="71px" width="80px"/>
+			<description>The background color of the glossary input</description>
+			<default-value>#425262</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.glossary input.GloFilter" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>glossary_input_font_color</name>
+			<uiname>Glossary Field Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_GLOSSARY"/>
+			<visual_properties height="10px" left="135px" top="86px" width="80px"/>
+			<description>The color of the font in the glossary input</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.glossary input.GloFilter" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>glossary_term_font_color</name>
+			<uiname>Glossary Term Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_GLOSSARY"/>
+			<visual_properties height="10px" left="138px" top="234px" width="80px"/>
+			<description>The color of terms in the glossary</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.glossary div.overlay-body a" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>glossary_term_hover_color</name>
+			<uiname>Glossary Term Font Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_GLOSSARY"/>
+			<visual_properties height="10px" left="398px" top="154px" width="80px"/>
+			<description>The font color displayed when the mouse is hovered over terms in the glossary</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.glossary div.overlay-body a:hover" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>glossary_term_hover_bgcolor</name>
+			<uiname>Glossary Term Background Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#3BB4D5</value>
+			<group res_ID="ID_GROUP_SIDEBAR_GLOSSARY"/>
+			<visual_properties height="10px" left="133px" top="154px" width="80px"/>
+			<description>The background color displayed when the mouse is hovered over terms in the glossary</description>
+			<default-value>#3BB4D5</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.glossary div.overlay-body a:hover" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>glossary_definition_font_color</name>
+			<uiname>Glossary Definition Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#969fa8</value>
+			<group res_ID="ID_GROUP_SIDEBAR_GLOSSARY"/>
+			<visual_properties height="10px" left="540px" top="185px" width="80px"/>
+			<description>The color of definitions in the glossary</description>
+			<default-value>#969fa8</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.glossary span.GlossDefinitionText" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_input_bgcolor</name>
+			<uiname>Search Field Background Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#425262</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="343px" top="106px" width="80px"/>
+			<description>The background color of the search input</description>
+			<default-value>#425262</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.search input.wSearchField" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_input_font_color</name>
+			<uiname>Search Field Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="1px" top="47px" width="80px"/>
+			<description>The color of the font in the search input</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.search input.wSearchField" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_list_font_color_sidebar</name>
+			<uiname>Search List Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#969fa8</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="629px" top="224px" width="80px"/>
+			<description>The color of text displayed in the search suggestions in the sidebar</description>
+			<default-value>#969fa8</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.search div.search-list" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_list_bgcolor_sidebar</name>
+			<uiname>Search List Background Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#425262</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="697px" top="176px" width="80px"/>
+			<description>The background color of the search suggestions in the sidebar</description>
+			<default-value>#425262</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.search div.search-list" cssproperty="background" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_list_divider_color_sidebar</name>
+			<uiname>Search List Divider Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#616e7c</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="697px" top="111px" width="80px"/>
+			<description>The color of the dividing line between search suggestions in the sidebar</description>
+			<default-value>#616e7c</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.search div.search-list tr" cssproperty="border-color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_list_item_hover_color_sidebar</name>
+			<uiname>Search List Item Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#FFFFFF</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="424px" top="256px" width="80px"/>
+			<description>The font color used when the mouse is hovered over search suggestions in the sidebar</description>
+			<default-value>#FFFFFF</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.search div.search-list tr div:hover" cssproperty="border-color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_options_font_color</name>
+			<uiname>Search Options Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="295px" top="201px" width="80px"/>
+			<description>The color of the search options in the sidebar</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.search div.search-options" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_input_icon</name>
+			<uiname>Search Icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-search.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="404px" top="74px" width="80px"/>
+			<description>The icon used for the search field in the sidebar (18 x 18px)</description>
+			<default-value>theme-1-search.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.search a.wSearchLink" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_check_box_image</name>
+			<uiname>Search Check Box Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-check-box.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="2px" top="102px" width="80px"/>
+			<description>The image used for check boxes in the search options (16 x 16px)</description>
+			<default-value>theme-1-check-box.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.search label.wSearchAndLabelResults input[type=checkbox]:before" cssproperty="background-image" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.search label.highlight-search input[type=checkbox]:before" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_check_box_selected_image</name>
+			<uiname>Search Check Box Selected Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-check-box-selected.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="1px" top="136px" width="80px"/>
+			<description>The image used for selected check boxes in the search options (16 x 16px)</description>
+			<default-value>theme-1-check-box-selected.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.search label.wSearchAndLabelResults input[type=checkbox]:checked:before" cssproperty="background-image" filename="theme-1.css"></source>
+				<source css_selector="div.overlay.search label.highlight-search input[type=checkbox]:checked:before" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_message_font_color</name>
+			<uiname>Search Message Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="-9px" top="166px" width="80px"/>
+			<description>The font color of the message displayed after a search has been performed</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.search div.wSearchMessage" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_message_border_color</name>
+			<uiname>Search Message Border Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#616e7c</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="225px" top="255px" width="80px"/>
+			<description>The color of the border under the search message</description>
+			<default-value>#616e7c</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.search div.wSearchMessage" cssproperty="border-bottom-color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_results_title_font_color</name>
+			<uiname>Search Results Title Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="373px" top="380px" width="80px"/>
+			<description>The color of the search result titles</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.search div.wSearchResultItem div.wSearchResultTitle" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_results_context_font_color</name>
+			<uiname>Search Results Context Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#969fa8</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="378px" top="515px" width="80px"/>
+			<description>The color of the search result context description</description>
+			<default-value>#969fa8</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.search div.wSearchResultItem span.wSearchContext" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_results_URL_font_color</name>
+			<uiname>Search Results URL Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="3px" top="588px" width="80px"/>
+			<description>The color of the search result URLs</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.search div.wSearchResultItem div.wSearchURL" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_results_end_font_color</name>
+			<uiname>Search Results End Message Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="308px" top="597px" width="80px"/>
+			<description>The color of the message that appears at the end of search results</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.search div.wSearchResultsEnd" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>search_results_topic_icon</name>
+			<uiname>Search Results Topic Icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-search-results-topics.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="3px" top="547px" width="80px"/>
+			<description>The image used to indicate topics in the search results (16 x 16px)</description>
+			<default-value>theme-1-search-results-topics.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>search_results_document_icon</name>
+			<uiname>Search Results Document Icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-search-results-documents.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="3px" top="289px" width="80px"/>
+			<description>The image used to indicate documents in the search results (16 x 16px)</description>
+			<default-value>theme-1-search-results-documents.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>search_results_presentation_icon</name>
+			<uiname>Search Results Presentation Icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-search-results-presentations.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="3px" top="427px" width="80px"/>
+			<description>The image used to indicate presentations in the search results (16 x 16px)</description>
+			<default-value>theme-1-search-results-presentations.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>search_results_spreadsheet_icon</name>
+			<uiname>Search Results Spreadsheet Icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-search-results-spreadsheets.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="3px" top="359px" width="80px"/>
+			<description>The image used to indicate spreadsheets in the search results (16 x 16px)</description>
+			<default-value>theme-1-search-results-spreadsheets.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>search_results_text_file_icon</name>
+			<uiname>Search Results Text File Icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-search-results-text-files.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="3px" top="486px" width="80px"/>
+			<description>The image used to indicate text files in the search results (16 x 16px)</description>
+			<default-value>theme-1-search-results-text-files.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>search_results_pdf_icon</name>
+			<uiname>Search Results PDF Icon</uiname>
+			<type>FILE</type>
+			<value>theme-1-search-results-pdfs.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_SEARCH"/>
+			<visual_properties height="10px" left="3px" top="220px" width="80px"/>
+			<description>The image used to indicate PDFs in the search results (16 x 16px)</description>
+			<default-value>theme-1-search-results-pdfs.png</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>filter_applied_image</name>
+			<uiname>Filter Applied Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-tick-overlay.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FILTER"/>
+			<visual_properties height="10px" left="287px" top="27px" width="80px"/>
+			<description>The image used to indicate that a filter has been applied (16 x 16px)</description>
+			<default-value>theme-1-tick-overlay.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.filter div.title.filter-applied:after" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>filter_reset_button_bgcolor</name>
+			<uiname>Filter Reset Button Background Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#3BBCE0</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FILTER"/>
+			<visual_properties height="10px" left="255px" top="570px" width="80px"/>
+			<description>The background color of the filter reset button</description>
+			<default-value>#3BBCE0</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.filter div.reset-button a" cssproperty="background-color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>filter_reset_button_font_color</name>
+			<uiname>Filter Reset Button Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FILTER"/>
+			<visual_properties height="10px" left="90px" top="506px" width="80px"/>
+			<description>The font color of the filter reset button</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.filter div.reset-button a" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>filter_reset_button_font_hover_color</name>
+			<uiname>Filter Reset Button Font Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FILTER"/>
+			<visual_properties height="10px" left="383px" top="505px" width="80px"/>
+			<description>The font color of the reset button when hovered in the sidebar</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.filter div.reset-button a:hover" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>filter_reset_button_hover_bgcolor</name>
+			<uiname>Filter Reset Button Background Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#12a7cb</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FILTER"/>
+			<visual_properties height="10px" left="547px" top="570px" width="80px"/>
+			<description>The background color of the reset button when hovered in the sidebar</description>
+			<default-value>#12a7cb</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.filter div.reset-button a:hover" cssproperty="background-color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>filter_label_font_color</name>
+			<uiname>Filter Label Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FILTER"/>
+			<visual_properties height="10px" left="255px" top="119px" width="80px"/>
+			<description>The font color of filter labels, i.e. subheadings</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.filter label.tag-parent" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>filter_label_border_color</name>
+			<uiname>Filter Label Border Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#616e7c</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FILTER"/>
+			<visual_properties height="10px" left="3px" top="133px" width="80px"/>
+			<description>The font color of the filter label border</description>
+			<default-value>#616e7c</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.filter label.tag-parent" cssproperty="border-bottom-color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>filter_item_font_color</name>
+			<uiname>Filter Item Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#969fa8</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FILTER"/>
+			<visual_properties height="10px" left="283px" top="259px" width="80px"/>
+			<description>The font color of the filter options</description>
+			<default-value>#969fa8</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.filter li.item" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>filter_check_box_image</name>
+			<uiname>Filter Check Box Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-check-box.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FILTER"/>
+			<visual_properties height="10px" left="520px" top="188px" width="80px"/>
+			<description>The image used for check boxes in the filter options (16 x 16px)</description>
+			<default-value>theme-1-check-box.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.filter ul.checkbox li.item label" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>filter_check_box_selected_image</name>
+			<uiname>Filter Check Box Selected Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-check-box-selected.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FILTER"/>
+			<visual_properties height="10px" left="520px" top="137px" width="80px"/>
+			<description>The image used for selected check boxes in the filter options (16 x 16px)</description>
+			<default-value>theme-1-check-box-selected.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.filter ul.checkbox li.item label.checked" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>filter_radio_button_image</name>
+			<uiname>Filter Radio Button Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-radio-button.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FILTER"/>
+			<visual_properties height="10px" left="4px" top="236px" width="80px"/>
+			<description>The image used for radio buttons in the filter options (16 x 16px)</description>
+			<default-value>theme-1-radio-button.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.filter ul.radio li.item label" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>filter_radio_button_selected_image</name>
+			<uiname>Filter Radio Button Selected Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-radio-button-selected.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FILTER"/>
+			<visual_properties height="10px" left="3px" top="269px" width="80px"/>
+			<description>The image used for selected radio buttons in the filter options (16 x 16px)</description>
+			<default-value>theme-1-radio-button-selected.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.filter ul.radio li.item label.checked" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>favorite_text_font_color</name>
+			<uiname>Favorite Text Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#FFFFFF</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FAVORITES"/>
+			<visual_properties height="10px" left="409px" top="101px" width="80px"/>
+			<description>The color of text in the list of favorites</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="table.favoritesholder td.favorite a" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>favorite_text_hover_bgcolor</name>
+			<uiname>Favorite Text Background Hover Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#3BB4D5</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FAVORITES"/>
+			<visual_properties height="10px" left="132px" top="170px" width="80px"/>
+			<description>The background color displayed when the mouse is hovered over text in the list of favorites</description>
+			<default-value>#3BB4D5</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="table.favoritesholder td.favorite a:hover" cssproperty="background-color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>favorite_delete_button_image</name>
+			<uiname>Favorite Delete Button Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-bin-overlay.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FAVORITES"/>
+			<visual_properties height="10px" left="563px" top="166px" width="80px"/>
+			<description>The image used for the remove icon in the favorites overlay (16 x 16px)</description>
+			<default-value>theme-1-bin-overlay.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="table.favoritesholder td.removelink a" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>favorite_delete_button_hover_image</name>
+			<uiname>Favorite Delete Button Hover Image</uiname>
+			<type>FILE</type>
+			<value>theme-1-bin-overlay-over.png</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FAVORITES"/>
+			<visual_properties height="10px" left="563px" top="196px" width="80px"/>
+			<description>The image used when the mouse is hovered over the remove favorite icon (16 x 16px)</description>
+			<default-value>theme-1-bin-overlay-over.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="table.favoritesholder td.removelink a:hover" cssproperty="background-image" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>favorite_label_font_color</name>
+			<uiname>Favorite Label Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FAVORITES"/>
+			<visual_properties height="10px" left="132px" top="40px" width="80px"/>
+			<description>The font color of favorite label, i.e. subheadings</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.favorites div.favoritestableintro" cssproperty="color" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>favorite_label_border_color</name>
+			<uiname>Favorite Label Border Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#616e7c</value>
+			<group res_ID="ID_GROUP_SIDEBAR_FAVORITES"/>
+			<visual_properties height="10px" left="132px" top="92px" width="80px"/>
+			<description>The font color of the favorite label border</description>
+			<default-value>#616e7c</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.overlay.favorites div.favoritestableintro" cssproperty="border-bottom" filename="theme-1.css"></source>
+			</sources>
+		</variable>
+	</variables>
+	<resources/>
+</rhlayout>

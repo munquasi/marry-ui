@@ -1,0 +1,327 @@
+/* 
+    Created on : 5 Apr, 2017, 3:52:26 PM
+    Author     : claritus
+*/
+
+
+.bottom-button-bar {
+    box-shadow: 0 4px 7px $black;
+    margin: 10px 0 0;
+    padding: 20px;
+    text-align: right;
+}
+
+/* Popup starts here */
+.popup-overlay {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.popup-content {
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    padding: 20px;
+    z-index:9999;
+    background-color: $white-two;
+    &.popup-small {
+        width: 542px;
+    }
+    border-radius: 5px;
+    border-top: 8px solid $blood-orange;
+}
+.popup-body {
+    /*max-height:318px;
+    overflow-y: auto; */
+    padding-top:5px;
+}
+.popup-header {
+    padding: 10px 0;
+    clear:both;
+    overflow:hidden;
+}
+.popup-title {
+    font-size: 24px;
+    color: $bg-darkGrey;
+    float: left;
+    margin: 0;
+}
+
+.full-width-input1{
+    md-input-container {
+        width: 42%;
+    }
+}
+
+.form-element {
+    padding: 10px;
+    //border-bottom: solid 1px $form-bg;
+    clear:both;
+    overflow:hidden;
+    label {
+        font-family: 'DroidSans';
+        font-size: 12px;
+        color: $text;
+        width:40%;
+        float: left;
+    }
+    
+    .custom-width-label{
+        width:13% !important;
+    }
+    
+    .form-right-element {
+        float: left;
+        font-family: 'DroidSansMono';
+        font-size: 14px;
+        color: $black; 
+        width: 60%;
+        
+        span {
+            font-family: 'DroidSansMono';
+            font-size: 14px;
+            color: $black;    
+        }
+        input {
+/*            font-family: 'DroidSansMono';
+            font-size: 14px;
+            color: $black;  
+            width:100%;
+            border: 1px solid #ccc!important;
+            background:$white;*/
+        }
+    }
+    md-input-container {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      .md-errors-spacer {
+        min-height: inherit;
+      }
+    }
+
+}
+.popup-footer {
+    padding:10px 0;
+}
+.ng-table-counts {
+    display:none;
+}
+md-content table.ng-table {
+    td {
+        max-width:300px;
+        word-wrap:break-word;
+        p {
+            max-width:300px;
+            word-wrap:break-word;
+        }
+        
+    }
+}
+// Popup ends here //
+
+
+//modal popup //
+
+.md-dialog-container {
+    &.currency-dialog {
+        md-dialog {
+            width:25%
+        }
+    }
+    &.confirm-dialog {
+        .modal-header {
+            border-top: 8px solid #e51c2e;
+            border-radius: 5px 5px 0 0;
+            border-bottom: 0 none;
+            .close {
+                display:none;
+            }
+            &.no-image{
+                border: 0 none;
+                .modal-title{
+                    background: none transparent;
+                    padding: 0px;
+                    color: #2b3a42;
+                }
+            }
+
+
+            .modal-title {
+                font-family: 'DroidSans';
+                font-size: 24px;
+                color: #e51c2e;
+                background: url('/static/img/combined-shape.png') left center no-repeat;
+                padding-left:40px;
+                font-weight:normal;
+
+            }
+        }
+        .modal-footer {
+            border: 0 none;
+            margin:0;
+            button {
+                border: solid 1px #c0c0c0;
+                border-radius: 5px;
+                color:$blood-orange;
+                font-family: 'DroidSans';
+                font-size: 14px;
+                background-color: $white;
+                text-transform: uppercase;
+                font-weight: normal;
+                float: left;
+                margin: 0;
+                box-shadow:0 0 0 transparent;
+                &.btn-fw.primary {
+                    float:right;
+                }
+            }
+        }
+        .modal-body {
+            font-family: 'DroidSans';
+            font-size: 12px;
+            line-height: 1.5;
+            color: #3e5766;
+        }
+        md-dialog {
+            border: 0 none;
+            padding:0;
+            width:21%
+        }
+        &.center-dialog {
+            text-align:center;
+              .modal-footer {
+                text-align: center;
+                button {
+                    float: none;
+                }
+            }
+        }
+    }
+} 
+ 
+.modal-content {
+     background-color: #f2f2f2;
+     
+}
+//.ng-invalid.ng-invalid-required {
+//    .ng-binding {
+//        color:$pinkish-red;
+//    }
+//}
+
+.validation-text{
+    color:$pinkish-red;
+}
+
+.validation-error-top {
+    background:$pinkish-red;
+    padding:10px;
+    color:$white;
+}
+.primary-button.md-button span {
+    color:$white;
+}
+
+
+.custom-label{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.54);
+    vertical-align: top;
+    transform: translate3d(0px, 6px, 0px) scale(0.75);
+}
+
+
+.custom-label-add{
+    color: #3e5766;
+    font-size: 0.8rem;
+    padding-top: 0.3rem;
+    vertical-align: top;
+}
+
+
+.disabled-input{
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    padding: 0;
+    width: 65px;
+}
+
+cw-list, countrytolerance-list, break-management-list, 
+    payroll-invoice-payprofile-list, 
+    payroll-invoice-payprofile-history, 
+    payroll-invoice-payrollrun-list-future, 
+    payroll-invoice-payrollrun-list-past, 
+    payroll-invoice-payrollrun-list-current,
+    payroll-invoice-payrollrun-list,
+    contract-list,
+    contract-view,
+    system-security-job-map,
+    countryauditlogs-list
+    {
+    width: 100%;
+}
+
+
+.my-label{
+    width: 132px;
+    padding-left: 2px;
+}
+
+
+.error-message{
+    color: #e91b27;
+    margin-bottom: 13px;
+    margin-top: -15px;
+}
+
+
+.input-cluster-custom{
+    border-bottom: 1px solid rgba(199, 200, 202, 0.5);
+    color: #3e5766;
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 4.5%;
+    
+    .custom-width-label{
+        width: 30%;
+    }
+    
+    .profile-page-radio{
+        width: 33%;
+    }
+}
+
+
+
+.dateHide{
+    .md-datepicker-button{
+        display: none;
+    }
+    .md-datepicker-input-container{
+        margin-left: -3px;
+    }
+}
+
+
+#annualLeaveAccuralGuaranteedDays{
+    width: 110%;
+}
+
+
+.full-width-select md-input-container{
+    width: 100%;
+}
+
+
+.grey-font{
+    color: #3e5766 !important;
+}

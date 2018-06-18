@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="1.0">
+	<properties imagewidth="16" windowstyles="8388610" exwindowstyles="256">
+	</properties>
+	<item name="Payroll">
+		<item name="Create New Payroll" link="Payroll\Create_New_Payroll.htm">
+		</item>
+		<item name="Create Pay Rule" link="Payroll\Create_Pay_Rule.htm">
+		</item>
+	</item>
+	<item name="Reports">
+		<item name="Billage Ratio Report" link="Reports\Billage_Ratio_Report.htm">
+		</item>
+	</item>
+</toc>

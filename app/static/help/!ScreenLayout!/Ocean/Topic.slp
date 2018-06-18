@@ -1,0 +1,334 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Adobe</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .rh-hide:not(.rh-animate) {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body data-class="homepage: @KEY_VIEW_MODE === 'layout'; topicview: @KEY_VIEW_MODE === 'topic'; search: @KEY_VIEW_MODE === 'search'; media-desktop: KEY_SCREEN_DESKTOP; media-landscape: KEY_SCREEN_TABLET; media-mobile: KEY_SCREEN_PHONE; ios: KEY_SCREEN_IOS;modal-open: @indexmodal || @glossarymodal || @filtermodal" data-rhwidget="Basic" data-controller="ModernLayoutController: mc; JsLoadingController; RH2017LayoutController: oc">
+    <!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="page-wrap" data-scroll="@.l.load_more_results(true) | debounce: 50, delta: 100">
+        <div class="content-wrapper">
+            <section class="search-bghome">
+                <div class="container-fluid">
+                    <section class="brand-bg">
+    					<div class="container wrapper" data-controller="HomeController: hc">
+    						<div class="title">		
+                                <a class="navbar-brand" data-attr="title: @KEY_LNG.HomeButton" data-click="$hc.goToHome()"><img src="logo.png" alt="Adobe" title="" class="pull-left">
+                                    <?rh-lng-string lngname="PROJECTTITLE" lngvalue="Project Title" ?>
+                                </a> 
+    						</div>
+                        </div>
+                    </section>
+                    <div class="container wrapper">
+                        <div class="row mg-top-40 adser">
+                            <div class="col-md-9 col-sm-9 col-xs-7 pmobile">
+                                <div class="search-box left-pane" data-css="width: sidebar_width | screen: 'desktop'" data-class="searchpage-mode, layout-visible: @KEY_ACTIVE_TAB == 'fts'; search-sidebar: @KEY_SEARCH_LOCATION == 'tabbar'; search-content: @KEY_SEARCH_LOCATION == 'content'; searchbar-open:@focusin_main_searchbox" data-controller="SearchController:sc">
+                                    <div class="mobileheader"><div class="totopic" data-if="@KEY_ACTIVE_TAB == 'fts'" data-click="$mc.toggleActiveTab('')" data-attr="title:@KEY_LNG.Back"></div></div>
+                                    <input class="search-input" type="text" data-class="no-filter: !@KEY_FEATURE.filter" data-attr="placeholder: @KEY_LNG.Search"
+                                           data-value="KEY_SEARCH_TERM" data-keyup="$mc.newSearch(node.value, event.keyCode, event), $sc.handleKey(event)|debounce:150" data-focus="@focusin_main_searchbox(true)" data-blur="$sc.handleFocusOut('focusin_main_searchbox')|timeout:200" data-value="KEY_SEARCH_TERM" />
+    								<img src="search.svg" data-click="@EVT_SEARCH_TERM(true)" class="searchicon">
+                                    <div data-if="@focusin_main_searchbox" class="search-list search-table">
+                                        <table data-class="search-table-desktop:KEY_SCREEN_DESKTOP; search-table-mobile:KEY_SCREEN_PHONE; search-table-tablet:KEY_SCREEN_TABLET">
+                                            <tr data-repeat="search_results" data-class="search-suggestion:true; search-selected:@selected===#{@index}" data-click="$sc.handleClick(#{@index})">
+                                                <td class="search-text-column"><div class="search-text" data-itext="item.term"></div> </td>
+                                                <td>
+                                                    <div class="search-count">
+                                                        <div class="topic-icon"></div>
+                                                        <div class="count-number" data-itext="item.count"></div>+
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="search-delete" data-if="$sc.canDelete(#{@index})" data-click="$sc.handleDelete(#{@index})">x</div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-5">
+                                <ul class="adobe-filter pull-right">
+                                    <li><img src="filter.svg" data-attr="alt:@KEY_LNG.Filter;title:@KEY_LNG.Filter" data-if="KEY_FEATURE.filter" data-click="@filtermodal(true)"></li>
+                                    <li><img src="index.svg" data-attr="alt:@KEY_LNG.Index;title:@KEY_LNG.Index" data-if="KEY_FEATURE.idx" data-click="@indexmodal(true)"></li>
+                                    <li><img src="glossary.svg" data-attr="alt:@KEY_LNG.Glossary;title:@KEY_LNG.Glossary" data-if="KEY_FEATURE.glo" data-click="@glossarymodal(true)"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resp-margin"></div>
+                <div class="container topicview wrapper">
+    				<ol class="breadcrumb" data-controller="HomeController:hc;  TocBreadcrumbsController:bc">
+                        <h3 data-text="KEY_TOPIC_TITLE"></h3>
+    					<li data-repeat="@KEY_TOC_BREADCRUMBS" class="breadcrumb-holder"> 
+    						<a  data-attr="href: $bc.getLink(#{@index})" data-click="$bc.select('#{id}', '#{url}')"  data-itext="item.text"></a>
+    					</li>
+                    </ol>
+                </div>
+                <!-- Container-fluid ends -->
+            </section>
+            <div class="container wrapper mg-top-30 searchresults">
+                <div class="row">
+                    <div class="searchresult col-md-12 left-pane" data-css="width: sidebar_width | screen: 'desktop'; left: sidebar_width | screen: 'desktop', dir: 'ltr'; right: sidebar_width | screen: 'desktop', dir: 'rtl'" data-class="sidebar-opened: $mc.isSidebarTab(@KEY_ACTIVE_TAB); desktop-sidebar-hidden: @.l.desktop_sidebar_visible == false || @.l.desktop_sidebar_available === false; search-sidebar: @KEY_SEARCH_LOCATION == 'tabbar'; search-content: @KEY_SEARCH_LOCATION == 'content'; layout-visible: $mc.isSearchMode(@KEY_ACTIVE_TAB, @active_content); mobile-header-visible: @.l.mobile_header_visible" data-scroll="@.l.load_more_results(true) | debounce: 50, delta: 100">
+
+                        <?rh-msp-search-results-start widgettype="searchresult" class="wSearchResults" id="searchresults" ?>
+                        <div class="wSearchResultSettings rh-hide">
+                            <div class="wSearchHighlight">
+                                <?rh-msp-search-highlight-control id="highlightsearch"
+                                widgettype="highlightsearch" type="checkbox"
+                                checked class="wSearchHighlight" id="highlightsearch"
+                                textcolorval="#000000" bgcolorval="#FCFF00" ?>
+                            </div>
+                        </div>
+                        <h3 class="mg-bottom-30" data-if="!@EVT_SEARCH_IN_PROGRESS">
+                            <?rh-msp-search-message id="searchMsg" class="wSearchMessage" ?>
+                        </h3>
+                    </div>
+                    <div data-class="loading: EVT_SEARCH_IN_PROGRESS" data-if="EVT_SEARCH_IN_PROGRESS"></div>
+                    <p class="progressbar" data-if="KEY_SEARCH_PROGRESS"><span data-text="KEY_SEARCH_PROGRESS"></span>%</p>
+                    <div class="serachresultlist" data-if="!@EVT_SEARCH_IN_PROGRESS">
+                        <div data-rhwidget="List: key: @.p.searchresults, spliton: index % @MAX_RESULTS == 14" data-config="loadmore: '.l.load_more_results', loaded: '.l.results_loaded'">
+                            <h6 class="search-item">
+                                <a class="nolink" data-i-href="item.strUrl+@.p.searchresultparams">
+                                    <div class="title" data-itext="item.strTitle"></div>
+                                </a>
+                            </h6>
+                            <p class="wSearchContent">
+                                <span class="context" data-itext="item.strSummary"></span>
+                            </p>
+                            <div class="searchurl">
+                                <span data-itext="item.strBreadcrumbs"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-if="@.l.results_loaded && @.p.searchresults.length && !@EVT_SEARCH_IN_PROGRESS" class="wSearchResultsEnd">
+                        <?rh-lng-string lngname="EndOfResults" lngvalue="End of search results." ?>
+                    </div>
+                    <?rh-msp-search-results-end ?>
+
+                </div>
+            </div>
+        <div class="layout-block">
+            <section>
+                <div class="container wrapper momesl">
+                    <nav id="ml-menu" class="menu toc-holder">
+                        <nav class="menu__breadcrumbs" data-controller="TocBreadcrumbsController:bc; HomeController: hc">
+                            <a data-click="$hc.goToHome()" data-text="@KEY_LNG.HomeButton"></a>
+    							<span data-if="@KEY_TOC_BREADCRUMBS.curlevel !== 0">
+    							<a data-repeat="@KEY_TOC_BREADCRUMBS" class="breadcrumb-holder" data-attr="href: $bc.getLink(#{@index})" 
+    								data-click="$bc.select('#{id}', '#{url}')"  data-itext="item.text">
+    							</a>
+								</span>
+                        </nav>
+
+                        <div class="menu__wrap">
+                            <ul data-menu="main" class="menu__level">
+                                <div class="carousel slide" data-ride="carousel" data-interval="false" data-controller="Carousel: carousel | key: 'EVT_TOC_LOADED'" data-rhwidget="Basic">
+                                    <div class="carousel-inner" role="listbox">
+                                                                            <ul class="toc carousel carousel-slide" data-rhwidget="List: @curtoc" data-controller="TocController: toc" data-click="$toc.onClick(event)">
+                                            <li class="book menu__link carousel-item" data-rif="item.type === 'book'" data-haslink="true" data-i-link="item.url" data-class="active: @bookid == '#{@id}'; inactive: @bookid != '#{@pid}' &amp;&amp; @bookid != '#{@id}';hide: #{@level} !== @curlevel" data-childorder="#{childOrder}" data-itemkey="#{$toc.key(item.absRef, item.key)}" data-click="$toc.expandBook(#{@level+1}, '#{@id}', node, {'name': @#{@itemkey}.name, 'url': @#{@itemkey}.url})"
+                                            data-itemid="#{@id}" data-itemlevel="#{@level}" data-rhtags="#{$toc.tags(item)}">
+    											<span class="icon-level" data-itext="item.name">&nbsp;</span>
+                                            </li>
+                                            <li class="item carousel-item" data-rif="item.type !== 'book'" data-class="hide: #{@level} !== @curlevel" data-itemid="#{@id}">
+    											<a class="menu__link" data-i-href="item.url">
+    												<span class="icon-article" data-itext="item.name">&nbsp;</span>
+    											</a>
+                                            </li>
+                                            <li class="child max-height-transition show" data-rif="item.key" data-childorder="#{childOrder}">
+                                              <ul class="child" data-if="@show_child.#{@id}" data-child="$toc.key(item.absRef, item.key)"></ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Controls -->
+                                    <a class="left carousel-control showz" role="button" data-slide="prev" data-if="@change &amp;&amp; $carousel.pagecount() > 0">
+                                        <span><img src="adpre.svg" id="tocprev" data-click="$carousel.previous()"></span>
+                                        <span class="sr-only" data-text="@KEY_LNG.Prev"></span>
+                                    </a>
+                                    <a class="right carousel-control showz" role="button" data-slide="next" data-if="@change &amp;&amp; $carousel.hasNext()">
+                                        <span><img src="adnxt.svg" id="tocnext" data-click="$carousel.next()"></span>
+                                        <span class="sr-only" data-text="@KEY_LNG.Next"></span>
+                                    </a>
+                                </div>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+            </div>
+        <div class="container wrapper topic-container" data-if="@KEY_VIEW_MODE !== 'layout' || @KEY_FEATURE.showDefTopic">
+            <?rh-msp-topic class="topic" scrolling="no" widgettype="topic" ?>
+        </div>
+          
+        </div>
+        <!-- Container frame -->
+        <!-- Glossary modal -->
+        <div id="glossarymodal" class="modal ocean-modal Glossary" tabindex="-1" role="dialog" aria-hidden="true" data-if="@glossarymodal" data-class="show: @glossarymodal" data-controller="GlossaryController: gc">
+            <div class="modal-dialog modal-lg" role="document" >
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-click="@glossarymodal(false)"><span>&times;</span></button>
+                        <h4 class="modal-title" data-text="@KEY_LNG.Glossary"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid bd-example-row">
+                            <div class="row">
+                                <form>
+                                    <div class="">
+                                        <input class="input-style-2" type="text"  data-attr="placeholder:@KEY_LNG.GlossaryFilterTerms" data-keyup="$gc.filterGlo(node.value) | debounce: 500">
+                                    </div>
+                                </form>
+                                <div class="col-md-12">
+                                    <ul class="nav nav-tabs responsive-tabs tabs-left hide-sm">
+                                        <li data-repeat="i, glossary: PROJECT_GLOSSARY_DATA" data-class="active: @show['#{$glossary.name}']" data-rif="!$gc.isFiltered($glossary.name)"><a class="glossterm" data-itext="$glossary.name" data-click="@show({'#{$glossary.name}': true})"
+    									></a></li>
+                                    </ul>
+                                    <div class="tab-content">
+    									<div data-repeat="i, glossary: PROJECT_GLOSSARY_DATA">
+    										<a class="show-xs show-sm glossterm" data-class="active: @show['#{$glossary.name}']" data-rif="!$gc.isFiltered($glossary.name)" data-i-href="'#' + $glossary.name" data-itext="$glossary.name" data-click="@show({'#{$glossary.name}': true})" class="accordion-link active first"></a>
+    										<div class="tab-pane active glossdef" data-if="@show['#{$glossary.name}']">
+    											<p data-itext="$glossary.value"></p>
+    										</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Glossary modal -->
+        <!-- index modal -->
+        <div id="indexmodal" class="modal ocean-modal idx-holder index" tabindex="-1" role="dialog" data-if="@indexmodal" data-class="show: @indexmodal">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-click="@indexmodal(false)"><span>&times;</span></button>
+                        <h4 class="index-title modal-title" data-text="@KEY_LNG.Index"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid bd-example-row">
+                            <div class="row">
+                                <form>
+                                    <div>
+                                        <input class="IdxFilter input-style-2" type="text" data-attr="placeholder:@KEY_LNG.IndexFilterKewords" data-keyup="@.l.idxfilter(node.value) | debounce: 500, delta: 500">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="row scrollall">
+                                <div class="index-list panel-group" id="accordion" role="tablist" aria-multiselectable="true" data-controller="IndexController: ic" data-rhwidget="List: key: PROJECT_INDEX_DATA, filter: $ic.showItem(item.name)"  data-output="indexmodal">
+                                    <div class="panel panel-default  col-xs-12 index-item" data-itemlevel="#{@level}" data-class="col-md-6:#{@level} == 0; col-sm-6:#{@level} == 0" data-init="@show.#{@id}(false)" data-i-data-rhtags="item['data-rhtags']">
+                                        <div class="panel-heading" role="tab">
+                                            <h4 class="panel-title">
+                                                <a data-click="$ic.showNextLevel(node)"  data-rif="item.keys &amp;&amp; item.keys.length" class="nolink IndexKeywordText" data-i-href="item.topics.length &amp;&amp; item.topics[0].url" data-itext="item.name" data-i-title="item.name" data-indexid="#{@id}">
+                                                </a>
+                                                <a data-click="$ic.showNextLevel(node), (@#{@itemkey}.topics.length == 1 &amp;&amp; @indexmodal(false))" data-rif="item.topics &amp;&amp; item.topics.length &amp;&amp; !item.keys.length" class="IndexKeywordText"  data-i-href="item.topics.length &amp;&amp; item.topics[0].url" data-itext="item.name" data-i-title="item.name" data-indexid="#{@id}"></a>
+                                                <a class="topic" data-i-href="item.url" data-rif="item.type === 'topic'" data-itext="item.name" data-click="@indexmodal(false)" data-i-title="item.name"></a>
+                                            </h4>
+                                        </div>
+                                        <div class="IndexChildBlock" data-rif="item['keys']">
+                                            <div class="child" data-child="#{@itemkey}.keys" data-if="@show.#{@id}" ></div>
+                                        </div>
+                                        <div class="IndexChildBlock" data-rif="item['topics']">
+                                            <div class="child" data-child="#{@itemkey}.topics" data-if="@show.#{@id}"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- panel-group -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- index modal -->
+        <!-- filter modal -->
+        <div id="filtermodal" class="modal ocean-modal filter-holder" tabindex="-1" role="dialog" aria-hidden="true" data-if="@filtermodal" data-class="show: @filtermodal">
+            <div class="modal-dialog modal-lg" role="document">
+                <form>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-click="@filtermodal(false)"><span>&times;</span></button>
+                            <div class="row">
+                                <div class="col-md-9 col-xs-12">
+                                    <h4 class="filter-title modal-title" data-text="KEY_PROJECT_FILTER_CAPTION"></h4>
+                                </div>
+                                <div class="col-md-3 col-xs-12">
+                                    <input type="button" data-attr="value: @KEY_LNG.ApplyTip" class="btn btn-warning btn-apply" data-click="@filtermodal(false)">
+                                    <input type="reset" data-attr="value: @KEY_LNG.Reset" value="Reset" class="btn btn-link butpad btn-reset" data-click="$mc.setDefaultTagStates()">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="left-pane" data-css="width: sidebar_width | screen: 'desktop'" data-class="sidebar-opened: $mc.isSidebarTab(@KEY_ACTIVE_TAB); desktop-sidebar-hidden: @.l.desktop_sidebar_visible == false || @.l.desktop_sidebar_available === false; layout-visible: @KEY_ACTIVE_TAB == 'filter'; mobile-header-visible: @.l.mobile_header_visible; loading: !@KEY_MERGED_FILTER_KEY">
+                                <ul class="wFltOpts" data-class="flradio: @KEY_PROJECT_FILTER_TYPE == 'radio'; flcheckbox: @KEY_PROJECT_FILTER_TYPE == 'checkbox'">
+                                    <ul class="wFltOptsGrp" data-rhwidget="List:KEY_MERGED_FILTER_KEY" data-controller="FilterController: fc" data-click="$fc.click(event)"
+                                        >
+                                        <li data-i-class="$fc.class(item)" data-itemkey="#{@path}" data-itemvalue="#{name}" data-class="row:#{@itemkey}.children; mg-bottom-30:#{@level} == 0;col-md-4: #{@level} != 0;;col-xs-12: #{@level} != 0">
+                                        <input data-rif="$fc.inputType(item) == 'checkbox'" data-i-id="'filter#{@id}'" type="checkbox" data-i-value="#{@index}" />
+                                        <input data-rif="$fc.inputType(item) == 'radio'" data-i-id="'filter#{@id}'" type="radio" data-i-name="'filter_name#{@pid}'" data-i-value="'#{@index}'" />
+                                            <label data-i-for="'filter#{@id}'" data-i-title="item.display" data-itext="item.display" data-class="tag-parent,h6: #{@itemkey}.children; checked: KEY_PROJECT_TAG_STATES#{@path}"></label>
+                                        <ul class="wFltOptsGrp" data-child="#{@itemkey}.children" data-rif="item.children"></ul>
+                                    </li>
+                                </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container wrapper topicview">
+            <div class="mg-top-30 mg-bottom-10 ht-30">
+                <div class="col-md-6">
+                    <ul class="social_buttons social-icon" data-if="@KEY_FEATURE.social === true && (@KEY_SCREEN_PHONE == false || (@KEY_SCREEN_PHONE == true && $mc.isSidebarTab(@KEY_ACTIVE_TAB) != true && $mc.isSearchMode(@KEY_ACTIVE_TAB, @active_content) != true && @KEY_ACTIVE_TAB != 'filter'))">
+                        <li class="fb" data-if="KEY_FEATURE.facebook"><iframe id="bf-iframe" style="border:none; overflow:hidden;"></iframe></li>
+                        <li class="twitter" id="twitter-holder" data-if="KEY_FEATURE.twitter"></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-right">
+                    <a data-trigger="EVT_PRINT_TOPIC" class="print" data-attr="title:@KEY_LNG.Print; href: '#'"><img src="printer.svg"></a>
+                </div>
+            </div>
+            <div class="pd-bottom-30 browsesequence">
+                <div class="pull-left" data-attr="title:@KEY_LNG.Prev">
+                    <a class="left-right previous" data-rhwidget="Basic" data-attr="href:.l.brsBack" data-css="visibility: @.l.brsBack?'visible':'hidden'" data-text="@KEY_LNG.Prev">&nbsp;</a>
+                </div>
+                <div class="pull-right" data-attr="title:@KEY_LNG.Next">
+                    <a class="left-right next" data-rhwidget="Basic" data-attr="href:.l.brsNext" data-css="visibility: @.l.brsNext?'visible':'hidden'" data-text="@KEY_LNG.Next">&nbsp;</a>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container wrapper">
+                <p class="pull-right">&copy;2017</p>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="usersettings.js"></script>
+    <script>
+        if(useTwitter === true) {
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+        }
+    </script>
+
+</body>
+
+</html>

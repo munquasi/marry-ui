@@ -1,0 +1,71 @@
+﻿/* Style Sheet created by ImportDoc 13.0 */
+
+p {
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri"    ,"sans-serif";
+}
+
+h3 {
+	margin-right:0in;
+	margin-left:0in;
+	font-size:13.5pt;
+	font-family:"Times New Roman"   ,"serif";
+	font-weight:bold;
+}
+
+h4 {
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman"   ,"serif";
+	font-weight:bold;
+}
+
+span.Hyperlink {
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;
+}
+
+span.HyperlinkFollowed {
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;
+}
+
+p.Acetate {
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma"   ,"sans-serif";
+}
+
+span.Heading3 {
+	font-family:"Times New Roman"   ,"serif";
+	font-weight:bold;
+}
+
+span.Heading4 {
+	font-family:"Times New Roman"   ,"serif";
+	font-weight:bold;
+}
+
+span.BalloonText {
+	font-family:"Tahoma"   ,"sans-serif";
+}
+
+OL {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+UL {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+

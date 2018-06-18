@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version='1.0' encoding='utf-8' ?>  <indexdata>  <key name=\"Add Customers\" >    <topic name=\"Add Customers\" url=\"customers/add_customers.htm\" />  </key>    </indexdata>";

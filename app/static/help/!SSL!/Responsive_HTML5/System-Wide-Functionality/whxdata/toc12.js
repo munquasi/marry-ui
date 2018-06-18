@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc1.js\"  name=\"Duress Code\"><item name=\"Duress Code\" url=\"Duress_Code.htm\" /><item name=\"Create New Duress Code\" url=\"Create_New_Duress_Code.htm\" /></data>";

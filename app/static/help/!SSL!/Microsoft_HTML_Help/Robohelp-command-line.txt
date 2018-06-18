@@ -1,0 +1,4 @@
+C:\Windows\hh.exe -mapid 1 ms-its:d:/TW-Work/Javelin-Project/!SSL!/Microsoft_HTML_Help/Javelin-Project.chm
+
+
+D:\TW-Work\Javelin-Project\!SSL!\Microsoft_HTML_Help

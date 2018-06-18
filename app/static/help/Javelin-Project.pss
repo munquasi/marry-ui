@@ -1,0 +1,132 @@
+﻿[Target:WebHelp Pro]
+ResultFileName=!SSL!\WebHelp_Pro\Javelin-Project.htm
+SSLayoutType=32
+ServerProjectName=Javelin-Project
+CreateProjectTime=
+CreateProjectUser=
+SupportMas_MPJ=1
+[Target:WebHelp]
+ResultFileName=!SSL!\WebHelp\index.htm
+SSLayoutType=2
+CreateProjectTime=11:34, March 17, 2017
+CreateProjectUser=sanjeev.sorokhaibam
+SupportMas_MPJ=1
+ActionID For Generation=1001
+Remove Folder with prompt=1
+ViewFileName=!SSL!\WebHelp\index.htm
+ResultStatus=0
+BuildTimeHi=30574813
+BuildTimeLow=-481567864
+[Target:Microsoft HTML Help]
+ResultFileName=!SSL!\Microsoft_HTML_Help\Javelin-Project.chm
+SSLayoutType=1
+CreateProjectTime=11:34, March 17, 2017
+CreateProjectUser=sanjeev.sorokhaibam
+SupportMas_MPJ=1
+ActionID For Generation=1001
+Remove Folder with prompt=1
+ViewFileName=!SSL!\Microsoft_HTML_Help\Javelin-Project.chm
+ResultStatus=0
+BuildTimeHi=30574856
+BuildTimeLow=-1070900186
+[Target:FlashHelp]
+ResultFileName=!SSL!\FlashHelp\Javelin-Project.htm
+SSLayoutType=2
+CreateProjectTime=
+CreateProjectUser=
+SupportMas_MPJ=1
+[Target:Printed Documentation]
+ResultFileName=!SSL!\Printed_Documentation\Javelin-Project.doc
+SSLayoutType=7
+[Target:XML Output]
+ResultFileName=!SSL!\XML_Output\Javelin-Project.xml
+SSLayoutType=8129
+[Target:FlashHelp Pro]
+ResultFileName=!SSL!\FlashHelp_Pro\Javelin-Project.htm
+SSLayoutType=2
+CreateProjectTime=
+CreateProjectUser=
+SupportMas_MPJ=1
+[Target:Adobe AIR]
+ResultFileName=!SSL!\Adobe_AIR\Javelin-Project.air
+SSLayoutType=512
+CreateProjectTime=
+CreateProjectUser=
+SupportMas_MPJ=1
+[Target:Multiscreen HTML5]
+ResultFileName=!SSL!\Multiscreen_HTML5\Javelin-Project.htm
+SSLayoutType=2
+CreateProjectTime=
+CreateProjectUser=
+SupportMas_MPJ=1
+[Target:eBook]
+ResultFileName=!SSL!\eBook\Javelin-Project.epub
+SSLayoutType=2
+CreateProjectTime=
+CreateProjectUser=
+SupportMas_MPJ=1
+[Target:Responsive HTML5]
+ResultFileName=!SSL!\Responsive_HTML5\index.htm
+SSLayoutType=2
+CreateProjectTime=11:35, March 17, 2017
+CreateProjectUser=sanjeev.sorokhaibam
+SupportMas_MPJ=1
+MindReader Server=
+ActionID For Generation=1001
+Remove Folder with prompt=1
+ViewFileName=!SSL!\Responsive_HTML5\index.htm
+ResultStatus=0
+BuildTimeHi=30580452
+BuildTimeLow=1949903374
+Enable Result Dialog=1
+[Target:Mobile App]
+ResultFileName=!SSL!\Mobile_App\Javelin-Project.htm
+SSLayoutType=3
+CreateProjectTime=
+CreateProjectUser=
+SupportMas_MPJ=1
+[PreSingleSource]
+Html Help Project=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\Javelin-Project.hhp
+Table Of Content=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\WebAppHelp.hhc
+Index=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\WebAppHelp.hhk
+Topic Index=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\RHTopicKeyword$.hhk
+See Also Index=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\Javelin-Project.hha
+Browse Sequence=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\Javelin-Project.brs
+Glossary=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\WebAppHelp.glo
+Topic Properties=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\Javelin-Project.trs
+Active Folders=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\Javelin-Project.trf
+Baggage Files=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\Javelin-Project.trb
+Skin List=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\Javelin-Project.trk
+Active Layout Names=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\Javelin-Project.trl
+Template Files=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\Javelin-Project.trt
+Project TOC List=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\Javelin-Project.trtocl
+Project Index List=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\Javelin-Project.tridxl
+Project Glossary List=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\Javelin-Project.trglol
+Project CSS List=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\Javelin-Project.trcss
+Project Variable Set List=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\Javelin-Project.trvset
+External URL Settings=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\SearchOptions.xml
+Screen Template File Details=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\Javelin-Project.sctfdl
+CPSwfToHTML5Map=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\__cpSwf2HTML5ZipMap
+Default Topic=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\Payroll\Create_New_Payroll.htm
+Build Tags0=30864;Online | Print
+Build Tags=
+Build Expression=
+Language ID=1033
+Language Name=en_US
+Language=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\!Language!\en_US\RoboHHRE.lng
+Stop List=d:\Javelin-Documentation-OPS\Help-Source-FIle\Javelin-Project\!Language!\en_US\Javelin-Project.stp
+[Layout Settings]
+MRULayoutCount=1
+MRULayout0=WebHelp]02/16/17]0
+[Target:New Microsoft HTML Help Output]
+SSLayoutType=1
+ActionID For Generation=1003
+ResultFileName=!SSL!\New_Microsoft_HTML_Help_Output\Javelin-Project.chm
+Remove Folder with prompt=1
+CreateProjectTime=11:34, March 17, 2017
+CreateProjectUser=sanjeev.sorokhaibam
+SupportMas_MPJ=1
+ViewFileName=!SSL!\New_Microsoft_HTML_Help_Output\Javelin-Project.chm
+ResultStatus=0
+BuildTimeHi=30574636
+BuildTimeLow=-156222384

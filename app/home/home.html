@@ -1,0 +1,146 @@
+<div class="container">
+  <div class="row" style="margin-top:10px;">
+    <div class="search-form-left fl">
+      <h5><b>Search</b><br> <span>your match</span></h5>
+      <div class="gender-search">
+      <form name="homeForm">
+        <label style="font-size:20px;"><input type="radio" value="male"  ng-model="homeForm.sex" checked="checked">Male</label>
+        <div class="clr"></div>
+        <label style="font-size:15px;"><input type="radio" value="female" ng-model="homeForm.sex">Female</label>
+      </div>
+    </div>
+
+    <div class="search-form-outer">
+      <label><b>Age</b></label>
+      <div class="clr"></div>
+      <div class="search-form-inner" style="width:45px; float:left">
+        <select id="minAge" name="minAge" ng-model="homeForm.minAge" style="width:45px;height:35px;" onchange="updateMaxAge();">
+        <option value="1999-01-01" selected="selected">18</option>
+        <option value="1998-01-01">19</option>
+        <option value="1997-01-01">20</option>
+         <option value="1996-01-01">21</option>
+          <option value="1995-01-01">22</option>
+           <option value="1994-01-01">23</option>
+           <option value="1993-01-01">24</option>
+           <option value="1992-01-01">25</option>
+           <option value="1991-01-01">26</option>
+        </select>
+      </div>
+      <div class="clr to">
+        <span>to</span>
+      </div>
+      <div class="search-form-inner age-left">
+        <select id="maxAge" name="maxAge" ng-model="homeForm.maxAge" style="width:45px;height:35px;">
+        <option value="1999-01-01" selected="selected">23</option>
+        <option value="1998-01-01">19</option>
+        <option value="1997-01-01">20</option>
+         <option value="1996-01-01">21</option>
+          <option value="1995-01-01">22</option>
+           <option value="1994-01-01">23</option>
+           <option value="1993-01-01">24</option>
+           <option value="1992-01-01">25</option>
+           <option value="1991-01-01">26</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="search-form-outer">
+      <label><b>Religion</b></label>
+      <div class="search-form-inner1">
+        <select id="religionSelect" name="religion" ng-model="homeForm.religion" onchange="updateCaste();" style="width:90px;height:35px;">
+          <option selected="selected" value="muslim">Muslim</option>
+          <option value="hindu">Hindu</option>
+          <option value="muslim">Muslim</option>
+          <option value="christian">Christian</option>
+          <option value="sikh">Sikh</option>
+          <option value="jain">Jain</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="search-form-outer">
+      <label><b>Cast</b></label>
+      <div class="search-form-inner1">
+        <select id="castSelect" name="cast" ng-model="homeForm.cast" onchange="updateCaste();" style="width:90px;height:35px;">
+          <option selected="selected" value="sunni">Sunni</option>
+          <option value="deobandi">Deobandi</option>
+         
+        </select>
+      </div>
+    </div>
+
+    <div class="search-form-outer">
+      <label><b>Mother Tongue</b></label>
+      <div class="search-form-inner1">
+        <select id="motherTongueSelectBox" name="motherTongue" ng-model="homeForm.motherTongue" style="width:90px;height:35px;">
+          <option value="urdu">Urdu</option>
+          <option value="hindi">Hindi</option>
+          <option value="Marathi">Marathi</option>
+          <option value="Telugu">Telugu</option>
+          <option value="urdu">urdu</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="search-form-outer">
+      <label><b>Country</b></label>
+      <div class="search-form-inner1">
+        <select id="countrySelect" name="countries" ng-model="homeForm.country" class="qsselect" onchange="updateCity();" style="width:90px;height:35px;">
+          <option value="India">India</option>
+          <option selected="selected" value="INDI"> India</option>
+          <option value="UNIT">United States of America</option>
+          <option value="PAKI">Pakistan</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="search-form-outer">
+      <input  class="search-button" type="button" value="Search" ng-click="$ctrl.getFilterData(homeForm)">
+    </div>
+
+
+</form>
+
+  </div><!-- end of row tag first -->
+
+</div><!-- end of container-->
+
+
+
+<div layout="row">
+  <div flex="90">
+    <div class="content-main-container">
+      <spinner spin:on="$ctrl.spinnerLoading">
+        <div class="spinner spinner-small">
+          <div class="spinner__bounce1 spinner__circle"></div>
+          <div class="spinner__bounce2 spinner__circle"></div>
+          <div class="spinner__bounce3 spinner__circle"></div>
+          <h3 class="spinner__text">Loading Users...</h3>
+        </div>
+      </spinner>
+      <table ng-table="$ctrl.tableParams" ng-hide="$ctrl.spinnerLoading.isSpinning()">
+        <thead>
+          <th>User list details</th>
+          <tr>
+            <th> User ID</th>
+            <th>phone</th>
+            <th>Email</th>
+            <th>Gender</th>  
+             <th>Name</th> 
+              <th>Date of birth</th>  
+          </tr>
+        </thead>
+        <tr ng-class-odd="'row-banded'" ng-class-even="'row-plain'" ng-repeat="user in $ctrl.users" style="cursor: pointer;">
+          <td ng-bind="user[0] || '-'"></td>
+          <td ng-bind="user.phone || '-'"></td>
+          <td ng-bind="user.email || '-'"></td>
+          <td ng-bind="user.gender || '-'"></td> 
+        </tr>
+        <tr ng-hide="!!$ctrl.users.length">
+          <td colspan="9">No records found</td>
+        </tr>
+      </table>     
+    </div>
+  </div>
+</div>    
+<!-- ng-hide="$ctrl.profileSpinner.isSpinning()" -->

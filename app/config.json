@@ -1,0 +1,9 @@
+{
+  "marryConfig": {
+    "apiBase": "http://localhost:8090/api/"
+  },
+  "googleApiKeys": {
+    "mapsApi" : "AIzaSyAfM7XJUid1jlqpclef54NC10NRV1E53kI"
+  }
+  
+}

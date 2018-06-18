@@ -1,0 +1,162 @@
+.notification-container {
+  width: 0;
+  height: 0;
+  border-bottom: 60px solid transparent;
+  border-right: 60px solid $blood-orange;
+  position: absolute;
+  right: 0;
+  top: 0;
+  a {
+    text-decoration: none;
+    color: $blood-orange;
+  }
+  .notification {
+    top: 5px;
+    left: 30px;
+    position: absolute;
+    div {
+      height: 23px;
+      width: 23px;
+      background: $white;
+      border-radius: 14px;
+      display: -ms-flexbox !important;
+      -ms-flex-pack: center;
+      -ms-flex-align: center;
+      /* Firefox */
+      display: -moz-box !important;
+      -moz-box-pack: center;
+      -moz-box-align: center;
+      /* Safari, Opera, and Chrome */
+      display: -webkit-box !important;
+      -webkit-box-pack: center;
+      -webkit-box-align: center;
+      /* W3C */
+      display: box !important;
+      box-pack: center;
+      box-align: center;
+      // display: block !important;
+    }
+  }
+}
+
+.notifications-sidebar {
+  width: 22% !important;
+}
+
+.aside.header__notifications .aside-header {
+  border-color: $pinkish-grey !important;
+  background-color: $white !important;
+  color: $bg-darkGrey !important;
+  box-shadow: none;
+  padding: 0.6rem 0 1.1rem 0;
+  margin: 0.2rem 1rem 0 1rem;
+  border-bottom: solid 1px $pinkish-grey;
+  .aside-title {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: .7rem .45rem 0;
+  }
+  button {
+    i {
+      color: $blood-orange;
+    }
+  }
+  .notification-circle-container {
+    background: $blood-orange;
+    color: $white;
+    display: inline-block;
+    padding: 0px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+  }
+  .notification-close {
+    margin-top: 46%;
+  }
+}
+
+.aside.header__notifications {
+  background-color: $white;
+}
+
+.aside {
+  .aside-body {
+    padding: 0 !important;
+    .list-group {
+      margin: 0 1rem;
+      .list-group-item {
+        padding: 12px 7px;
+      }
+      .notifications-alert {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $text;
+        display: inline-flex;
+        align-items: center;
+        border-bottom: solid 1px $pinkish-grey;
+        span {
+          justify-content: center;
+        }
+      }
+      .notifications-reminder {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $text;
+        display: inline-block;
+        align-items: center;
+        border-top: solid 1px $pinkish-grey;
+        border-bottom: solid 1px $pinkish-grey;
+        span {
+          justify-content: center;
+        }
+      }
+      .notifications-alert-reminder-container {
+        border: 1px solid $blood-orange;
+        color: $blood-orange;
+        display: inline-flex;
+        align-items: center;
+        padding: 0px !important;
+        border-radius: 50%;
+        line-height: 2rem;
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.9rem;
+        margin-right: 0.5rem;
+        span {
+          justify-content: center;
+        }
+      }
+      .text-muted,
+      .box__breadcrumbs li.active,
+      .list-item {
+        text-align: left;
+        a {
+          font-size: 0.9rem;
+        }
+        small {
+          color: $text-disabled;
+          font-size: 0.8rem;
+          opacity: 1;
+        }
+        .notification-text {
+          color: $text;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.modal-backdrop {
+  background-color: $text-disabled;
+  .in {
+    opacity: 80%;
+  }
+}

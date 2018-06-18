@@ -1,0 +1,56 @@
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-block">
+          <!-- <img class="mx-auto d-block" src="/assets/img/logo.png" alt=""> -->
+          <h1 class="text-center">Register</h1>
+          <form name="register">
+            <div class="form-group offset-md-2 col-md-6">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" ng-model="user.email" name="uEmail" required>
+
+               <div ng-show="register.$submitted || register.uEmail.$touched">
+      <span ng-show="register.uEmail.$error.required">Tell us your email.</span>
+      <span ng-show="register.uEmail.$error.email">This is not a valid email.</span>
+    </div>
+            </div>
+            <div class="form-group offset-md-2 col-md-6">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" ng-model="user.password"required>
+            </div>
+
+            <div class="form-group offset-md-2 col-md-6">
+              <label for="Mobile">Mobile</label>
+              <input type="text" class="form-control" ng-model="user.phone" required>
+            </div>
+
+            <div class="form-group offset-md-2 col-md-6">
+              <label for="Profile Created For">Profile Created For</label>
+              <select class="form-control" id="profileFor" ng-model="user.profileFor">
+                <option value="son">Son</option>
+                <option value="daughter">Daughter</option>
+                <option value="brother">Brother</option>
+                <option value="sister">Sister</option>
+                <option value="friend">Friend</option>
+              </select>
+            </div>
+
+            <div class="form-group offset-md-2 col-md-6">
+              <label for="Gender">Gender</label>
+              <select class="form-control" id="gender" ng-model=user.gender>
+               <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+
+            <div class="form-group offset-md-2 col-md-6">
+             <input type="checkbox" ng-model=user.isAgree>I have read and agree to the <a href="">Term of Use</a> & <a href="">Privacy policy</a> .             
+            </div>
+            <input type="submit" class="btn btn-primary btn-block offset-md-2 col-md-6" value="Register Now" ng-click="$ctrl.registerUser(user)">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

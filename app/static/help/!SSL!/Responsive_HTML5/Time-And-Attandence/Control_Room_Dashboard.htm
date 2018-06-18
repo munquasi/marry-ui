@@ -1,0 +1,1630 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2017" />
+<title>Control Room Dashboard</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/widgets.min.css">
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.0_1";
+</script>
+ <meta name="topic-breadcrumbs" content="Time & Attendance" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<h1 style="color: #ffffff; background-color: #0000ff;">Control Room Dashboard</h1>
+<p style="margin-top: 0in; line-height: 115%; margin-right: 22px; margin-left: 0px;"><span><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">The control room dashboard displays the list of employee 
+ shifts and current status as well as the total statistics for each status. 
+ These statuses are:</span></span></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; text-indent: -.25in; 
+	 line-height: 115%; margin-left: 36px;"><span style="font-size: 10.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif; 
+													 color: #000000;">●<span 
+	 style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">AT-RISK: 15 minutes before up until check in/out 
+ time</span></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; text-indent: -.25in; 
+	 line-height: 115%; margin-left: 36px;"><span style="font-size: 10.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif; 
+													 color: #000000;">●<span 
+	 style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">In Jeopardy: From check in/out time until 15 mins 
+ after</span></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; text-indent: -.25in; 
+	 line-height: 115%; margin-left: 36px;"><span style="font-size: 10.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif; 
+													 color: #000000;">●<span 
+	 style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Overdue: From 15 mins after onward</span></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; text-indent: -.25in; 
+	 line-height: 115%; margin-left: 36px;"><span style="font-size: 10.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif; 
+													 color: #000000;">●<span 
+	 style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Upcoming: Upcoming shifts and their status</span></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 0px;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">On clicking the <b>Control Room Dashboard</b> link 
+ present on the top of the drop down list, the following <b>Control Room 
+ Dashboard</b> screen will appear:</span></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><img src="TimeAttendance_files/image006.gif" alt="" border="0" style="width:100%; max-width:578px" /></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; text-indent: -.25in; 
+	 line-height: 115%; margin-left: 0px;"><span style="font-size: 10.0pt; 
+												 line-height: 115%; font-family: Arial, sans-serif; 
+												 color: #000000;">&#160;&#160;&#160;&#160;&#160;&#160;The 
+ Control Room Supervisor can view the daily employee’s shift status by 
+ viewing the updates on <b>Upcoming</b>, <b>At Risks</b>, <b>Jeopardy</b> 
+ and <b>Overdue</b> records of employees. The user can also view the record 
+ of employees those have not joined the shift in last 24 hours. </span><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">The descriptions of the fields present on the <b>Control 
+ Room Dashboard</b> screen as follows:</span></p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;"><b><span 
+	 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">&#160;&#160;</span></b>&#160;</p>
+
+<table style=" border:none; margin-left:36px; width:100%; max-width:586px;" cellspacing="0">
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: solid #000000 1.0px; 
+			 border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="143" bgcolor="#D52A0A"><p style="margin-top: 0in; text-align: center; 
+												 line-height: normal;"><b><span 
+		 style="font-family: Arial, sans-serif; color: #ffffff;">Fields</span></b></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: solid #000000 1.0px; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="443" bgcolor="#D52A0A"><p 
+			 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+		 style="font-family: Arial, sans-serif; color: #ffffff;">Descriptions</span></b></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="143"><p style="margin-top: 0in; 
+			 line-height: normal;"><img src="TimeAttendance_files/image008.gif" alt="" border="0" style="width:100%; max-width:125px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="443"><p class="NormalCxSpMiddle" style="margin-top: 0in; 
+							 margin-right: 0in; margin-bottom: .0001pt; 
+							 line-height: 115%; margin-left: 0px;"><span 
+		 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+		 color: #000000;">The user can refine / filter the Employee /shift 
+		 information displayed on the <b>Control Room Dashboard</b> screen, 
+		 by typing the name of the employee/ shift on the <b>Search</b> 
+		 field.</span></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="143"><p style="margin-top: 0in; 
+			 line-height: normal;"><img src="TimeAttendance_files/image010.gif" alt="" border="0" style="width:100%; max-width:125px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="443"><p style="margin-top: 0in; line-height: normal;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">The 
+		 number of pending duress is displayed on the <b>Control Room Dashboard</b> 
+		 screen.</span></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="143"><p style="margin-top: 0in; 
+			 line-height: normal;"><img src="TimeAttendance_files/image012.gif" alt="" border="0" style="width:100%; max-width:125px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="443"><p style="margin-top: 0in; line-height: normal;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">The 
+		 number of active duress is displayed on the <b>Control Room Dashboard</b> 
+		 screen.</span></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="143"><p style="margin-top: 0in; 
+			 line-height: normal;"><img src="TimeAttendance_files/image014.gif" alt="" border="0" style="width:100%; max-width:125px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="443"><p class="NormalCxSpMiddle" style="margin-top: 0in; 
+							 margin-right: 0in; margin-bottom: .0001pt; 
+							 line-height: 115%; margin-left: 0px; text-align: justify;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; font: 7.0pt 'Times New Roman';">&#160;</span><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif;">O</span><span 
+		 style="font-family: Arial, sans-serif; font-size: 10pt;">n</span><span 
+		 style="font-size: 10pt;"> </span><span style="font-family: Arial, sans-serif; 
+												 font-size: 10pt;">clicking</span> 
+		 <span style="font-size: 10.0pt; font-family: Arial, sans-serif;">the</span> 
+		 <img src="TimeAttendance_files/image015.gif" alt="" border="0" style="width:100%; max-width:110px" /><span style="font-size: 10.0pt; 
+												 font-family: Arial, sans-serif;">&#160;tab, 
+		 the list of employees, those have not joined the shift in last 
+		 24 hours will get displayed on the <b>Control Room Dashboard</b> 
+		 screen.</span></p>
+		<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+		<p style="margin-top: 0in; line-height: 115%;"><b><span style="font-size: 10.0pt; 
+		 line-height: 115%; font-family: Arial, sans-serif; color: #000000;">Note:</span></b> 
+		 <span style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+				 color: #000000;">There is no record for <b>Last 24 Hours</b> 
+		 is available to view on the <b>Control Room Dashboard</b> screen.</span></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="143"><p style="margin-top: 0in; 
+			 line-height: normal;"><img src="TimeAttendance_files/image017.gif" alt="" border="0" style="width:100%; max-width:125px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="443"><p class="NormalCxSpMiddle" style="margin-top: 0in; 
+							 margin-right: 0in; margin-bottom: .0001pt; 
+							 line-height: 115%; margin-left: 8px; text-indent: -8px;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif;">&#160;&#160;On</span> 
+		 <span style="font-family: Arial, sans-serif;">clicking</span> 
+		 <img src="TimeAttendance_files/image018.gif" alt="" border="0" style="width:100%; max-width:101px" /><span style="font-size: 10.0pt; 
+												 font-family: Arial, sans-serif;">&#160;tab, 
+		 the list of employees those have not joined the shift in the given 
+		 timings, will get displayed on the <b>Control Room Dashboard</b> 
+		 screen as shown below:</span></p>
+		<p class="NormalCxSpMiddle" style="margin-top: 0in; margin-right: 0in; 
+			 margin-bottom: .0001pt; line-height: 115%; margin-left: 8px; 
+			 text-indent: -8px;">&#160;</p>
+		<p style="margin-top: 0in; text-align: center; line-height: normal;"><img src="TimeAttendance_files/image020.gif" alt="" border="0" style="width:100%; max-width:430px" /></p>
+		<p style="margin-top: 0in; line-height: normal;">&#160;</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="143"><p style="margin-top: 0in; 
+			 line-height: normal; margin-right: -18px;"><img src="TimeAttendance_files/image022.gif" alt="" border="0" style="width:100%; max-width:125px" /> 
+		 &#160;&#160;&#160;&#160;</p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="443"><p class="NormalCxSpMiddle" style="margin-top: 0in; 
+							 margin-right: 0in; margin-bottom: .0001pt; 
+							 text-indent: -22.5pt; line-height: 115%; margin-left: 8px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span 
+		 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+		 color: #000000;">On clicking</span> <img src="TimeAttendance_files/image023.gif" alt="" border="0" style="width:100%; max-width:99px" /><span 
+		 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+		 color: #000000;">tab, the list of employees those have not joined 
+		 the shift even after 15 minutes passed from the shift’s start 
+		 time, will get displayed on the <b>Control Room Dashboard</b> 
+		 screen.</span></p>
+		<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+		<p style="margin-top: 0in; line-height: 115%;"><b><span style="font-size: 10.0pt; 
+		 line-height: 115%; font-family: Arial, sans-serif; color: #000000;">Note:</span></b> 
+		 <span style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+				 color: #000000;">As the status of <b>Jeopardy</b> is ‘0’. 
+		 There is no record to display on the <b>Control Room Dashboard</b> 
+		 screen.</span></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="143"><p style="margin-top: 0in; 
+			 line-height: normal;"><img src="TimeAttendance_files/image025.gif" alt="" border="0" style="width:100%; max-width:125px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="443"><p class="NormalCxSpMiddle" style="margin-top: 0in; 
+							 margin-right: 0in; margin-bottom: .0001pt; 
+							 line-height: 115%; margin-left: 8px; text-indent: -8px;"><span 
+		 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+		 color: #000000;">&#160;On</span> <span style="font-size: 10.0pt; 
+												 line-height: 115%; font-family: Arial, sans-serif; 
+												 color: #000000;">clicking</span> 
+		 <img src="TimeAttendance_files/image026.gif" alt="" border="0" style="width:100%; max-width:104px" /><span style="font-size: 10.0pt; 
+												 line-height: 115%; font-family: Arial, sans-serif; 
+												 color: #000000;">&#160;tab, 
+		 the list of employees those have not joined the shift on time 
+		 will get displayed on the <b>Control Room Dashboard</b> screen. 
+		 The employees will stay <b>At Risk</b> list, for 15 minutes passed 
+		 the joining time.</span></p>
+		<p style="margin-top: 0in; line-height: 115%;">&#160;</p>
+		<p style="margin-top: 0in; line-height: 115%;"><b><span style="font-size: 10.0pt; 
+		 line-height: 115%; font-family: Arial, sans-serif; color: #000000;">Note:</span></b> 
+		 <span style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+				 color: #000000;">As the status of <b>At Risk</b> is ‘0’. 
+		 There is no record to display on the <b>Control Room Dashboard</b> 
+		 screen.</span></p>
+		<p style="margin-top: 0in; line-height: normal;">&#160;</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="143"><p style="margin-top: 0in; 
+			 line-height: normal;"><img src="TimeAttendance_files/image028.gif" alt="" border="0" style="width:100%; max-width:125px" /></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="443"><p class="NormalCxSpMiddle" style="margin-top: 0in; 
+							 margin-right: 0in; margin-bottom: .0001pt; 
+							 line-height: 115%; margin-left: 8px; text-indent: -8px;">&#160;<span 
+		 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+		 color: #000000;">The user can view the information of upcoming 
+		 employees information by clicking on the</span> <img src="TimeAttendance_files/image029.gif" alt="" border="0" style="width:100%; max-width:109px" /><span style="font-size: 10.0pt; 
+															 line-height: 115%; 
+															 font-family: Arial, sans-serif; 
+															 color: #000000;">&#160;tab, 
+		 present on the <b>Control Room Dashboard</b> screen. The list 
+		 of employees displaying <b>In/Out</b> (joined the shift or about 
+		 to join / not joined) will get displayed as shown below:</span><span 
+		 style="text-indent: -22.5pt; line-height: 115%;"><img src="TimeAttendance_files/image031.gif" alt="" border="0" style="width:100%; max-width:431px" /></span></p></td>
+	</tr>
+</table>
+
+<p class="NormalCxSpLast" style="margin-top: 0in; text-indent: -.25in; 
+	 line-height: 115%; margin-left: 36px;">&#160;</p>
+<p class="NormalCxSpLast" style="margin-top: 0in; text-indent: -.25in; 
+	 line-height: 115%; margin-left: 0px;"><span style="font-size: 10.0pt; 
+												 font-family: Arial, sans-serif; 
+												 font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;&#160;&#160;O</span><span 
+	 style="font-size: 10.0pt; font-family: Arial, sans-serif;">nce the 
+ user selects the</span> <span style="font-size: 10.0pt; font-family: Arial, sans-serif;">employee 
+ for which unplanned absence needs to be marked, click on the <b>Employee 
+ Name</b> or <b>Site ID</b> links present on the <b>Daily Employee Shifts</b> 
+ screen, </span><span style="font-size: 10.0pt; font-family: Arial, sans-serif;">The 
+ information on <b>Shift Management</b>, <b>Info</b>, <b>Assignment</b>, 
+ <b>Photo</b>, <b>Profile</b>, <b>Role</b> and <b>Visa Permits</b> tabs 
+ can be viewed on the <b>Employee Information</b> screen as shown below:</span></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; text-indent: -22.5pt; 
+	 line-height: 115%; margin-left: 36px;"><span style="font-size: 10.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif; 
+													 color: #000000; font: 7.0pt 'Times New Roman';">&#160;&#160;</span>&#160;<span 
+	 style="text-align: center; line-height: normal;"><img src="TimeAttendance_files/image037.gif" alt="" border="0" style="width:100%; max-width:555px" /></span></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px; font-size: 10.0pt; 
+	 font-family: Arial, sans-serif;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; font-size: 10.0pt; font-family: Arial, sans-serif; 
+	 margin-left: 0px;">The descriptions of the fields present on the <b>Employee 
+ Information</b> screen are as follows:</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+
+<table style=" border:none; margin-left:12px; width:100%; max-width:561px;" cellspacing="0">
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: solid #000000 1.0px; 
+			 border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="129" bgcolor="#D52A0A"><p style="margin-top: 0in; text-align: center; 
+												 line-height: normal;"><b><span 
+		 style="font-family: Arial, sans-serif; color: #ffffff;">Fields</span></b></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: solid #000000 1.0px; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="432" bgcolor="#D52A0A"><p 
+			 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+		 style="font-family: Arial, sans-serif; color: #ffffff;">Descriptions</span></b></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="129"><p style="margin-top: 0in; 
+			 line-height: normal;"><span style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+										 color: #000000;">Date</span></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="432"><p style="margin-top: 0in; line-height: normal;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">Displays 
+		 the date of the shift in DD/MM/YYYY format.</span></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="129"><p style="margin-top: 0in; 
+			 line-height: normal;"><span style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+										 color: #000000;">Start/End Time</span></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="432"><p style="margin-top: 0in; line-height: normal;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">Displays 
+		 the Start/End time of the employee’s shift</span></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="129"><p style="margin-top: 0in; 
+			 line-height: normal;"><span style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+										 color: #000000;">Actual</span></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="432"><p style="margin-top: 0in; line-height: normal;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">Displays 
+		 actual hours given by the employee to the shift</span></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="129"><p style="margin-top: 0in; 
+			 line-height: normal;"><span style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+										 color: #000000;">Customer</span></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="432"><p style="margin-top: 0in; line-height: normal;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">Displays 
+		 the name of the customer being served by the employee</span></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="129"><p style="margin-top: 0in; 
+			 line-height: normal;"><span style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+										 color: #000000;">Site ID</span></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="432"><p style="margin-top: 0in; line-height: normal;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">Displays 
+		 the ID of the site where the employee is deployed</span></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="129"><p style="margin-top: 0in; 
+			 line-height: normal;"><span style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+										 color: #000000;">Location</span></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="432"><p style="margin-top: 0in; line-height: normal;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">Displays 
+		 the&#160;&#160;location of the site where the employee is deployed</span></p></td>
+	</tr>
+</table>
+
+<p>&#160;</p>
+<p style="font-weight: bold;">Marking Unplanned Absence</p>
+<p style="font-weight: bold;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; text-indent: -22.5pt; 
+	 line-height: 115%; margin-left: 0px;"><span style="font-size: 10.0pt; 
+												 font-family: Arial, sans-serif;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;Once 
+ the user clicks on the</span> <img src="TimeAttendance_files/image039.gif" alt="" border="0" style="width:100%; max-width:28px" /> 
+ <span style="font-size: 10.0pt; font-family: Arial, sans-serif;">check 
+ box to select the employee for marking absence, the following fields will 
+ get displayed on the bottom of the <b>Employee Information</b> screen 
+ as shown below:</span></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><img src="TimeAttendance_files/image041.gif" alt="" border="0" style="width:100%; max-width:578px" /></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">The descriptions of the fields present on the <b>Employee 
+ Information</b> screen &gt; <b>Absence</b> tab as follows:</span></p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;">&#160;</p>
+<div style="text-align: center; margin-left: 36px;">
+	
+	<table style=" border:none; width:100%; max-width:588px;" cellspacing="0">
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: solid #000000 1.0px; 
+				 border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="148" bgcolor="#D52A0A"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #ffffff;">Field</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: solid #000000 1.0px; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="440" 
+				 bgcolor="#D52A0A"><p style="margin-top: 0in; text-align: center; 
+										 line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #ffffff;">Description</span></b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="148"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Absence Category</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="440"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">It is the 
+			 category of absence that can be marked for the employee which 
+			 has been marked check on the <b>Shift Management</b> tab present 
+			 on the <b>Employee Information</b> screen.</span></p>
+			<p style="margin-top: 0in; text-align: center; line-height: normal;"><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">&#160;</span><img src="TimeAttendance_files/image043.gif" alt="" border="0" style="width:100%; max-width:364px" /></p>
+			<p style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Once the 
+			 user select appropriate option from the drop down, the selected 
+			 option will get displayed on the <b>Select Category</b> field</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="148"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Absence Type</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="440"><p 
+				 style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; 
+				 margin-left: 0in; line-height: 115%;"><span style="font-size: 10.0pt; 
+															 line-height: 115%; 
+															 font-family: Arial, sans-serif; 
+															 color: #000000;">Type 
+			 of absence is used to determine the type of leave to be applied 
+			 for the employee depending on the category selected for marking 
+			 absence.</span></p>
+			<p style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; 
+				 margin-left: 0in; line-height: 115%;"><img src="TimeAttendance_files/image045.gif" alt="" border="0" style="width:100%; max-width:428px" /></p>
+			<p style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Once the 
+			 user select appropriate option from the drop down, the selected 
+			 option will get displayed on the <b>Absence Type</b> field.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="148"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Absence Reason</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="440"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Reason for 
+			 absence of the employee.</span> <span style="font-size: 10.0pt; 
+													 font-family: Arial, sans-serif; 
+													 color: #000000;">Click 
+			 on the <b>Absence Reason</b> drop down menu, the list will 
+			 get displayed on the screen as shown below:</span></p>
+			<p style="margin-top: 0in; text-align: center; line-height: normal;"><img src="TimeAttendance_files/image047.gif" alt="" border="0" style="width:100%; max-width:399px" /></p>
+			<p style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Once the 
+			 user select appropriate option from the drop down, the selected 
+			 option will get displayed on the <b>Absence Reason</b> field.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="148"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Comment</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="440"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Comment regarding 
+			 the absence of the employee. Enter the text in the comment 
+			 field.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="148"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><img src="TimeAttendance_files/image049.gif" alt="" border="0" style="width:100%; max-width:97px" /></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="440"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Click on 
+			 the <b>Save</b> button to mark the absence, on clicking the 
+			 <b>Save</b> button the message for ‘Successful marking of 
+			 the absence’ will get displayed on the <b>Control Room Dashboard</b> 
+			 screen.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="148"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><img src="TimeAttendance_files/image051.gif" alt="" border="0" style="width:100%; max-width:100px" /></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="440"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Click on 
+			 the <b>Cancel</b> button to cancel the process.</span></p></td>
+		</tr>
+	</table>
+	
+	</div>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px; font-size: 14pt;">&#160;</p>
+<h1 style="font-size: 14pt;">Manual Check In/Check Out</h1>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 0px;"><span 
+	 style="line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; 
+										 font-family: Arial, sans-serif; 
+										 color: #000000;">For&#160;&#160;marking 
+ the <b>Check In /Check Out</b> time for the employee manually, click on 
+ the employee name listed on the <b>Control Room Dashboard</b> screen. 
+ To reach the <b>Control Room Dashboard</b> screen and view the listed 
+ employees, please refer to the section</span> <a href="#_gwe2wpnt1c69"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #1155CC;">Ops-4-4.1 Control Room Dashboard.</span></a></span></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; text-indent: -22.5pt; 
+	 line-height: 115%; margin-left: 36px;"><span style="font-size: 10.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif; 
+													 color: #000000;">1.<span 
+	 style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Once the user clicks on the</span> <img src="TimeAttendance_files/image039.gif" alt="" border="0" style="width:100%; max-width:28px" /><span style="font-size: 10.0pt; 
+														 line-height: 115%; 
+														 font-family: Arial, sans-serif; 
+														 color: #000000;">check 
+ box to select the employee for marking <b>Check In /Check Out</b> manually, 
+ the following fields will get displayed on the bottom of the <b>Employee 
+ Information</b> screen as shown below:</span></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><img src="TimeAttendance_files/image055.gif" alt="" border="0" style="width:100%; max-width:578px" /></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">The descriptions of the fields present on the <b>Employee 
+ Information</b> screen &gt; <b>Check In</b> tab as follows:</span></p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;">&#160;</p>
+<div style="text-align: center; margin-left: 36px;">
+	
+	<table style=" border:none; width:100%; max-width:580px;" cellspacing="0">
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: solid #000000 1.0px; 
+				 border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="124" bgcolor="#D52A0A"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #ffffff;">Field</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: solid #000000 1.0px; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="456" 
+				 bgcolor="#D52A0A"><p style="margin-top: 0in; text-align: center; 
+										 line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #ffffff;">Description</span></b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="124"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Date</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="456"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Pick and 
+			 displays the current date on which user is logged in the system 
+			 to mark manual check In.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="124"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Time</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="456"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Pick and 
+			 displays the current time on which user is logged in the system 
+			 to mark&#160;&#160;manual check In.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="124"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Reason</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="456"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Reason in 
+			 regards to manual check in/check out will get selected by 
+			 the user.</span></p>
+			<p style="margin-top: 0in; text-align: center; line-height: normal;"><img src="TimeAttendance_files/image057.gif" alt="" border="0" style="width:100%; max-width:305px" /><span style="font-size: 10.0pt; 
+											 font-family: Arial, sans-serif; 
+											 color: #000000;">&#160;&#160;&#160;&#160;&#160;</span></p>
+			<p style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Once the 
+			 user select appropriate option from the drop down, the selected 
+			 option will get displayed on the <b>Reason</b> field.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="124"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Comment</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="456"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Comment text 
+			 box is available to provide the additional information in 
+			 regards to manual check in/ out. The comment will be entered 
+			 in the text box present below the comment field.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="124"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><img src="TimeAttendance_files/image058.gif" alt="" border="0" style="width:100%; max-width:75px" /></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="456"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Click on 
+			 the <b>Save</b> button to mark the check In, the message for 
+			 successfully check In will get displayed on the <b>Control 
+			 Room Dashboard</b> screen.</span></p></td>
+		</tr>
+		<tr style="height: 31.0pt;">
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" height="41" 
+				 width="124"><p style="margin-top: 0in; text-align: center; 
+								 line-height: normal;"><img src="TimeAttendance_files/image059.gif" alt="" border="0" style="width:100%; max-width:78px" /></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" height="41" 
+				 width="456"><p style="margin-top: 0in; line-height: normal;"><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Click on the <b>Cancel</b> button to cancel 
+			 the process.</span></p></td>
+		</tr>
+	</table>
+	
+	</div>
+<p style="margin-top: 0in; text-indent: -4.5pt; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; text-indent: -4.5pt; line-height: 115%; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #434343;">&#160;On clicking</span> <img src="TimeAttendance_files/image060.gif" alt="" border="0" style="width:100%; max-width:65px" /><b><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">&#160;</span></b><span style="font-size: 10.0pt; 
+											 line-height: 115%; font-family: Arial, sans-serif; 
+											 color: #000000;">button, the 
+ <b>Check In /Check Out</b> details will get saved successfully for the 
+ employee and will get reflected on the screen as shown below:</span></p>
+<p style="margin-top: 0in; text-indent: -4.5pt; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><img src="TimeAttendance_files/image062.gif" alt="" border="0" style="width:100%; max-width:577px" /></p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; text-indent: -22.5pt; 
+	 line-height: 115%; margin-left: 36px;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; text-indent: -22.5pt; 
+	 line-height: 115%; margin-left: 36px; font-family: Arial, sans-serif; 
+	 font-weight: bold; font-size: 14pt;">Find Employee</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; text-indent: -22.5pt; 
+	 line-height: 115%; margin-left: 36px; font-size: 10.0pt; font-family: Arial, sans-serif;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; text-indent: -22.5pt; 
+	 line-height: 115%; margin-left: 36px; font-size: 10.0pt; font-family: Arial, sans-serif;">Once 
+ the user has marked the absence for the employee, the <b>Employee Name</b> 
+ field will be marked as <b>Find Employee</b> for that particular shift 
+ as shown below:</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><img src="TimeAttendance_files/image053.gif" alt="" border="0" style="width:100%; max-width:578px" /></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px; font-size: 10.0pt; 
+	 font-family: Arial, sans-serif;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; font-weight: bold; margin-left: 0px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; font-weight: bold; margin-left: 0px;">Assigning 
+ Unmanned Shift</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; font-size: 10.0pt; font-family: Arial, sans-serif; 
+	 margin-left: 0px;">To schedule new/another employee for that particular 
+ shift, the Control Room Supervisor has to search the appropriate employee 
+ for that particular site. On clicking the <b>Find Employee</b> option 
+ displayed on the <b>Employee Name</b> field. The following <b>Manual Scheduling</b> 
+ screen will appear:</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;"><img src="TimeAttendance_files/image066.gif" alt="" border="0" style="width:100%; max-width:578px" /></span></p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">On the <b>Manual Scheduling</b> screen, the two tabs 
+ are present to find the employee i.e. Search / Recommendation as mentioned 
+ below:</span></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><b><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Search Tab :</span></b></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">The user can search/find the employee to schedule 
+ for the shift by typing the name of the employee on the <b>Search</b> 
+ text field as shown below:</span></p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;"><img src="TimeAttendance_files/image068.gif" alt="" border="0" style="width:100%; max-width:578px" /></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px; font-family: Arial, sans-serif; 
+	 font-size: 14pt;"><b>Accept Employee for Unmanned Shift:</b></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Select the appropriate employee for the shift by 
+ clicking on the</span> <img src="TimeAttendance_files/image070.gif" alt="" border="0" style="width:100%; max-width:26px" /><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">&#160;<b>Accept</b> option present in front of the 
+ name of the employee. On clicking the <b>Accept</b> option the following 
+ <b>Accepted</b> screen pop-up will appear:</span></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;"><img src="TimeAttendance_files/image072.gif" alt="" border="0" style="width:100%; max-width:436px" /></p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">The descriptions of the fields present on the <b>Accepted 
+ pop-up</b> screen as follows:</span></p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;">&#160;</p>
+<div style="text-align: center; margin-left: 36px;">
+	
+	<table style=" border:none; width:100%; max-width:582px;" cellspacing="0">
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: solid #000000 1.0px; 
+				 border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="151" bgcolor="#D52A0A"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #ffffff;">Field</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: solid #000000 1.0px; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="431" 
+				 bgcolor="#D52A0A"><p style="margin-top: 0in; text-align: center; 
+										 line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #ffffff;">Description</span></b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="151"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Start Time</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="431"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Start time 
+			 that is allocated to the Employee shift.</span></p>
+			<p style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Displays 
+			 the current date by default on the <b>Start Time</b> field.</span></p>
+			<p style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">To change/select 
+			 another start time for the shift, click on the</span> <img src="TimeAttendance_files/image074.gif" alt="" border="0" style="width:100%; max-width:37px" /><span style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+											 color: #000000;">icon. Once 
+			 the user selects the appropriate time, it will get displayed 
+			 on the <b>Start Time</b> field.</span></p>
+			<p style="margin-top: 0in; line-height: normal;">&#160;</p>
+			<p style="margin-top: 0in; line-height: normal;">&#160;</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="151"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">End Time</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="431"><p 
+				 style="margin-top: 0in; text-align: justify; line-height: normal;"><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Displays the Completion time allocated to 
+			 the Employee’s shift&#160;&#160;by default on the <b>End Time</b> 
+			 field.</span></p>
+			<p style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">To change/select 
+			 another end time for the shift, click on the</span> <img src="TimeAttendance_files/image074.gif" alt="" border="0" style="width:100%; max-width:37px" /><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">icon.</span></p>
+			<p style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Once the 
+			 user selects the appropriate time, it will get displayed on 
+			 the <b>End Time</b> field.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="151"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Comment</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="431"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Comment regarding 
+			 the shift allocation and other related details. Enter the 
+			 text in the text field present below the Comment field.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="151"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Call out Allowance</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="431"><p 
+				 style="margin-top: 0in; text-align: justify; line-height: normal;"><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Check the box if the allowance is applicable.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="151"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Allowance Type</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="431"><p 
+				 style="margin-top: 0in; text-align: justify; line-height: normal;"><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Select the type of allowance applicable from 
+			 the drop down menu.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="151"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Amount</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="431"><p 
+				 style="margin-top: 0in; text-align: justify; line-height: normal;"><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Enter the allowance amount entitled for the 
+			 employee. It will reflect in Euro.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="151"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><img src="TimeAttendance_files/image076.gif" alt="" border="0" style="width:100%; max-width:60px" /></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="431"><p 
+				 style="margin-top: 0in; text-align: justify; line-height: normal;"><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Click on the <b>Save</b> button to save the 
+			 information and get back to the previous screen.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="151"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><img src="TimeAttendance_files/image078.gif" alt="" border="0" style="width:100%; max-width:60px" /></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="431"><p 
+				 style="margin-top: 0in; text-align: justify; line-height: normal;"><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Click on the <b>Cancel</b> button to cancel 
+			 the process.</span></p></td>
+		</tr>
+	</table>
+	
+	</div>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">On clicking the <b>Save</b> button, the following 
+ message for successfully accepting empty shift will pop-up:</span></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><img src="TimeAttendance_files/image080.gif" alt="" border="0" style="width:100%; max-width:577px" /></p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Once the shift is accepted successfully, the name 
+ of employee will get displayed in front of that particular site as shown 
+ below:</span></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><img src="TimeAttendance_files/image082.gif" alt="" border="0" style="width:100%; max-width:577px" /></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px; font-family: Arial, sans-serif; 
+	 font-size: 12pt;"><b>Reject Employee from Search Result List:</b></p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">The 
+ user can also reject the employee from the search list by clicking on 
+ the</span> <img src="TimeAttendance_files/image084.gif" alt="" border="0" style="width:100%; max-width:22px" /><span style="font-size: 10.0pt; 
+												 font-family: Arial, sans-serif; 
+												 color: #000000;">&#160;icon 
+ present on the Search result list as shown below:</span></p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;"><img src="TimeAttendance_files/image086.gif" alt="" border="0" style="width:100%; max-width:578px" /></p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">On 
+ clicking the</span> <img src="TimeAttendance_files/image087.gif" alt="" border="0" style="width:100%; max-width:22px" /><span 
+	 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">&#160;icon, 
+ the following <b>Rejected</b> screen pop-up will appear as shown below:</span></p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;"><img src="TimeAttendance_files/image089.gif" alt="" border="0" style="width:100%; max-width:578px" /></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">&#160;&#160;The descriptions of the fields present 
+ on the <b>Accepted pop-up</b> screen as follows:</span></p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;">&#160;</p>
+<div style="text-align: center; margin-left: 36px;">
+	
+	<table style=" border:none; width:100%; max-width:582px;" cellspacing="0">
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: solid #000000 1.0px; 
+				 border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="151" bgcolor="#D52A0A"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #ffffff;">Field</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: solid #000000 1.0px; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="431" 
+				 bgcolor="#D52A0A"><p style="margin-top: 0in; text-align: center; 
+										 line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #ffffff;">Description</span></b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="151"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Reason</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="431"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Reason in 
+			 regards to reject the employee will get selected by the user.</span></p>
+			<p style="margin-top: 0in; text-align: center; line-height: normal;"><img src="TimeAttendance_files/image091.gif" alt="" border="0" style="width:100%; max-width:282px" /><span style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+											 color: #000000;">&#160;&#160;&#160;</span></p>
+			<p style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Once the 
+			 user select appropriate option from the drop down, the selected 
+			 option will get displayed on the <b>Reason</b> field.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="151"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Comment</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="431"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Enter the 
+			 comment in regards to reject&#160;&#160;the employee. Enter 
+			 the text in the text field present below the Comment field.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="151"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><img src="TimeAttendance_files/image092.gif" alt="" border="0" style="width:100%; max-width:75px" /></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="431"><p 
+				 style="margin-top: 0in; text-align: justify; line-height: normal;"><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Click on the <b>Save</b> button to save the 
+			 reason given for rejection of employee and take the user back 
+			 to search result screen.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="151"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><img src="TimeAttendance_files/image093.gif" alt="" border="0" style="width:100%; max-width:70px" /></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="431"><p 
+				 style="margin-top: 0in; text-align: justify; line-height: normal;"><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Click on the <b>Cancel</b> button to cancel 
+			 the rejection process.</span></p></td>
+		</tr>
+	</table>
+	
+	</div>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><b><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #434343;">View Contact Logs for employee:</span></b></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #434343;">The user can also view the contact logs for the employee, 
+ by clicking on</span> <img src="TimeAttendance_files/image095.gif" alt="" border="0" style="width:100%; max-width:32px" /><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #434343;">&#160;icon as shown below:</span></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><img src="TimeAttendance_files/image097.gif" alt="" border="0" style="width:100%; max-width:578px" /></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #434343;">On 
+ clicking the</span> <img src="TimeAttendance_files/image095.gif" alt="" border="0" style="width:100%; max-width:32px" /><span 
+	 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #434343;">&#160;icon, 
+ the following <b>Recent Call Logs</b> pop-up screen will appear as shown 
+ below:</span></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><img src="TimeAttendance_files/image099.gif" alt="" border="0" style="width:100%; max-width:578px" /></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #434343;">Click 
+ on the</span> <img src="TimeAttendance_files/image101.gif" alt="" border="0" style="width:100%; max-width:62px" /><span style="font-size: 10.0pt; 
+													 font-family: Arial, sans-serif; 
+													 color: #434343;">&#160;button, 
+ to close the <b>Recent Call Logs</b> pop-up screen.</span></p>
+<p style="margin-top: 16.0pt; margin-bottom: 4.0pt; line-height: normal; 
+	 margin-left: 48px; font-family: Arial, sans-serif; color: #434343; 
+	 font-size: 10pt; font-weight: bold;">Recommendation:</p>
+<p style="margin-bottom: .0001pt; text-align: justify; line-height: normal; 
+	 margin-left: 48px;">&#160;</p>
+<p style="margin-bottom: .0001pt; text-indent: -.25in; line-height: normal; 
+	 margin-left: 88px;"><span style="font-size: 10.0pt; font-family: Arial, sans-serif;">On 
+ clicking <b>Recommendation</b> tab present on the <b>Shift scheduling</b> 
+ screen.</span></p>
+<p style="margin-bottom: .0001pt; text-indent: -.25in; line-height: normal; 
+	 margin-left: 88px;"><span style="font-size: 10.0pt; font-family: Arial, sans-serif;">The 
+ list of employees best suited to the empty shift will get displayed as 
+ shown below:</span></p>
+<p style="margin-bottom: .0001pt; text-align: justify; line-height: normal; 
+	 margin-left: 48px;">&#160;</p>
+<p style="margin-bottom: .0001pt; text-align: justify; line-height: normal; 
+	 margin-left: 48px; font-size: 10.0pt; font-family: Arial, sans-serif;">&#160;&#160;&#160;&#160;<img src="recomendation.png" alt="" style=" border-left-style:Solid; border-left-width:1px; border-right-style:Solid; border-right-width:1px; border-top-style:Solid; border-top-width:1px; border-bottom-style:Solid; border-bottom-width:1px; width:100%; max-width:657px;" border="1" /></p>
+<p style="margin-bottom: .0001pt; text-align: justify; line-height: normal; 
+	 margin-left: 48px;">&#160;</p>
+<p style="margin: 0in; margin-bottom: .0001pt; line-height: normal; margin-left: 40px;"><span 
+	 style="font-size: 10.0pt; font-family: Arial, sans-serif;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Select 
+ the recommended employee, by clicking on the <b>Accept</b> <img src="recommendation_doc_files/image004.png" alt="https://lh5.googleusercontent.com/K2qSAyy2omp6b6WDjfF2FpgHkWWM1DykN0W37GSO_EQN5t3RwtVQRnJH5DBscQ5a-MuNU5K6HERHIv5-PLdKdwadX36Jo1iWHLnjq93Cfsmkr4RVapiGTYDMAyaQBfAIsJAZL7rX" border="0" style="width:100%; max-width:29px" />icon present on the <b>Recommendation</b> 
+ tab. </span></p>
+<p style="margin: 0in; margin-bottom: .0001pt; line-height: normal; margin-left: 40px;"><span 
+	 style="font-size: 10.0pt; font-family: Arial, sans-serif;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;On 
+ clicking <b>Accept</b> <img src="recommendation_doc_files/image004.png" alt="https://lh5.googleusercontent.com/K2qSAyy2omp6b6WDjfF2FpgHkWWM1DykN0W37GSO_EQN5t3RwtVQRnJH5DBscQ5a-MuNU5K6HERHIv5-PLdKdwadX36Jo1iWHLnjq93Cfsmkr4RVapiGTYDMAyaQBfAIsJAZL7rX" border="0" style="width:100%; max-width:29px" />icon, 
+ the following <b>Accepted</b> screen pop-up will appear:</span></p>
+<p style="margin-bottom: .0001pt; text-align: justify; line-height: normal; 
+	 margin-left: 48px; font-size: 10.0pt; font-family: Arial, sans-serif;">&#160;</p>
+<p style="margin-bottom: .0001pt; text-align: justify; line-height: normal; 
+	 margin-left: 48px; font-size: 10.0pt; font-family: Arial, sans-serif;"><img src="acceptedPopup.png" alt="" style=" border-left-style:Solid; border-left-width:1px; border-right-style:Solid; border-right-width:1px; border-top-style:Solid; border-top-width:1px; border-bottom-style:Solid; border-bottom-width:1px; width:100%; max-width:486px;" border="1" /></p>
+<p style="margin-bottom: .0001pt; text-align: justify; line-height: normal; 
+	 margin-left: 48px;">&#160;</p>
+<p style="margin-bottom: .0001pt; text-align: justify; line-height: normal; 
+	 margin-left: 48px;">&#160;</p>
+<p style="margin-bottom: .0001pt; text-align: justify; line-height: normal; 
+	 margin-left: 48px;"><span style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+								 color: #000000;"><span style="font-size: 12.0pt; 
+														 font-family: 'Times New Roman', serif;">&#160;</span>The 
+ descriptions of the fields present on the <b>Accepted pop-up</b> screen 
+ as follows:</span></p>
+<p style="margin-bottom: .0001pt; text-align: justify; line-height: normal; 
+	 margin-left: 48px;">&#160;</p>
+<table style=" margin-left:48px; width:100%; max-width:54.886%;" cellspacing="0">
+	<col style="width: 15.939%;" />
+	<col width="497" />
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: solid #000000 1.0px; 
+			 border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 bgcolor="#D52A0A"><p style="margin-bottom: .0001pt; text-align: center;"><b><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #ffffff;">Field</span></b></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: solid #000000 1.0px; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" bgcolor="#D52A0A"><p 
+			 style="margin-bottom: .0001pt; text-align: center;"><b><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #ffffff;">Description</span></b></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;"><p style="margin-bottom: .0001pt; 
+															 text-align: justify; 
+															 font-size: 10.0pt; 
+															 font-family: Arial, sans-serif; 
+															 font-weight: bold;">Start 
+		 Time</p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;"><p 
+			 style="margin-bottom: .0001pt; text-align: justify; line-height: normal;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">Start 
+		 time allocated to the Employee shift. Displays the time set as 
+		 system’s current time.</span></p>
+		<p style="margin-bottom: .0001pt; text-align: justify; line-height: normal;">&#160;</p>
+		<p style="margin-bottom: .0001pt; text-align: justify; line-height: normal;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">Displays 
+		 the current date by default on the Start Time field.</span> </p>
+		<p style="margin-bottom: .0001pt; text-align: justify;"><span style="font-size: 10.0pt; 
+		 font-family: Arial, sans-serif; color: #000000;">To change/select 
+		 another start time for the shift, click on the <img src="recommendation_doc_files/image007.png" alt="https://lh5.googleusercontent.com/lm2n5TamNigOjja0oE0ek7H-LaJPHUkxVHaLVp2GIE85ENn-EiUm8X8EFpy0Rf3IHzbQkne2NzRGh589uWrTfH3K7dbUwYqamZqUvvNIgqqo1vCxDAZ8lK1aGsOdsDKmZHOlqKEM" border="0" style="width:100%; max-width:35px" />icon.</span></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;"><p style="margin-bottom: .0001pt; 
+															 text-align: justify; 
+															 font-size: 10.0pt; 
+															 font-family: Arial, sans-serif; 
+															 font-weight: bold;">End 
+		 Time</p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;"><p 
+			 style="margin-bottom: .0001pt; text-align: justify;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">Completion 
+		 time allocated to the Employee’s shift. Displays the End time 
+		 as per the time set for shift cycle, depending on the start time. 
+		 The end time will be calculated on the basis of predefined hours 
+		 for that particular shift.</span></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;"><p style="margin-bottom: .0001pt; 
+															 text-align: justify; 
+															 font-size: 10.0pt; 
+															 font-family: Arial, sans-serif; 
+															 font-weight: bold;">Comment</p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;"><p 
+			 style="margin-bottom: .0001pt; text-align: justify;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">Comment 
+		 regarding the shift allocation and other related details.</span></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;"><p style="margin-bottom: .0001pt; 
+															 text-align: justify; 
+															 font-size: 10.0pt; 
+															 font-family: Arial, sans-serif; 
+															 font-weight: bold;">Call-out 
+		 Allowance</p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;"><p 
+			 style="margin-bottom: .0001pt; text-align: justify;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">Check 
+		 the box if the allowance is applicable.</span> </p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;"><p style="margin-bottom: .0001pt; 
+															 text-align: justify; 
+															 font-size: 10.0pt; 
+															 font-family: Arial, sans-serif; 
+															 font-weight: bold;">Allowance 
+		 Type</p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;"><p 
+			 style="margin-bottom: .0001pt; text-align: justify;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">Select 
+		 the type of allowance applicable from the drop down menu.</span></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;"><p style="margin-bottom: .0001pt; 
+															 text-align: justify; 
+															 font-size: 10.0pt; 
+															 font-family: Arial, sans-serif; 
+															 font-weight: bold;">Amount</p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;"><p 
+			 style="margin-bottom: .0001pt; text-align: justify;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">The 
+		 allowance amount entitled for the employee. It will reflect in 
+		 Euro.</span></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;"><p style="margin-bottom: .0001pt; 
+															 text-align: justify; 
+															 font-size: 10.0pt; 
+															 font-family: Arial, sans-serif; 
+															 font-weight: bold;">Calculation</p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;"><p 
+			 style="margin-bottom: .0001pt; text-align: justify;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">Mention 
+		 the amount applicable for this shift.</span></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;"><p style="margin-bottom: .0001pt; 
+															 text-align: justify;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;"><img src="recommendation_doc_files/image008.png" alt="https://lh6.googleusercontent.com/PWEsrMF-dIimhpj92DdYQvsuxhTtNjp1SHMEoyLn6I-AH1NoVas2JewPaPMt1xzyKIOFYr73Oa9z4WqxEHFtEqkIWQN463vX5GWlQ8hDcOp_8ZV7MIZThXQdsPniAI8zI9-MunkD" border="0" style="width:100%; max-width:58px" /></span></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;"><p 
+			 style="margin-bottom: .0001pt; text-align: justify;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">Click 
+		 on the <b>Save</b> button to save the information.</span></p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+			 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+			 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;"><p style="margin-bottom: .0001pt; 
+															 text-align: justify;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;"><img src="recommendation_doc_files/image010.png" alt="https://lh6.googleusercontent.com/a5kKfz7m6QbdZ1stebhqMTckyAENq0l9wlqO7EC5pmYsfldKnUOEqc43EeEtWx6O70ibsJRvo9AIhB2lCLHugZai_XoVEi_TR6AM6YNxLxTrCUDgJO6QnOf2eZ2MkDXyXY9W1ESV" border="0" style="width:100%; max-width:60px" /></span></p></td>
+		<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+			 border-top: none; border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;"><p 
+			 style="margin-bottom: .0001pt; text-align: justify;"><span 
+		 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">Click 
+		 on the <b>Cancel</b> button to cancel the process.</span></p></td>
+	</tr>
+</table>
+<p style="margin-bottom: .0001pt; line-height: normal; margin-left: 48px;">&#160;</p>
+<p style="margin: 0in; margin-bottom: .0001pt; line-height: normal; margin-left: 40px;"><span 
+	 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000; 
+	 font: 7.0pt 'Times New Roman';">&#160;</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span 
+	 style="font-size: 10.0pt; font-family: Arial, sans-serif; color: #000000;">On 
+ clicking the <b>Save</b> button, the following message ‘Successfully Accepted’ 
+ employee from the <b>Recommendation</b> list &#160;for the empty shift 
+ will appear:</span></p>
+<p style="margin-bottom: .0001pt; line-height: normal; margin-left: 48px;">&#160;</p>
+<p style="margin-bottom: .0001pt; line-height: normal; margin-left: 48px; 
+	 font-size: 10.0pt; font-family: Arial, sans-serif;"><img src="acceptedScreen.png" alt="" style=" border-left-width:1px; border-left-style:Solid; border-top-width:1px; border-top-style:Solid; border-right-width:1px; border-right-style:Solid; border-bottom-width:1px; border-bottom-style:Solid; width:100%; max-width:831px;" border="1" /></p>
+<p style="margin-bottom: .0001pt; line-height: normal; margin-left: 48px; 
+	 font-size: 10.0pt; font-family: Arial, sans-serif;">&#160;</p>
+<h1 style="font-size: 14pt;">Accept Empty Shift</h1>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><span 
+	 style="line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; 
+										 font-family: Arial, sans-serif; 
+										 color: #000000;">The user can 
+ mark/ accept the empty shift by clicking on the</span> <img src="TimeAttendance_files/image115.gif" alt="" border="0" style="width:100%; max-width:119px" /><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">&#160;button. The following message ‘Empty shift 
+ has been successfully accepted ‘ will get displayed as shown below:</span></span></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><img src="TimeAttendance_files/image117.gif" alt="" border="0" style="width:100%; max-width:595px" /></p>
+<h1 style="font-size: 14pt;">Manual Check In/Check Out</h1>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><span 
+	 style="line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; 
+										 font-family: Arial, sans-serif; 
+										 color: #000000;">For&#160;&#160;marking 
+ the <b>Check In /Check Out</b> time for the employee manually, click on 
+ the employee name listed on the <b>Control Room Dashboard</b> screen. 
+ To reach the <b>Control Room Dashboard</b> screen and view the listed 
+ employees, please refer to the section</span> <a href="#_gwe2wpnt1c69"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #1155CC;">Ops-4-4.1 Control Room Dashboard.</span></a></span></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p class="NormalCxSpMiddle" style="margin-top: 0in; text-indent: -22.5pt; 
+	 line-height: 115%; margin-left: 36px;"><span style="font-size: 10.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif; 
+													 color: #000000;">1.<span 
+	 style="font: 7.0pt 'Times New Roman';">&#160;&#160;&#160;&#160;&#160;&#160;</span></span>&#160;<span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">Once the user clicks on the</span> <img src="TimeAttendance_files/image039.gif" alt="" border="0" style="width:100%; max-width:28px" /><span style="font-size: 10.0pt; 
+														 line-height: 115%; 
+														 font-family: Arial, sans-serif; 
+														 color: #000000;">check 
+ box to select the employee for marking <b>Check In /Check Out</b> manually, 
+ the following fields will get displayed on the bottom of the <b>Employee 
+ Information</b> screen as shown below:</span></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><img src="TimeAttendance_files/image055.gif" alt="" border="0" style="width:100%; max-width:578px" /></p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">The descriptions of the fields present on the <b>Employee 
+ Information</b> screen &gt; <b>Check In</b> tab as follows:</span></p>
+<p style="margin-top: 0in; line-height: normal; margin-left: 36px;">&#160;</p>
+<div style="text-align: center; margin-left: 36px;">
+	
+	<table style=" border:none; width:100%; max-width:580px;" cellspacing="0">
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: solid #000000 1.0px; 
+				 border-bottom: solid #000000 1.0px; padding: 5.0pt 5.0pt 5.0pt 5.0pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="124" bgcolor="#D52A0A"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #ffffff;">Field</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: solid #000000 1.0px; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="456" 
+				 bgcolor="#D52A0A"><p style="margin-top: 0in; text-align: center; 
+										 line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #ffffff;">Description</span></b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="124"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Date</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="456"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Pick and 
+			 displays the current date on which user is logged in the system 
+			 to mark manual check In.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="124"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Time</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="456"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Pick and 
+			 displays the current time on which user is logged in the system 
+			 to mark&#160;&#160;manual check In.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="124"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Reason</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="456"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Reason in 
+			 regards to manual check in/check out will get selected by 
+			 the user.</span></p>
+			<p style="margin-top: 0in; text-align: center; line-height: normal;"><img src="TimeAttendance_files/image057.gif" alt="" border="0" style="width:100%; max-width:305px" /><span style="font-size: 10.0pt; 
+											 font-family: Arial, sans-serif; 
+											 color: #000000;">&#160;&#160;&#160;&#160;&#160;</span></p>
+			<p style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Once the 
+			 user select appropriate option from the drop down, the selected 
+			 option will get displayed on the <b>Reason</b> field.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="124"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><b><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Comment</span></b></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="456"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Comment text 
+			 box is available to provide the additional information in 
+			 regards to manual check in/ out. The comment will be entered 
+			 in the text box present below the comment field.</span></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="124"><p 
+				 style="margin-top: 0in; text-align: center; line-height: normal;"><img src="TimeAttendance_files/image058.gif" alt="" border="0" style="width:100%; max-width:75px" /></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="456"><p 
+				 style="margin-top: 0in; line-height: normal;"><span style="font-size: 10.0pt; 
+			 font-family: Arial, sans-serif; color: #000000;">Click on 
+			 the <b>Save</b> button to mark the check In, the message for 
+			 successfully check In will get displayed on the <b>Control 
+			 Room Dashboard</b> screen.</span></p></td>
+		</tr>
+		<tr style="height: 31.0pt;">
+			<td style="vertical-align: top; border-left: solid #000000 1.0px; 
+				 border-right: solid #000000 1.0px; border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" height="41" 
+				 width="124"><p style="margin-top: 0in; text-align: center; 
+								 line-height: normal;"><img src="TimeAttendance_files/image059.gif" alt="" border="0" style="width:100%; max-width:78px" /></p></td>
+			<td style="vertical-align: top; border-left: none; border-right: solid #000000 1.0px; 
+				 border-top: none; border-bottom: solid #000000 1.0px; 
+				 padding: 5.0pt 5.0pt 5.0pt 5.0pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" height="41" 
+				 width="456"><p style="margin-top: 0in; line-height: normal;"><span 
+			 style="font-size: 10.0pt; font-family: Arial, sans-serif; 
+			 color: #000000;">Click on the <b>Cancel</b> button to cancel 
+			 the process.</span></p></td>
+		</tr>
+	</table>
+	
+	</div>
+<p style="margin-top: 0in; text-indent: -4.5pt; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; text-indent: -4.5pt; line-height: 115%; margin-left: 36px;"><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #434343;">&#160;On clicking</span> <img src="TimeAttendance_files/image060.gif" alt="" border="0" style="width:100%; max-width:65px" /><b><span 
+	 style="font-size: 10.0pt; line-height: 115%; font-family: Arial, sans-serif; 
+	 color: #000000;">&#160;</span></b><span style="font-size: 10.0pt; 
+											 line-height: 115%; font-family: Arial, sans-serif; 
+											 color: #000000;">button, the 
+ <b>Check In /Check Out</b> details will get saved successfully for the 
+ employee and will get reflected on the screen as shown below:</span></p>
+<p style="margin-top: 0in; text-indent: -4.5pt; line-height: 115%; margin-left: 36px;">&#160;</p>
+<p style="margin-top: 0in; line-height: 115%; margin-left: 36px;"><img src="TimeAttendance_files/image062.gif" alt="" border="0" style="width:100%; max-width:577px" /></p>
+</body>
+</html>

@@ -1,0 +1,141 @@
+
+/* Table starts here */
+/*
+ table {
+     tr:nth-child(odd) {
+         background-color: #f1f1f1;
+     }
+     tr:nth-child(even) {
+         background-color: $white;
+     }
+ }
+*/
+.sorting-arrow {
+    display:inline-block;
+    width:17px;
+    height:10px;
+    left: 5px;
+    position: relative;
+    &.up-arrow {
+        background: url(/static/img/arrow_sort-up.png) no-repeat;
+    }
+    &.down-arrow {
+        background: url(/static/img/arrow_sort-down.png) no-repeat;
+    }
+}
+
+.action-td a {
+    color: $blood-orange;
+    margin-right: 10px;
+}
+/* Table ends here */
+
+/* Pagination starts */
+
+.ng-table-pager, .dataTables_paginate {
+    border-radius: 4px;
+    display: block;
+    margin: 20px 0 !important;
+    padding-left: 0;
+    text-align: center !important;
+}
+.pagination {
+    padding-left: 0;
+    margin: 20px 0;
+    text-align: center;
+    list-style: none;
+    margin: 0 auto!important;
+    width:100%;
+    
+    li.page-item, li.ng-scope {
+        width: auto !important;
+        display: inline-block!important;
+        
+        >a.page-link, > a.ng-scope {
+            display: inline-block;
+            color: #ff5200;
+            padding: 4px 14px!important;
+            background-color: transparent;
+            border: solid 1px transparent;
+            border-radius: 5px!important;
+            color: #ff5200!important;
+            border-color: transparent!important;
+        }
+        &.active {
+            color: #3e5766 !important;
+            background-color: transparent !important;
+            border-color: #c0c0c0 !important;
+            font-weight: bold;
+            
+             >a.page-link {
+                 color: #3e5766 !important;
+                background-color: transparent !important;
+                border-color: #c0c0c0 !important;
+                font-weight: bold;
+             }
+        }
+        &:first-child {
+            margin-right:15px!important;
+            
+            > a.page-link, > a.ng-scope {
+                float: left;
+                color: #fff;
+                background: url(/static/img/sprite_2.png) center 6px no-repeat #ff5200!important;
+                text-indent: -9999px;
+                margin:0;
+                padding: 4px 16px!important;
+            }
+        }
+        &:last-child {
+            margin-left:15px!important;
+            
+            > a.page-link, > a.ng-scope {
+                float: right;
+                color: #fff;
+                background-color: #ff5200;
+                background: url(/static/img/sprite_2.png) center -31px no-repeat #ff5200!important;
+                text-indent: -9999px;
+                margin:0;
+                padding: 4px 16px!important;
+            }
+        }
+        &.disableButton {
+            opacity:1!important;
+            > a.ng-scope {
+                color: #3e5766!important;
+                background-color: transparent!important;
+                border-color: silver!important;
+                font-weight: 700;
+            }
+            
+            &:first-child {
+                margin-right:15px!important;
+
+                > a.page-link, > a.ng-scope {
+                    float: left;
+                    color: #fff;
+                    background: url(/static/img/sprite_2.png) center 6px no-repeat #ff5200!important;
+                    text-indent: -9999px;
+                    margin:0;
+                    padding: 5px 16px!important;
+                    border: 0 none!important;
+                }
+            }
+            &:last-child {
+                margin-left:15px!important;
+
+                > a.page-link, > a.ng-scope {
+                    float: right;
+                    color: #fff;
+                    background-color: #ff5200;
+                    background: url(/static/img/sprite_2.png) center -31px no-repeat #ff5200!important;
+                    text-indent: -9999px;
+                    margin:0;
+                    padding: 5px 16px!important;
+                    border: 0 none!important;
+                }
+            }
+        }
+    }
+}
+/* Pagination ends */

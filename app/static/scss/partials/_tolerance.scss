@@ -1,0 +1,197 @@
+
+.tolerance-table {
+    th,td {
+        width: 50px;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+}
+.country-adjustment-table tbody {
+    th {
+        width: 50px;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+}
+
+countrytolerance-list {
+    width:100%
+}
+.first-md-input-container{
+	width:50%;
+} 
+absence-pay-form {
+	width:100%;
+	md-input-container {
+		margin: .25rem 0;
+	}
+	.md-check {
+		margin:0!important;
+		float:left;
+	}
+	.input-error {
+	    clear: both;
+	    font-size: 11px;
+	}
+}
+
+countryallowances-list,controlroom-list,site-address-component,payelement-list,
+payroll-invoice-payroll-list,payroll-invoice-payrule-history,payroll-invoice-payrule-list,
+payroll-list-table,payroll-invoice-payroll-history,auditlogs-list,oneoffpayroll-view-employee,oneoffpayroll-view-payprofile,oneoffpayroll-view-payroll,oneoffpayroll-view{
+    width:100%
+}
+
+.payelement-table{
+    td {
+        width: 50px;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+}
+
+.allowance_skill .md-text {
+        margin-right: 0.5rem!important;
+    }
+
+
+//control-room
+/*.controlroom-table {
+    td {
+        width: 50px;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+}*/
+
+
+//site administrator css
+
+.siteadmin-div{
+    padding-top: 50px;
+}
+
+//List Page
+.siteadmin-main-container {
+  //page specific override to adjust width
+  width: 85vw;
+}
+
+.siteadmin-find-container {
+  //page specific override to adjust width
+  tr {
+    white-space: normal;
+  }
+  h4 {
+    margin-left: 0;
+  }
+}
+
+.siteadmin-page-search-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 2.2rem;
+  width: 25rem;
+  background-color: $white;
+  input {
+    background-color: $white;
+    border: 0;
+    vertical-align: middle;
+    width: 70%;
+    height: 35px!important;
+    line-height: 35px!important;
+  }
+  md-icon svg {
+    width: 1rem;
+  }
+  button {
+    width: 3.6rem;
+    height: 1.6rem;
+    border-radius: 5px;
+    border: 0;
+    margin: 0.23rem;
+    float: right;
+    background-color: #ff5200;
+    color: $white;
+    background-color: $blood-orange;
+    vertical-align: middle;
+    text-align: -webkit-center;
+  }
+  md-autocomplete {
+      height: 35px;
+      md-autocomplete-wrap {
+          height: 33px;
+      }
+  }
+}
+
+.payrule-create-cards {
+  background: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    width: 96%;
+    /* min-height: 37%; */
+    max-height: 100%;
+    box-sizing: inherit;
+}
+
+
+.payroll-list-table{
+     td {
+        width: 50px;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+}
+
+
+.allowance-table {
+   td {
+       width: 50px;
+       word-wrap: break-word;
+       white-space: normal;
+   }
+}
+
+contact-list-section, location-base,g4s-contact-component,site-surveys,barred-employees-section,
+skills-component,license-component,holiday-component,post-list-section,auditlogs-list, equipment-component,license-component{
+    width :100%!important;
+}
+
+.contactlist-table,.g4s-table{
+    width :100%!important;
+}
+
+.g4s-table,.contactlist-table {
+   th,td {
+       width: 50px;
+       word-wrap: break-word;
+       white-space: normal;
+   }
+}
+
+view-allowance-component,post-base,post-allowance-component{
+   width :100%!important; 
+}
+
+
+.postallowance-table{
+   width :100%!important; 
+}
+
+
+.comment-btn{
+    margin: 20px 35px 0px 1px;
+}
+
+
+.location-equipment{
+    width :100%!important;
+}
+    
+.location-equipment{
+    th,td {
+        width: 50px;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+}

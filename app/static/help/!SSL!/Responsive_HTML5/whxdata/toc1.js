@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc.js\"  name=\"Payroll\"><item name=\"Country Control Room\" url=\"Payroll/Create_New_Payroll.htm\" /><item name=\"Country Duress Code List\" url=\"Payroll/Create_Pay_Rule.htm\" /></data>";

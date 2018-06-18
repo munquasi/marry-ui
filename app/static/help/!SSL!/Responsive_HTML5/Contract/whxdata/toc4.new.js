@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"Rate Card","url":"contract-catalogue-rate_card.htm"},{"type":"item","name":"Add Rate Card","url":"Add_Rate_Card.htm"},{"type":"item","name":"Equipment","url":"contract-catalogue-equipment.htm"},{"type":"item","name":"Add Inventory","url":"Add_Inventory.htm"},{"type":"item","name":"Add Asset","url":"Add_Asset.htm"},{"type":"item","name":"Allowances","url":"contract-catalogue-allowances.htm"},{"type":"item","name":"Add Allowance","url":"Add_Allowance.htm"},{"type":"item","name":"Direct Management","url":"contract-catalogue-direct_mgment.htm"},{"type":"item","name":"Add Direct Management","url":"Add_Direct_Management.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

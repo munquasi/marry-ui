@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data ><item name=\"Home Screen\" url=\"Home_Screen.htm\" /><book name=\"System Wide Functionality\" url=\"System_Wide_Functionality.htm\" src=\"toc1.js\" /><book name=\"Directory\" src=\"toc17.js\" /><book name=\"System Administration\" src=\"toc21.js\" /></data>";

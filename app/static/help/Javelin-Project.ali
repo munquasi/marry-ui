@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aliaslist version="1.0">
+	<alias name="Create_Pay_Rule" link="Payroll\Create_Pay_Rule.htm">
+	</alias>
+	<alias name="Billage_Ratio_Report" link="Reports\Billage_Ratio_Report.htm">
+	</alias>
+	<alias name="Create_New_Payroll" link="Payroll\Create_New_Payroll.htm">
+	</alias>
+</aliaslist>

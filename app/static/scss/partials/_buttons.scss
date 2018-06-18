@@ -1,0 +1,45 @@
+/*
+Added to commit the file without doing any changes
+*/
+
+.primary-button {
+    background-color: $blood-orange !important;
+    border-radius: 5px;
+    box-shadow: none;
+    text-transform: uppercase;
+    color: $white;
+    padding: 0.1rem 0.7rem;
+    border: none;
+    margin: 0.6rem;
+    //  :hover {
+    //     // border: solid 1px $white !important; span issues
+    //     background-color: $blood-orange !important;
+    // }
+     :active {
+        background-color: $blood-orange;
+        // border: solid 1px $bg-darkGrey; span issues
+    }
+    .disabled {
+        background-color: rgba(255, 81, 0, 0.2);
+    }
+}
+
+.secondary-button {
+    @extend .primary-button;
+    background-color: $text!important;
+    float: right;
+     :hover {
+        // border: solid 1px $white !important; span issues
+        background-color: $text !important;
+    }
+}
+
+.md-button.md-default-theme[disabled],
+.md-button[disabled] {
+    opacity: 0.75 !important;
+}
+
+md-input.disabled,
+.md-input[disabled] {
+    opacity: 0.75 !important;
+}

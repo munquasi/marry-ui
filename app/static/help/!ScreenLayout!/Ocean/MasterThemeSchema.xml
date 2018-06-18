@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rhlayout majorversion="2" minorversion="0">
+	<flags>1</flags>
+	<media>
+		<query name="dummy" id="dummy" css_selector="@SCREEN"/>
+	</media>
+	<groups>
+		<group res_ID="ID_GROUP_USERSETTINGS" layoutimage="preview/Basic Settings.jpg">Basic settings</group>
+		<group res_ID="ID_GROUP_FILTER" layoutimage="preview/Filter Settings.jpg">Dynamic Filter settings</group>
+		<group res_ID="ID_GROUP_BANNER" layoutimage="preview/Banner.jpg">Banner</group>
+		<!--group layoutimage="preview/Glossary Settings.jpg" res_ID="ID_GROUP_GLO">Glossary</group>
+		<group layoutimage="preview/Index Settings.jpg" res_ID="ID_GROUP_IDX">Index</group>
+		<group layoutimage="preview/TOC Settings.jpg" res_ID="ID_GROUP_TOC_DESKTOP">TOC (All)</group-->
+		<group layoutimage="preview/Header.jpg" res_ID="ID_GROUP_HEADER">Header</group>
+		
+		<group layoutimage="preview/social.jpg" res_ID="ID_GROUP_SOCIAL">Social media</group>
+		<group res_ID="ID_GROUP_BREAKPOINTS" layoutimage="preview/Media Query.jpg">Media Query</group>
+	</groups>
+	<variables>
+		<!--variable>
+			<name>us_useTOC</name>
+			<uiname>Show TOC</uiname>
+			<type>BOOLEAN</type>
+			<value>true</value>
+			<group res_ID="ID_GROUP_USERSETTINGS"/>
+			<visual_properties width="80px" height="30px" top="212px" left="-2px" />
+			<description>Do you want to show the TOC in the output?</description>
+			<default-value>true</default-value>
+			<allowedvalues/>
+			<sources>
+				<source variable="useTOC" filename="usersettings.js"></source>
+			</sources>
+		</variable-->
+		<variable>
+			<name>us_useDefTopic</name>
+			<uiname>Show default topic</uiname>
+			<type>BOOLEAN</type>
+			<value>true</value>
+			<group res_ID="ID_GROUP_USERSETTINGS"/>
+			<visual_properties width="80px" height="30px" top="350px" left="0px" />
+			<description>Do you want to show the default topic in the ouput homepage?</description>
+			<default-value>true</default-value>
+			<allowedvalues/>
+			<sources>
+				<source variable="showDefTopic" filename="usersettings.js"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>us_useIDX</name>
+			<uiname>Show Index</uiname>
+			<type>BOOLEAN</type>
+			<value>true</value>
+			<group res_ID="ID_GROUP_USERSETTINGS"/>
+			<visual_properties  width="80px" height="30px" top="180px" left="848px"/>
+			<description>Do you want to show the index in the output?</description>
+			<default-value>true</default-value>
+			<allowedvalues/>
+			<sources>
+				<source variable="useIDX" filename="usersettings.js"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>us_useGLO</name>
+			<uiname>Show Glossary</uiname>
+			<type>BOOLEAN</type>
+			<value>true</value>
+			<group res_ID="ID_GROUP_USERSETTINGS"/>
+			<visual_properties width="80px" height="30px" top="286px" left="846px" />
+			<description>Do you want to show the Glossary in the output?</description>
+			<default-value>true</default-value>
+			<allowedvalues/>
+			<sources>
+				<source variable="useGLO" filename="usersettings.js"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>us_useFilter</name>
+			<uiname>Show Filter</uiname>
+			<type>BOOLEAN</type>
+			<value>true</value>
+			<group res_ID="ID_GROUP_USERSETTINGS"/>
+			<visual_properties  width="80px" height="30px" top="73px" left="858px"/>
+			<description>Do you want to show the filter option in the output? Setting this to false will only hide the filter for the reader. You can still use the filter through a context sensitive help call. (If you enable dynamic filters in your output settings.)</description>
+			<default-value>true</default-value>
+			<allowedvalues/>
+			<sources>
+				<source variable="useFilter" filename="usersettings.js"></source>
+			</sources>
+		</variable>
+
+		<variable>
+			<name>us_useFacebook</name>
+			<uiname>Use Facebook</uiname>
+			<type>BOOLEAN</type>
+			<value>false</value>
+			<group res_ID="ID_GROUP_SOCIAL"/>
+			<visual_properties top="70px;" left="395px" height="10px" width="80px"/>
+			<description>Do you want to show the Facebook like button in the output? Setting this to false will hide the Facebook like button. (Works for hosted output only.)</description>
+			<default-value>false</default-value>
+			<allowedvalues/>
+			<sources>
+				<source variable="useFacebook" filename="usersettings.js"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>us_useTwitter</name>
+			<uiname>Use Twitter</uiname>
+			<type>BOOLEAN</type>
+			<value>false</value>
+			<group res_ID="ID_GROUP_SOCIAL"/>
+			<visual_properties top="132px" left="395px" height="10px" width="80px"/>
+			<description>Do you want to show the Tweet button in the output? Setting this to false will hide the Tweet button. (Works for hosted output only.)</description>
+			<default-value>false</default-value>
+			<allowedvalues/>
+			<sources>
+				<source variable="useTwitter" filename="usersettings.js"></source>
+			</sources>
+		</variable>
+		
+		<variable>
+			<name>filter_title_color</name>
+			<uiname>Title color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#022d41</value>
+			<group res_ID="ID_GROUP_FILTER"/>
+			<visual_properties left="64px" top="3px" height="10px" width="10px"/>
+			<description>The text color of the filter title.</description>
+			<default-value>#022d41</default-value>
+			<allowedvalues/>
+			<sources>
+				<source filename="css\main.css" cssproperty="color" css_selector="div.filter-holder .filter-title"></source>
+				<source filename="css\main-rtl.css" cssproperty="color" css_selector="div.filter-holder .filter-title"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>filter_reset_color</name>
+			<uiname>Filter reset color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#337ab7</value>
+			<group res_ID="ID_GROUP_FILTER"/>
+			<visual_properties left="370px" top="29px" height="10px" width="10px"/>
+			<description>The text color of the filter reset button.</description>
+			<default-value>#337ab7</default-value>
+			<allowedvalues/>
+			<sources>
+				<source filename="css\main.css" cssproperty="color" css_selector="div.filter-holder .btn-reset"></source>
+				<source filename="css\main-rtl.css" cssproperty="color" css_selector="div.filter-holder .btn-reset"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>filter_apply_color</name>
+			<uiname>Filter apply button color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#fe6771</value>
+			<group res_ID="ID_GROUP_FILTER"/>
+			<visual_properties left="617px" top="12px" height="10px" width="10px"/>
+			<description>The text color of the filter apply button.</description>
+			<default-value>#fe6771</default-value>
+			<allowedvalues/>
+			<sources>
+				<source filename="css\main.css" cssproperty="color" css_selector="div.filter-holder .btn-apply"></source>
+				<source filename="css\main-rtl.css" cssproperty="color" css_selector="div.filter-holder .btn-apply"></source>
+			</sources>
+		</variable>
+		<!--variable>
+			<name>filter_group_bgcolor</name>
+			<uiname>Background color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#eeeeee</value>
+			<group res_ID="ID_GROUP_FILTER"/>
+			<visual_properties left="709px" top="437px" height="10px" width="10px"/>
+			<description>The background color of a filter group header.</description>
+			<default-value>#eeeeee</default-value>
+			<allowedvalues/>
+			<sources>
+				<source filename="css\main.css" cssproperty="background-color" css_selector="div.filter-holder ul.wFltOpts span.tag-parent"></source>
+				<source filename="css\main-rtl.css" cssproperty="background-color" css_selector="div.filter-holder ul.wFltOpts span.tag-parent"></source>
+			</sources>
+		</variable-->
+	
+		<variable>
+			<name>searchImage</name>
+			<uiname>Search Image</uiname>
+			<type>FILE</type>
+			<value>search.svg</value>
+			<group res_ID="ID_GROUP_BANNER"/>
+			<visual_properties left="481px" top="275px" height="30px" width="80px"/>
+			<description>This image is shown in the search box.</description>
+			<default-value>search.svg</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>filterImage</name>
+			<uiname>Filter Button Image</uiname>
+			<type>FILE</type>
+			<value>filter.svg</value>
+			<group res_ID="ID_GROUP_BANNER"/>
+			<visual_properties left="535px" top="330px" height="30px" width="80px"/>
+			<description>This image indicates the dynamic filter button.</description>
+			<default-value>filter.svg</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>indexImage</name>
+			<uiname>Index Button Image</uiname>
+			<type>FILE</type>
+			<value>index.svg</value>
+			<group res_ID="ID_GROUP_BANNER"/>
+			<visual_properties left="671px" top="254px" height="30px" width="80px"/>
+			<description>This image indicates the index button.</description>
+			<default-value>index.svg</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>glossaryImage</name>
+			<uiname>Glossary Button Image</uiname>
+			<type>FILE</type>
+			<value>glossary.svg</value>
+			<group res_ID="ID_GROUP_BANNER"/>
+			<visual_properties left="825px" top="332px" height="30px" width="150px"/>
+			<description>This image indicates the glossary button.</description>
+			<default-value>glossary.svg</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>bkImage</name>
+			<uiname>Background Image</uiname>
+			<type>FILE</type>
+			<value>search-bg.jpg</value>
+			<group res_ID="ID_GROUP_BANNER"/>
+			<visual_properties left="696px" top="3px" height="30px" width="80px"/>
+			<description>This image is shown in the header background.</description>
+			<default-value>search_bg.jpg</default-value>
+			<allowedvalues/>
+			<sources/>
+		</variable>
+		<variable>
+			<name>search_text_color</name>
+			<uiname>Search text color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#333</value>
+			<group res_ID="ID_GROUP_BANNER"/>
+			<visual_properties height="10px" left="138px" top="263px" width="80px"/>
+			<description>The color of the text in the search box.</description>
+			<default-value>#333</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector=".search-input" cssproperty="color" filename="css\main.css"></source>
+				<source css_selector=".search-input" cssproperty="color" filename="css\main-rtl.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>fbd_search_section_bgcolor</name>
+			<uiname>Search background color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#fff</value>
+			<group res_ID="ID_GROUP_BANNER"/>
+			<visual_properties height="10px" left="101px" top="3px" width="80px"/>
+			<description>The background color of the search section.</description>
+			<default-value>#fff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector=".search-input" cssproperty="background-color" filename="css\main.css"></source>
+				<source css_selector=".search-input" cssproperty="background-color" filename="css\main-rtl.css"></source>
+			</sources>
+		</variable>
+		<!--variable>
+			<name>glo_search_text</name>
+			<uiname>Search color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#000000</value>
+			<group res_ID="ID_GROUP_GLO"/>
+			<visual_properties height="10px" left="5px" top="118px" width="80px"/>
+			<description>The color of the text in the search box.</description>
+			<default-value>#000000</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.Glossary input" cssproperty="color" filename="css\main.css"></source>
+				<source css_selector="div.Glossary input" cssproperty="color" filename="css\main-rtl.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>glo_search_bkcolor</name>
+			<uiname>Search background color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#000000</value>
+			<group res_ID="ID_GROUP_GLO"/>
+			<visual_properties height="10px" left="237px" top="5px" width="80px"/>
+			<description>The color of the background in the search box.</description>
+			<default-value>#000000</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.Glossary input" cssproperty="background-color" filename="css\main.css"></source>
+				<source css_selector="div.Glossary input" cssproperty="background-color" filename="css\main-rtl.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>glo_entry_color</name>
+			<uiname>Term color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#000000</value>
+			<group res_ID="ID_GROUP_GLO"/>
+			<visual_properties height="10px" left="5px" top="193px" width="10px"/>
+			<description>The text color of glossary entries.</description>
+			<default-value>#000000</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.Glossary .glossterm" cssproperty="color" filename="css\main.css"></source>
+				<source css_selector="div.Glossary .glossterm" cssproperty="color" filename="css\main-rtl.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>glo_bkcolor</name>
+			<uiname>Glossary background color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#000000</value>
+			<group res_ID="ID_GROUP_GLO"/>
+			<visual_properties height="10px" left="746px" top="371px" width="80px"/>
+			<description>Glossary background color.</description>
+			<default-value>#000000</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.Glossary" cssproperty="background-color" filename="css\main.css"></source>
+				<source css_selector="div.Glossary" cssproperty="background-color" filename="css\main-rtl.css"></source>
+			</sources>
+		</variable-->
+		
+		<variable>
+			<name>breakpoint_mobile</name>
+			<uiname>Phone maximum width</uiname>
+			<type>LITERAL</type>
+			<value>941</value>
+			<group res_ID="ID_GROUP_BREAKPOINTS"/>
+			<visual_properties left="15px" top="11px" height="10px" width="80px"/>
+			<description>The maximum width of a device (in pixels) that is served the mobile layout. Devices with a width smaller than specified will see the mobile layout. Devices with a higher width will see the tablet or desktop layout.</description>
+			<default-value>941</default-value>
+			<allowedvalues/>
+			<sources>
+				<source variable="phone_max_width" filename="usersettings.js"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>breakpoint_tablet</name>
+			<uiname>Tablet maximum width</uiname>
+			<type>LITERAL</type>
+			<value>1295</value>
+			<group res_ID="ID_GROUP_BREAKPOINTS"/>
+			<visual_properties left="320px" top="11px" height="10px" width="80px"/>
+			<description>The maximum width of a device (in pixels) that is served the tablet layout. Devices with a screen width between the Mobile phone maximum width and the Tablet maximum width will see the tablet layout. Devices with a higher width will see the desktop layout.</description>
+			<default-value>1295</default-value>
+			<allowedvalues/>
+			<sources>
+				<source variable="tablet_max_width" filename="usersettings.js"></source>
+			</sources>
+		</variable>
+		
+		<variable>
+			<name>head_logo</name>
+			<uiname>Logo</uiname>
+			<type>FILE</type>
+			<value>logo.png</value>
+			<group res_ID="ID_GROUP_HEADER"/>
+			<visual_properties height="10px" left="26px" top="12px" width="30px"/>
+			<description>The logo to use. Use a square logo for best results.</description>
+			<default-value>logo.png</default-value>
+			<allowedvalues/>
+			<sources>
+				<source filename="usersettings.js" variable="logo"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>head_bgcolor</name>
+			<uiname>Background color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#ffffff</value>
+			<group res_ID="ID_GROUP_HEADER"/>
+			<visual_properties height="10px" left="617px" top="12px" width="80px"/>
+			<description>The background color of the header. This will affect all devices.</description>
+			<default-value>#ffffff</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="section.brand-bg" cssproperty="background-color" filename="css\main.css"></source>
+				<source css_selector="section.brand-bg" cssproperty="background-color" filename="css\main-rtl.css"></source>
+				<source filename="usersettings.js" variable="backgroundColor"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>title_font_color</name>
+			<uiname>Title Font Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#337ab7</value>
+			<group res_ID="ID_GROUP_HEADER"/>
+			<visual_properties height="10px" left="125px" top="12px" width="80px"/>
+			<description>The font color of the title. This will affect all devices.</description>
+			<default-value>#337ab7</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="section.brand-bg .navbar-brand" cssproperty="color" filename="css\main.css"></source>
+				<source css_selector="section.brand-bg .navbar-brand" cssproperty="color" filename="css\main-rtl.css"></source>
+			</sources>
+		</variable>
+		
+		
+		<!--variable>
+			<name>idx_search_text</name>
+			<uiname>Search text color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#000000</value>
+			<group res_ID="ID_GROUP_IDX"/>
+			<visual_properties height="10px" left="4px" top="128px" width="80px"/>
+			<description>The color of the text in the search box.</description>
+			<default-value>#000000</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.Index input" cssproperty="color" filename="css\main.css"></source>
+				<source css_selector="div.Index input" cssproperty="color" filename="css\main-rtl.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>idx_search_bkcolor</name>
+			<uiname>Search background color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#000000</value>
+			<group res_ID="ID_GROUP_IDX"/>
+			<visual_properties height="10px" left="232px" top="5px" width="80px"/>
+			<description>The color of the background in the search box.</description>
+			<default-value>#000000</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.Index input" cssproperty="background-color" filename="css\main.css"></source>
+				<source css_selector="div.Index input" cssproperty="background-color" filename="css\main-rtl.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>idx_bkcolor</name>
+			<uiname>Index background color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#000000</value>
+			<group res_ID="ID_GROUP_IDX"/>
+			<visual_properties height="10px" left="745px" top="376px" width="80px"/>
+			<description>Index background color.</description>
+			<default-value>#000000</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="div.Index" cssproperty="background-color" filename="css\main.css"></source>
+				<source css_selector="div.Index" cssproperty="background-color" filename="css\main-rtl.css"></source>
+			</sources>
+		</variable-->
+		
+		<!--variable>
+			<name>toc_entry_color</name>
+			<uiname>Topic color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#000000</value>
+			<group res_ID="ID_GROUP_TOC_DESKTOP"/>
+			<visual_properties height="10px" left="646px" top="379px" width="10px"/>
+			<description>The text color of topic entries.</description>
+			<default-value>#000000</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector=".toc-holder .menu__link" cssproperty="color" filename="css\main.css"></source>
+				<source css_selector=".toc-holder .menu__link" cssproperty="color" filename="css\main-rtl.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_entry_selected_color</name>
+			<uiname>Selected color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#509de6</value>
+			<group res_ID="ID_GROUP_TOC_DESKTOP"/>
+			<visual_properties height="10px" left="522px" top="437px" width="10px"/>
+			<description>The text color of the selected topic entry.</description>
+			<default-value>#509de6</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector=".toc-holder .menu__link.active" cssproperty="color" filename="css\main.css"></source>
+				<source css_selector=".toc-holder .menu__link.active" cssproperty="color" filename="css\main-rtl.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_bkgrnd_color</name>
+			<uiname>TOC Background color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#000000</value>
+			<group res_ID="ID_GROUP_TOC_DESKTOP"/>
+			<visual_properties height="10px" left="655px" top="5px" width="10px"/>
+			<description>The background color of TOC widget.</description>
+			<default-value>#000000</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector=".toc-holder" cssproperty="background-color" filename="css\main.css"></source>
+				<source css_selector=".toc-holder" cssproperty="background-color" filename="css\main-rtl.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>breadcrumb_text_color</name>
+			<uiname>TOC Text color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#000000</value>
+			<group res_ID="ID_GROUP_TOC_DESKTOP"/>
+			<visual_properties height="10px" left="82px" top="3px" width="10px"/>
+			<description>The font color of selected TOC text in breadcrumbs.</description>
+			<default-value>#000000</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector=".toc-holder" cssproperty="background-color" filename="css\main.css"></source>
+				<source css_selector=".toc-holder" cssproperty="background-color" filename="css\main-rtl.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>selected_breadcrumb_color</name>
+			<uiname>Selected TOC Text color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#000000</value>
+			<group res_ID="ID_GROUP_TOC_DESKTOP"/>
+			<visual_properties height="10px" left="285px" top="3px" width="10px"/>
+			<description>The font color of selected TOC text in breadcrumbs.</description>
+			<default-value>#000000</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector=".toc-holder" cssproperty="background-color" filename="css\main.css"></source>
+				<source css_selector=".toc-holder" cssproperty="background-color" filename="css\main-rtl.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>breadcrumb_arrow_color</name>
+			<uiname>TOC Arrow Color</uiname>
+			<type>HTML_COLOR</type>
+			<value>#1ba5b7</value>
+			<group res_ID="ID_GROUP_TOC_DESKTOP"/>
+			<visual_properties height="10px" left="5px" top="155px" width="10px"/>
+			<description>The color of the toc arrow.</description>
+			<default-value>#1ba5b7</default-value>
+			<allowedvalues/>
+			<sources>
+				<source css_selector="ol.breadcrumb > li + li::before" cssproperty="color" filename="css\main.css"></source>
+				<source css_selector="ol.breadcrumb > li + li::before" cssproperty="color" filename="css\main-rtl.css"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_next_image</name>
+			<uiname>TOC Next Image</uiname>
+			<type>FILE</type>
+			<value>adnxt.svg</value>
+			<group res_ID="ID_GROUP_TOC_DESKTOP"/>
+			<visual_properties height="10px" left="144px" top="389px" width="10px"/>
+			<description>Next TOC button image</description>
+			<default-value>adnxt.svg</default-value>
+			<allowedvalues/>
+			<sources>
+				<source attribute="src" filename="Topic.slp" id="tocnext"></source>
+			</sources>
+		</variable>
+		<variable>
+			<name>toc_prev_image</name>
+			<uiname>TOC Previous Image</uiname>
+			<type>FILE</type>
+			<value>adpre.svg</value>
+			<group res_ID="ID_GROUP_TOC_DESKTOP"/>
+			<visual_properties height="10px" left="98px" top="470px" width="10px"/>
+			<description>Previous TOC button image</description>
+			<default-value>adpre.svg</default-value>
+			<allowedvalues/>
+			<sources>
+				<source attribute="src" filename="Topic.slp" id="tocprev"></source>
+			</sources>
+		</variable-->
+	
+		
+		</variables>
+	<resources/>
+</rhlayout>

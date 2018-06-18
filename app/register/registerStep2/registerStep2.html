@@ -1,0 +1,332 @@
+<div class="container" style="max-width:600px;padding:40px 20px;background:#ebeff2">
+	<h3>Your Basic Information</h3>
+	<form class="form-horizontal" role="form">
+    <div class="form-group form-row">
+      <label for="name" class ="control-label col-sm-3">* Full Name</label>
+      <div class="col-sm-8 col-md-9">
+        <input type="name" class="form-control" id="name" ng-model="user.fullName" placeholder="Enter full name">
+      </div>
+    </div>
+
+  
+   <!--  <div class="form-row form-group">
+        <label for="dob" class ="control-label col-sm-3">Date Of Birth</label>
+      <md-datepicker ng-model="$ctrl.startCommonDate" name=startCommonDate editable=true onkeydown="return false" required=true milliseconds="$ctrl.startCommonDate" maxdatemilliseconds=$ctrl.endCommonDate></md-datepicker>
+      <div ng-messages="searchForm.startCommonDate.$error">
+           
+          <div ng-message="maxdate">From Date can not be more than To date!</div>
+          
+      </div>
+    </div> 
+    -->
+
+     <div class="form-row form-group">
+     <table>
+       <tr>
+         
+    <td>
+        <label for="dob" class ="control-label col-sm-3">*Date Of birth</label>
+        </td>
+        <td>
+      <div class="col-3">
+        <select class="form-control" id="day" ng-model="user.day">
+          <option value="">Day</option>
+          <option value="01">1</option>
+          <option value="02">2</option>
+          <option value="03">3</option>
+          <option value="04">4</option>  
+        </select>
+      </div>
+      </td>
+      <td>
+      <div class="col-3">
+        <select class="form-control" id="month" ng-model="user.month">
+          <option value="">Month</option>
+          <option value="01">1</option>
+          <option value="02">2</option>
+          <option value="03">3</option>
+          <option value="04">4</option>  
+        </select>
+      </div>
+      </td>
+      <td>
+      <div class="col-3">
+        <select class="form-control" id="year" ng-model="user.year">
+          <option value="">Year</option>
+          <option value="1997">1997</option>
+          <option value="1996">1996</option>
+          <option value="1995">1995</option>
+          <option value="1994">1994</option>
+          <option value="1993">1993</option>
+          <option value="1992">1992</option>  
+        </select>
+      </div>
+      </td>
+         </tr>
+     </table>
+    </div>
+
+    <div class="form-group form-row">
+      <label for="Height" class ="control-label col-sm-3">*Height</label>
+      <div class="col-sm-8 col-md-9">
+        <select class="form-control" id="height" ng-model="user.height">
+          <option value="">Select Height</option>
+          <option value="FT4_IN5">4ft 5in</option>
+          <option value="FT4_IN6">4ft 6in</option>
+          <option value="FT4_IN7">4ft 7in</option>
+          <option value="FT4_IN8">4ft 8in</option>
+          <option value="FT4_IN9">4ft 9in</option>  
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group form-row">
+      <label for="Height" class ="control-label col-sm-3">Special Case</label>
+      <div class="col-sm-8 col-md-9">
+        <select class="form-control" id="specialCase" ng-model="user.specialCase">
+          <option value="NONE" selected="selected">None</option>
+          <option value="PHYSICALLY_CHALLENGED_FROM_BIRTH">Physically challenged from birth</option>
+          <option value="HIV_POSITIVE">Hiv positive</option><option value="MENTALLY_CHALLENGED_FROM_BIRTH">Mentally challenged from birth</option>
+          <option value="ACCIDENTAL_PHYSICAL_ABNORMALITY_AFFECTING_ONLY_LOOKS">Accidental / Physical abnormality affecting only looks</option>
+          <option value="PHYSICAL_ABNORMALITY_AFFECTING_BODILY_FUNCTIONS_DUE_TO_ACCIDENT">Physical abnormality affecting bodily functions due to accident</option>
+          <option value="PHYSICALLY_CHALLENGED_DUE_TO_ACCIDENT">Physically challenged due to accident</option>
+          <option value="MEDICALLY_CHALLENGED_CONDITION_OF_ONE_OR_MORE_VITAL_ORGANS">Medically challenged condition of one or more vital organs</option> 
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group form-row">
+      <label for="name" class ="control-label col-sm-3">Upload Biodata</label>
+      <div class="col-sm-8 col-md-9">
+        <input type="file" class="form-control" id="biodata"  ng-model="user.biodata" placeholder="Enter name">
+      </div>
+    </div>
+
+    <h3>Socio-religious information:</h3>
+
+    <div class="form-group form-row">
+      <label for="Height" class ="control-label col-sm-3"> *Religion</label>
+      <div class="col-sm-8 col-md-9">
+        <select class="form-control" id="religion" ng-model="user.religion">
+          <option value="">Select Religion</option>
+          <option value="HIND">Hindu</option>
+          <option value="MUSL">Muslim</option>
+          <option value="CHRI">Christian</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group form-row">
+      <label for="Height" class ="control-label col-sm-3">*Mother Tongue</label>
+      <div class="col-sm-8 col-md-9">
+        <select class="form-control" id="motherTongue" ng-model="user.motherTongue">
+          <option value="">Select Mother Tongue</option>
+          <option value="HINDI">Hindi</option>
+          <option value="MARATHI">Marathi</option>
+          <option value="TELUGU">Telugu</option>
+          <option value="TAMIL">Tamil</option>    
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group form-row">
+      <label for="Height" class ="control-label col-sm-3">*Marital Status</label>
+      <div class="col-sm-8 col-md-9">
+        <select class="form-control" id="maritalStatus" ng-model="user.maritalStatus">
+          <option value="">Select Marital Status </option>
+          <option value="NEVER_MARRIED" selected="selected">Never Married</option>
+          <option value="ANNULED">Annulled</option>
+          <option value="DIVORCED">Divorced</option>
+          <option value="WIDOWED">Widowed</option>          
+        </select>
+      </div>
+    </div>
+
+    <h3>About your lifestyle:</h3>
+
+    <div class="form-row form-group">
+      <label for="dob" class ="control-label col-sm-3">Smoking</label>
+      <div class="form-check form-check-inline col-2">
+        <input class="form-check-input" type="radio" ng-model="user.smoking" id="inlineRadio1" value="yes">
+        <label class="form-check-label" for="inlineRadio1">yes</label>
+      </div>
+      <div class="form-check form-check-inline col-2">
+        <input class="form-check-input" type="radio" ng-model="user.smoking" id="inlineRadio2" value="no">
+        <label class="form-check-label" for="inlineRadio2">No</label>
+      </div>
+        <div class="form-check form-check-inline col-3">
+          <input class="form-check-input" type="radio" ng-model="user.smoking" id="inlineRadio3" value="moderate">
+          <label class="form-check-label" for="inlineRadio2">Moderate</label>
+        </div>
+    </div>
+
+    <div class="form-row form-group">
+      <label for="Drinking" class ="control-label col-sm-3">Drinking</label>
+      <div class="form-check form-check-inline col-2">
+        <input class="form-check-input" type="radio" ng-model="user.drinking" id="drik1" value="yes">
+        <label class="form-check-label" for="inlineRadio1">yes</label>
+      </div>
+      <div class="form-check form-check-inline col-2">
+        <input class="form-check-input" type="radio" ng-model="user.drinking" id="drik2" value="no">
+        <label class="form-check-label" for="inlineRadio2">No</label>
+      </div>
+        <div class="form-check form-check-inline col-3">
+          <input class="form-check-input" type="radio" ng-model="user.drinking" id="drik3" value="moderate">
+          <label class="form-check-label" for="inlineRadio2">Moderate</label>
+        </div>
+    </div>
+
+
+
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-sm-2 pt-0 col-6">Food</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" ng-model="user.food" id="gridRadios1" value="jain" checked>
+            <label class="form-check-label" for="gridRadios1">Jain</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" ng-model="user.food" id="gridRadios2" value="vegetarian">
+            <label class="form-check-label" for="gridRadios2">Vegetarian</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" ng-model="user.food" id="gridRadios3" value="vegetarianWithEggs" >
+            <label class="form-check-label" for="gridRadios3">Vegetarian with eggs</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" ng-model="user.food" id="gridRadios2" value="nonVegetarian">
+            <label class="form-check-label" for="gridRadios2">Non vegetarian</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <h3>About your apperance</h3>
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-sm-2 pt-0 col-6">Complexion</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" ng-model="user.complexion" id="gridRadios1" value="fair" checked>
+            <label class="form-check-label" for="gridRadios1">Fair</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" ng-model="user.complexion" id="gridRadios2" value="veryFair">
+            <label class="form-check-label" for="gridRadios2">Very fair</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" ng-model="user.complexion"id="gridRadios3" value="wheatist" >
+            <label class="form-check-label" for="gridRadios2">Wheatist</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" ng-model="user.complexion" id="bodycolor" value="wheatistMedium" >
+            <label class="form-check-label" for="gridRadios3">Wheatist medium</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" ng-model="user.complexion" id="gridRadios2" value="dark">
+            <label class="form-check-label" for="gridRadios2">Dark</label>
+          </div>
+        </div>
+
+        <legend class="col-form-label col-sm-2 pt-0 col-6">Body Type</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" ng-model="user.bodyType" id="gridRadios1" value="slim" checked>
+            <label class="form-check-label" for="gridRadios1">Slim</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" ng-model="user.bodyType" id="gridRadios2" value="average">
+            <label class="form-check-label" for="gridRadios2">Average</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" ng-model="user.bodyType" id="gridRadios3" value="athletic" >
+            <label class="form-check-label" for="gridRadios3">Athletic</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" ng-model="user.bodyType" id="gridRadios3" value="Heavy" >
+            <label class="form-check-label" for="gridRadios3">Heavy</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <h3>Your education:</h3>
+    <div class="form-group form-row">
+      <label for="Height" class ="control-label col-sm-3">*Qualification</label>
+      <div class="col-sm-8 col-md-9">
+        <select class="form-control" id="qualification" ng-model="user.qualification">
+          <option value="">Select your degree</option>
+          <option value="" disabled="disabled">------------------------PG-Professional Courses------------------------</option>
+          <option disabled="disabled"></option>
+          <option value="CACC">CA (Chartered Accountant)</option><option value="CFAP">CFA (Chartered Financial Analyst)</option><option value="CSEC">CS (Company Secretary)</option><option value="ICWA">ICWA</option><option value="INTE">Integrated PG</option><option value="MARC">M.Arch. (Architecture)</option><option value="MEDG">M.Ed. (Education)</option><option value="MLIB">M.Lib.Sc. (Library Sciences)</option><option value="MPLA">M.Plan. (Planning)</option><option value="MFAT">Master of Fashion Technology</option><option value="MOHA">Master of Health Administration</option><option value="MHPA">Master of Hospital Administration</option><option value="MBAP">MBA/PGDM</option><option value="MCAT">MCA PGDCA part time</option><option value="MCAP">MCA/PGDCA</option><option value="MEMT">ME/M.Tech/MS (Engg/Sciences)</option><option value="MFAA">MFA (Fine Arts)</option><option value="MLLM">ML/LLM (Law)</option><option value="MSWT">MSW (Social Work)</option><option value="PGDP">PG Diploma</option>
+          <option disabled="disabled"></option>
+          <option value="" disabled="disabled">------------------------PG-General Courses------------------------</option>
+          <option disabled="disabled"></option>
+          <option value="MCOM">M.Com. (Commerce)</option><option value="MSCP">M.Sc. (Science)</option><option value="MAPG">MA (Arts)</option>
+          <option disabled="disabled"></option>
+        </select>
+      </div>
+    </div>
+
+    <h3>What you do:</h3>
+    <div class="form-group form-row">
+      <label for="Height" class ="control-label col-sm-3">*Employed in</label>
+      <div class="col-sm-8 col-md-9">
+        <select class="form-control" id="employedIn" ng-model="user.employedIn">
+          <option value="">Select Employed In</option>
+          <option value="MNC">MNC</option>
+          <option value="CENTRAL_GOVERNMENT">Central Government</option>
+          <option value="STATE_GOVERNMENT">State Government</option>
+          <option value="PRIVATE_SECTOR">Private Sector</option>
+          <option value="PUBLIC_SECTOR">Public Sector</option>
+          <option value="NOT_WORKING">Not Working</option>
+          <option value="OTHERS">Others</option>
+        </select>
+      </div>
+    </div>
+
+    <h3>Living in:</h3>
+    <div class="form-group form-row">
+      <label for="Height" class ="control-label col-sm-3">*Country</label>
+      <div class="col-sm-8 col-md-9">
+        <select class="form-control" id="country" ng-model="user.country">
+          <option value="">Select Country</option>
+          <option value="INDI" selected="selected">India</option>
+          <option value="UNIT">United States of America</option>
+          <option value="PAKI">Pakistan</option>
+          <option value="UNAE">United Arab Emirates</option>
+          <option value="UNIK">United Kingdom</option>
+          <option value="AUST">Australia</option>
+          <option value="SAUD">Saudi Arabia</option>
+          <option value="BANG">Bangladesh</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group form-row">
+      <label for="Height" class ="control-label col-sm-3">*State</label>
+      <div class="col-sm-8 col-md-9">
+        <select class="form-control" id="state" ng-model="user.state">
+          <option value="">Please Select</option>
+          <option value="ANNI">Andaman and Nicobar</option>
+          <option value="ANPR">Andhra Pradesh</option>
+          <option value="ARPR">Arunachal Pradesh</option>
+          <option value="ASSA">Assam</option>
+          <option value="BIHA">Bihar</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group form-row">
+      <label for="name" class ="control-label col-sm-3">About me</label>
+      <div class="col-sm-8 col-md-9">
+        <textarea class="col-md-12" ng-model="user.aboutMe" placeholder="Describe Yourself"></textarea>
+      </div>
+    </div>
+    <!-- Submit Button is below -->
+    <div class="col-sm-offset-2 col-sm-8">
+      <input type="submit" class="btn btn-primary btn-block offset-md-2 col-md-6" value="Register" ng-click="$ctrl.registerUserNext(user)">
+    </div>
+	</form>
+</div>

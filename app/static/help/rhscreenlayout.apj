@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rhpml majorversion="7" minorversion="13">
+	<ScreenLayouts>
+		<ScreenLayout name="Ocean">
+			<ScreenLayoutPages>
+				<ScreenLayoutPage default="1" name="Topic.slp" type="1"/>
+			</ScreenLayoutPages>
+		</ScreenLayout>
+		<ScreenLayout name="Indigo">
+			<ScreenLayoutPages>
+				<ScreenLayoutPage default="1" name="homepage.slp" type="3"/>
+				<ScreenLayoutPage default="0" name="Topic.slp" type="1"/>
+			</ScreenLayoutPages>
+		</ScreenLayout>
+		<ScreenLayout name="Charcoal_Grey">
+			<ScreenLayoutPages>
+				<ScreenLayoutPage default="1" name="Topic.slp" type="1"/>
+			</ScreenLayoutPages>
+		</ScreenLayout>
+	</ScreenLayouts>
+</rhpml>

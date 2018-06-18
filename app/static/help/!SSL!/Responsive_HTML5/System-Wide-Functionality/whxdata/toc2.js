@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc1.js\"  name=\"Minimum Wages\" url=\"Minimum_Wages.htm\"><item name=\"Minimum Wages\" url=\"Minimum_Wages.htm#bc-1\" /><item name=\"Create New Wage\" url=\"Create_New_Wage.htm\" /></data>";

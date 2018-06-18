@@ -1,0 +1,58 @@
+// Use this on the accordion parent div to apply new accordion styles
+.accordion-container {
+    table {
+        margin-top: 0;
+        margin-bottom: 0.8rem;
+        th {
+            background: transparent;
+            a {
+                color: $text;
+            }
+        }
+    }
+    //Accordion specific table styles
+    tr:nth-child(even) {
+        background: $white;
+    }
+    tr:nth-child(odd) {
+        background: $white-two;
+    }
+    .accordion-box .accordion-header {
+        background-color: #e0e0e0;
+        padding: 1.5rem !important;
+        border-bottom: 2px solid $white-two;
+    }
+    .accordion-number-container {
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+        font-weight: normal;
+        background-color: $blood-orange;
+        color: $white;
+        font-size: 0.8rem;
+        text-align: center;
+        border-radius: 100%;
+        padding-top: 3px;
+    }
+    .accordion-date {
+        color: $dark;
+        padding: 0.5rem;
+    }
+}
+
+.expand-plus {
+    background: url('/static/img/expand.svg');
+    background-size: cover;
+    height: 18px;
+    width: 18px;
+    margin-top: 0.2rem;
+}
+
+.collapse-minus {
+    background: url('/static/img/collapse.svg');
+    width: 18px;
+    height: 2px;
+    border-radius: 7%;
+    margin-top: 0.6rem;
+    background-size: cover;
+}

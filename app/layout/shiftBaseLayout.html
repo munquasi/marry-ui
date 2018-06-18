@@ -1,0 +1,36 @@
+<div layout="row">
+  <div flex-gt-sm="5" flex-md="5" flex-gt-md="5" flex-lg="5" flex-gt-lg="5">
+   <!--  <nav-menu-sidebar></nav-menu-sidebar> -->
+  </div>
+  <div flex-gt-sm="95" flex-md="95" flex-gt-md="95" flex-lg="95" flex-gt-lg="95">
+    <div layout="row" class="head-section">
+
+      <app-header></app-header>
+      <div class="notification-container">
+        <div notification/>
+      </div>
+    </div>
+    <div layout="row" class="app-container" role="main" ui-view ng-show="$root.Permissions">
+    
+    </div>
+  </div>
+    <div layout="row" class="footer-section">
+      <app-footer></app-footer>
+    </div>
+</div>
+<div layout="row" layout-align="start start" class="global-serach-bar-row" >
+    <global-search></global-search>   
+</div>
+<!--@Author Amrish - JP 2554 - CreationDate Dec, 26 , 2106  -->
+
+<!--<div class="notification-container">
+  <div notification/>
+</div>
+<app-header></app-header>
+<div flex layout="row">
+  <nav-menu-sidebar></nav-menu-sidebar>
+  <md-content id="content" flex  role="main">
+    <div ng-show="$root.Permissions" ui-view id="view">
+    </div>
+  </md-content>
+</div>-->

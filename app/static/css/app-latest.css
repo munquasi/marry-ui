@@ -1,0 +1,236 @@
+html body {
+    background-color: #F2F2F2;
+    height: auto;
+}
+
+/* Angular Material Theme Overrides - START */
+/* move to theme configuration rather than CSS  */
+.app-header-bar {
+    background-color: black !important;
+    min-height: 3.5rem !important;
+    max-height: 3.5rem !important;
+    height: 3.5rem !important;
+}
+md-sidenav {
+    background-color: black;
+    height: 100%;
+}
+
+md-tabs.md-default-theme .md-tab.md-active, md-tabs .md-tab.md-active, md-tabs.md-default-theme .md-tab.md-active md-icon, md-tabs .md-tab.md-active md-icon, md-tabs.md-default-theme .md-tab.md-focused, md-tabs .md-tab.md-focused, md-tabs.md-default-theme .md-tab.md-focused md-icon, md-tabs .md-tab.md-focused md-icon {
+    color: #000000;
+}
+
+/* Material Theme Overrides - END */
+
+
+/* Header and Nav */
+
+.nav-header-buttons-right {
+    position: absolute;
+    right: 0px;
+}
+
+.g4s-header-logo-container img {
+    height: 24px;
+}
+.g4s-header-logo-container {
+    margin-top: -7px;
+}
+.app-content.full-width {
+    width: 100%;
+}
+.nav {
+    border: none;
+}
+.side-nav-left {
+    border-right: 1px solid #d4d8d4;
+    background-color: black;
+    width: 16.5rem;
+}
+.left.navside {
+    width: 16.5rem;
+}
+
+.global-search {
+    margin-left: 205px;
+}
+@media (max-width: 1280px) {
+    .global-search {
+        margin-left: 20px;
+    }
+}
+
+.global-search .searchbar__group,
+.global-search .btn.btn-secondary,
+.global-search .searchbar__input {
+ background-color: #474343;
+ color: white;
+ font-size: 14px;
+}
+
+.global-search .searchbar__group {
+    border-radius: 0px;
+}
+
+.global-search .btn.btn-secondary {
+    border-left: 1px #615d5d solid;
+    border-right: 1px #615d5d solid;
+}
+
+.global-search .material-icons {
+    color: white;
+}
+
+.global-search .search-bar-icon {
+    padding: 10px;
+}
+
+/* Other */
+
+.breadcrumb{
+    background-color: white;
+}
+
+.box__breadcrumbs .breadcrumbs__header li{
+    color: #777 !important;
+}
+
+.box__breadcrumbs .breadcrumbs__header li a{
+    color: #58b6e8 !important;
+}
+
+.box__feature-navigation,
+.box__feature-navigation .box-header{
+    background-color: transparent;
+    font-weight:bold;
+    color: black;
+}
+
+.display-field {
+    overflow: hidden;
+}
+
+.home-page-container .home-page-heading {
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.home-page-container .nav-tiles {
+    text-align: center;
+    margin: auto;
+    max-width: 1200px;
+}
+.home-page-container .nav-tile {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #c2c0c0;
+    width: 300px;
+    margin: 10px;
+    height: 100px;
+    display: table;
+    padding-top: 35px;
+}
+.home-page-container .nav-tile-menu {
+    display: inline-block;
+}
+.notification-container {
+    position: absolute;
+    right: 20px;
+    color: white;
+    top: 17px;
+    z-index: 10;
+}
+
+.card-header {
+    background-color: white;
+    border-bottom: 1px solid #eceeef;
+}
+
+.box-header-dark {
+    background-color: black !important;
+    color: white !important;
+    font-size: 1.1em !important;
+}
+
+.search-for-suitable-employee-progress {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.search-for-suitable-employee-progress p {
+    margin-top: 20px;
+}
+
+/* JLS OVERRIDE */
+
+body {
+    /* font-family: 'Noto', sans-serif !important;
+    font-size: .9rem !important;*/
+}
+.text-md, .box__jls-variant1 .box-header, .box__jls-variant1 .box__header__brand-neutral-light, .box__jls-variant1 .box__header__grey-900, .box__jls-variant1 .box__pattern-search .box-header__intro, .box__pattern-search .box__jls-variant1 .box-header__intro, .box__brand-red .box-header, .box__brand-red .box__header__brand-neutral-light, .box__brand-red .box__header__grey-900, .box__brand-red .box__pattern-search .box-header__intro, .box__pattern-search .box__brand-red .box-header__intro, .box__brand-black .box-header, .box__brand-black .box__header__brand-neutral-light, .box__brand-black .box__header__grey-900, .box__brand-black .box__pattern-search .box-header__intro, .box__pattern-search .box__brand-black .box-header__intro, .box__brand-neutral .box-header, .box__brand-neutral .box__header__brand-neutral-light, .box__brand-neutral .box__header__grey-900, .box__brand-neutral .box__pattern-search .box-header__intro, .box__pattern-search .box__brand-neutral .box-header__intro, .box__brand-neutral-light .box-header, .box__brand-neutral-light .box__header__brand-neutral-light, .box__brand-neutral-light .box__header__grey-900, .box__brand-neutral-light .box__pattern-search .box-header__intro, .box__pattern-search .box__brand-neutral-light .box-header__intro, .box__brand-neutral-lighter .box-header, .box__brand-neutral-lighter .box__header__brand-neutral-light, .box__brand-neutral-lighter .box__header__grey-900, .box__brand-neutral-lighter .box__pattern-search .box-header__intro, .box__pattern-search .box__brand-neutral-lighter .box-header__intro, .box__style-guide .box-header, .box__style-guide .box__header__brand-neutral-light, .box__style-guide .box__header__grey-900, .box__style-guide .box__pattern-search .box-header__intro, .box__pattern-search .box__style-guide .box-header__intro, .box__notifications-panel .box-header, .box__notifications-panel .box__header__brand-neutral-light, .box__notifications-panel .box__header__grey-900, .box__notifications-panel .box__pattern-search .box-header__intro, .box__pattern-search .box__notifications-panel .box-header__intro, .box__header__brand-neutral-light, .box__header__grey-900, .box__feature-navigation .box-header, .box__feature-navigation .box__header__brand-neutral-light, .box__feature-navigation .box__header__grey-900, .box__feature-navigation .box__pattern-search .box-header__intro, .box__pattern-search .box__feature-navigation .box-header__intro, .box__feature-sub .box-header, .box__feature-sub .box__header__brand-neutral-light, .box__feature-sub .box__header__grey-900, .box__feature-sub .box__pattern-search .box-header__intro, .box__pattern-search .box__feature-sub .box-header__intro, .box__ess-scheduler .box-header, .box__ess-scheduler .box__header__brand-neutral-light, .box__ess-scheduler .box__header__grey-900, .box__ess-scheduler .box__pattern-search .box-header__intro, .box__pattern-search .box__ess-scheduler .box-header__intro, .box__ess-scheduler .box__box-body .box__box-header, .box__acordion .accordion__header, .box__pattern-search .box-body, .box__pattern-search .box__feature-navigation .box__box-body, .box__feature-navigation .box__pattern-search .box__box-body, .box__pattern-search .box__feature-sub .box__box-body, .box__feature-sub .box__pattern-search .box__box-body, .box__pattern-search .box__ess-scheduler .box__box-body, .box__ess-scheduler .box__pattern-search .box__box-body, .table__variant-centered .footable-row-detail-name, .table__variant-centered .footable-row-detail-value, .card__filter .card-header, .card__filter .card-text, .modal__javelin .modal__subtitle, .modal__javelin-full-width .modal__subtitle,
+.form-control, .searchbar__input, .btn, .login__btn, .dropdown-menu, .input-group-addon, .popover-title, .text {
+    /* font-size: 1.125rem; */
+    /* font-size: .778rem; */
+    font-size: .9rem !important;
+}
+
+/* HELPER CSS **/
+
+.margin-top {
+    margin-top: 10px;
+}
+.margin-bottom{
+    margin-bottom: 10px;
+}
+.center-text {
+    text-align: center;
+}
+.nowrap {
+    white-space: nowrap;
+}
+.z-index-0 {
+    z-index: 0 !important;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.input-error {
+  color: red;
+}
+
+.error-display-text {
+  color: red;
+  font-size: 0.9em;
+}
+
+.apply-invalid-field-styles input.ng-invalid {
+  border-color: red;
+}
+
+.bold-labels label {
+  font-weight: bold;
+}
+
+.chip{
+    float:left;
+    background-color:rgba(172, 172, 172, 0.2);
+    border-radius:10px;
+    white-space: nowrap;
+    margin:2px
+}
+
+.chip-padded{
+    float:left;
+    white-space: nowrap;
+    background-color:rgba(172, 172, 172, 0.2);
+    border-radius:10px;
+    margin:2px;
+    padding:0px 8px 0px 8px;
+}
+
+.clickable{
+    cursor:pointer;
+}

@@ -1,0 +1,192 @@
+﻿/* Style Sheet created by ImportDoc 13.0 */
+
+p {
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:.0001pt;
+	margin-left:0in;
+	line-height:120%;
+	font-size:11.0pt;
+	font-family:"Open Sans";
+	color:#695D46;
+}
+
+h1 {
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:130%;
+	font-size:18.0pt;
+	font-family:"PT Sans Narrow";
+	color:#980000;
+	font-weight:bold;
+}
+
+h2 {
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:120%;
+	font-size:24.0pt;
+	font-family:"PT Sans Narrow";
+	color:#980000;
+	font-weight:bold;
+}
+
+h3 {
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"PT Sans Narrow";
+	color:#695D46;
+	font-weight:normal;
+}
+
+h4 {
+	margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:120%;
+	font-size:11.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-weight:normal;
+	text-decoration:underline;
+	text-underline:single;
+}
+
+h5 {
+	margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:120%;
+	font-size:11.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-weight:normal;
+}
+
+h6 {
+	margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:120%;
+	font-size:11.0pt;
+	font-family:"Trebuchet MS";
+	color:#666666;
+	font-weight:normal;
+	font-style:italic;
+}
+
+p.Title {
+	margin-top:16.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	font-size:42.0pt;
+	font-family:"PT Sans Narrow";
+	color:#695D46;
+	font-weight:bold;
+}
+
+p.TitleCxSpFirst {
+	margin-top:16.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	font-size:42.0pt;
+	font-family:"PT Sans Narrow";
+	color:#695D46;
+	font-weight:bold;
+}
+
+p.TitleCxSpMiddle {
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:42.0pt;
+	font-family:"PT Sans Narrow";
+	color:#695D46;
+	font-weight:bold;
+}
+
+p.TitleCxSpLast {
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:42.0pt;
+	font-family:"PT Sans Narrow";
+	color:#695D46;
+	font-weight:bold;
+}
+
+p.Subtitle {
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"PT Sans Narrow";
+	color:#695D46;
+}
+
+p.SubtitleCxSpFirst {
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"PT Sans Narrow";
+	color:#695D46;
+}
+
+p.SubtitleCxSpMiddle {
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"PT Sans Narrow";
+	color:#695D46;
+}
+
+p.SubtitleCxSpLast {
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"PT Sans Narrow";
+	color:#695D46;
+}
+
+p.Acetate {
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma"   ,"sans-serif";
+	color:#695D46;
+}
+
+span.BalloonText {
+	font-family:"Tahoma"   ,"sans-serif";
+}
+
+OL {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+UL {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+

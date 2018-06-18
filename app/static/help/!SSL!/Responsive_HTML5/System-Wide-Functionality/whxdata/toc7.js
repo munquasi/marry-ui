@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc1.js\"  name=\"Country Allowances\"><item name=\"Country Allowances\" url=\"Country_Allowances.htm\" /><item name=\"Create New Allowances\" url=\"Create_New_Allowances.htm\" /></data>";

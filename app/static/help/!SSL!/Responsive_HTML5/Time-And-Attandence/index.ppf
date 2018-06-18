@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE polprojfile>
+<ppfml version="2.00" project="G4S Javelin Help" type="4">
+ <windowlist defaultwindow="NewWindow">
+  <window name="NewWindow" x="5%" y="5%" width="90%" height="90%" viewtype="doublepane" workspacestyle="DEFAULT" toolbar="off" locationbar="off" menu="off" resizable="yes" statusbar="off" usecurrentwindowsettings="yes" caption="NewWindow">
+   <elements><element name="BrowseSequence" Present="yes" /><element name="SearchInput" Present="no" />
+   </elements>
+   <agents defaultagent="toc">
+    <agent>toc
+    </agent>
+    <agent>ndx
+    </agent>
+    <agent>nls
+    </agent>
+    <agent>gls
+    </agent>
+   </agents>
+  </window>
+ </windowlist>
+ <contextmap>
+  <contextentry id="84" page="Time___Attendance.htm">
+  </contextentry>
+  <contextentry id="83" page="Time.htm">
+  </contextentry>
+  <contextentry id="81" page="Edit_Actuals.htm">
+  </contextentry>
+  <contextentry id="80" page="Duress.htm">
+  </contextentry>
+  <contextentry id="82" page="Recent_Check_In___Check_Out.htm">
+  </contextentry>
+  <contextentry id="79" page="Control_Room_Dashboard.htm">
+  </contextentry>
+ </contextmap>
+ <topiclist defaulttopic="Time.htm">
+  <topic>Recent_Check_In___Check_Out.htm
+  </topic>
+  <topic>recommendation_doc.htm
+  </topic>
+  <topic>Edit_Actuals.htm
+  </topic>
+  <topic>Control_Room_Dashboard.htm
+  </topic>
+  <topic>Duress.htm
+  </topic>
+  <topic>Time.htm
+  </topic>
+  <topic>Time___Attendance.htm
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+  <filenameentry moniker="wh_languagetype">
+   <filename>en_US
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="startpage">
+   <filename>index.htm
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="keywordinfo">
+   <filename>SearchOptions.xml
+   </filename>
+  </filenameentry>
+ </filenamemap>
+</ppfml>

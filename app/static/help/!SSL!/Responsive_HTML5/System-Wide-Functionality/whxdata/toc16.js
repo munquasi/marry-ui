@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc1.js\"  name=\"Working Absence\"><item name=\"Working Absence\" url=\"Working_Absence.htm\" /><item name=\"Add Working Absence\" url=\"Add_Working_Absence.htm\" /></data>";

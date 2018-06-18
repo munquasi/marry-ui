@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE polprojfile>
+<ppfml version="2.00" project="Javelin-Help" type="4">
+ <windowlist defaultwindow="NewWindow">
+  <window name="NewWindow" x="5%" y="5%" width="90%" height="90%" viewtype="doublepane" workspacestyle="DEFAULT" toolbar="off" locationbar="off" menu="off" resizable="yes" statusbar="off" usecurrentwindowsettings="yes" caption="NewWindow">
+   <elements><element name="BrowseSequence" Present="yes" /><element name="SearchInput" Present="no" />
+   </elements>
+   <agents defaultagent="toc">
+    <agent>toc
+    </agent>
+    <agent>ndx
+    </agent>
+    <agent>nls
+    </agent>
+    <agent>gls
+    </agent>
+   </agents>
+  </window>
+ </windowlist>
+ <contextmap>
+  <contextentry id="29" page="Create_New_Wage.htm">
+  </contextentry>
+  <contextentry id="51" page="System_Wide_Functionality.htm">
+  </contextentry>
+  <contextentry id="32" page="Directory.htm">
+  </contextentry>
+  <contextentry id="18" page="Country_Audit_Logs.htm">
+  </contextentry>
+  <contextentry id="52" page="system-admin.docx_files\Update_a_Job_to_Role_Mapping.htm">
+  </contextentry>
+  <contextentry id="57" page="View_Employee_s_Photo.htm">
+  </contextentry>
+  <contextentry id="44" page="Pay_Element.htm">
+  </contextentry>
+  <contextentry id="42" page="Working_Absence.htm">
+  </contextentry>
+  <contextentry id="31" page="Delete_an_Event_from_Employee_Calendar.htm">
+  </contextentry>
+  <contextentry id="15" page="Country_Absence_Entitlement.htm">
+  </contextentry>
+  <contextentry id="24" page="Create_Employee_Sick_Leave_Entitlement.htm">
+  </contextentry>
+  <contextentry id="28" page="Create_New_Tolerance.htm">
+  </contextentry>
+  <contextentry id="16" page="Country_Adjustment.htm">
+  </contextentry>
+  <contextentry id="26" page="Create_New_Duress_Code.htm">
+  </contextentry>
+  <contextentry id="48" page="Site_Administration.htm">
+  </contextentry>
+  <contextentry id="12" page="Bank_Holiday_(Average_Pay_Calculation_Reference).htm">
+  </contextentry>
+  <contextentry id="30" page="Currency.htm">
+  </contextentry>
+  <contextentry id="14" page="Control_Room.htm">
+  </contextentry>
+  <contextentry id="33" page="Duress_Code.htm">
+  </contextentry>
+  <contextentry id="60" page="View_People_s_Calendar.htm">
+  </contextentry>
+  <contextentry id="20" page="Country_Tolerance.htm">
+  </contextentry>
+  <contextentry id="54" page="Update_an_Event_in_Employee_Calendar.htm">
+  </contextentry>
+  <contextentry id="61" page="View_People_s_Information.htm">
+  </contextentry>
+  <contextentry id="56" page="View_Employee_Assignment.htm">
+  </contextentry>
+  <contextentry id="25" page="Create_New_Allowances.htm">
+  </contextentry>
+  <contextentry id="55" page="View_Country_Audit_Logs.htm">
+  </contextentry>
+  <contextentry id="38" page="Holidays_List.htm">
+  </contextentry>
+  <contextentry id="23" page="Create_Currency.htm">
+  </contextentry>
+  <contextentry id="34" page="Getting_Started.htm">
+  </contextentry>
+  <contextentry id="35" page="Holiday_Calendar1.htm">
+  </contextentry>
+  <contextentry id="17" page="Country_Allowances.htm">
+  </contextentry>
+  <contextentry id="43" page="Minimum_Wages.htm">
+  </contextentry>
+  <contextentry id="39" page="Home_Screen.htm">
+  </contextentry>
+  <contextentry id="22" page="Create_Country_Adjustment.htm">
+  </contextentry>
+  <contextentry id="58" page="View_Employee_s_Profile.htm">
+  </contextentry>
+  <contextentry id="49" page="system-admin.docx_files\Suspend_a_Role.htm">
+  </contextentry>
+  <contextentry id="36" page="Holiday_Calendar.htm">
+  </contextentry>
+  <contextentry id="47" page="Sick_Leave-absence-entitlement.htm">
+  </contextentry>
+  <contextentry id="53" page="system-admin.docx_files\Update_a_Role.htm">
+  </contextentry>
+  <contextentry id="46" page="system-admin.docx_files\Role_Administration_in_CRUD.htm">
+  </contextentry>
+  <contextentry id="37" page="Holidays.htm">
+  </contextentry>
+  <contextentry id="27" page="Create_New_Pay_Element.htm">
+  </contextentry>
+  <contextentry id="45" page="login-quick-links.docx_files\Quick_Links.htm">
+  </contextentry>
+  <contextentry id="13" page="system-admin.docx_files\Configuring_Updating_Menus_for_Role.htm">
+  </contextentry>
+  <contextentry id="50" page="system-admin.docx_files\Suspending_a_Job_Title.htm">
+  </contextentry>
+  <contextentry id="59" page="View_Employee_s_Role.htm">
+  </contextentry>
+  <contextentry id="19" page="Country_Break_Management.htm">
+  </contextentry>
+  <contextentry id="21" page="system-admin.docx_files\Create_a_Role.htm">
+  </contextentry>
+  <contextentry id="40" page="How_Operations_link_to_Finance_and_HR.htm">
+  </contextentry>
+ </contextmap>
+ <topiclist defaulttopic="About_Operations.htm">
+  <topic>View_Country_Audit_Logs.htm
+  </topic>
+  <topic>system-admin.docx_files\Create_a_Role.htm
+  </topic>
+  <topic>Update_an_Event_in_Employee_Calendar.htm
+  </topic>
+  <topic>Duress_Code.htm
+  </topic>
+  <topic>login-quick-links.docx_files\Quick_Links.htm
+  </topic>
+  <topic>Country_Tolerance.htm
+  </topic>
+  <topic>Add_Employee_Annual_Leave_Entitlement.htm
+  </topic>
+  <topic>Control_Room.htm
+  </topic>
+  <topic>Directory.docx.htm
+  </topic>
+  <topic>Create_New_Allowances.htm
+  </topic>
+  <topic>View_Employee_s_Profile.htm
+  </topic>
+  <topic>Add_New_Calendar.htm
+  </topic>
+  <topic>system-admin.docx_files\Mapping_Jobs_to_Role.htm
+  </topic>
+  <topic>Country_Audit_Logs.htm
+  </topic>
+  <topic>System_Wide_Functionality.htm
+  </topic>
+  <topic>Add_a_New_Event_to_Calendar.htm
+  </topic>
+  <topic>Site_Administration.htm
+  </topic>
+  <topic>How_Operations_link_to_Finance_and_HR.htm
+  </topic>
+  <topic>Holidays_List.htm
+  </topic>
+  <topic>View_Employee_s_Photo.htm
+  </topic>
+  <topic>Add_Average_Pay_Calculation_for_Sick_Leave.htm
+  </topic>
+  <topic>Create_New_Wage.htm
+  </topic>
+  <topic>View_People_s_Information.htm
+  </topic>
+  <topic>Country_Allowances.htm
+  </topic>
+  <topic>system-admin.docx_files\Role_Administration_in_CRUD.htm
+  </topic>
+  <topic>Time-attendance.docx.htm
+  </topic>
+  <topic>Home_Screen.htm
+  </topic>
+  <topic>Holiday_Calendar1.htm
+  </topic>
+  <topic>system-admin.docx_files\Activate_a_Role.htm
+  </topic>
+  <topic>Add_Sick_Leave-absence-entitlement.htm
+  </topic>
+  <topic>Add_New_Holiday.htm
+  </topic>
+  <topic>View_People_s_Calendar.htm
+  </topic>
+  <topic>Holiday_Calendar.htm
+  </topic>
+  <topic>View_Employee_Assignment.htm
+  </topic>
+  <topic>Create_Employee_Sick_Leave_Entitlement.htm
+  </topic>
+  <topic>system-wide-funct.docx.htm
+  </topic>
+  <topic>Create_New_Pay_Element.htm
+  </topic>
+  <topic>system-admin.docx_files\system-admin.docx.htm
+  </topic>
+  <topic>system-admin.docx_files\Configuring_Updating_Menus_for_Role.htm
+  </topic>
+  <topic>Add_Annual_Leave-absence-entitlement.htm
+  </topic>
+  <topic>Add_Working_Absence.htm
+  </topic>
+  <topic>Create_Country_Adjustment.htm
+  </topic>
+  <topic>system-admin.docx_files\Suspend_a_Role.htm
+  </topic>
+  <topic>Sick_Leave-absence-entitlement.htm
+  </topic>
+  <topic>Working_Absence.htm
+  </topic>
+  <topic>login-quick-links.docx.htm
+  </topic>
+  <topic>Holidays.htm
+  </topic>
+  <topic>Bank_Holiday_(Average_Pay_Calculation_Reference).htm
+  </topic>
+  <topic>View_Visa_Permits.htm
+  </topic>
+  <topic>Create_Currency.htm
+  </topic>
+  <topic>Pay_Element.htm
+  </topic>
+  <topic>Country_Break_Management.htm
+  </topic>
+  <topic>system-admin.docx_files\Suspending_a_Job_Title.htm
+  </topic>
+  <topic>Annual_Leave-absence-entitlement.htm
+  </topic>
+  <topic>About_Operations.htm
+  </topic>
+  <topic>Country_Adjustment.htm
+  </topic>
+  <topic>Minimum_Wages.htm
+  </topic>
+  <topic>system-admin.docx_files\Update_a_Role.htm
+  </topic>
+  <topic>Country_Absence_Entitlement.htm
+  </topic>
+  <topic>Delete_an_Event_from_Employee_Calendar.htm
+  </topic>
+  <topic>Create_New_Duress_Code.htm
+  </topic>
+  <topic>Create_New_Tolerance.htm
+  </topic>
+  <topic>Add_Average_Pay_Calculation_Reference_for_Annual_Leave.htm
+  </topic>
+  <topic>Add_Country_Control_Room.htm
+  </topic>
+  <topic>Getting_Started.htm
+  </topic>
+  <topic>Directory.htm
+  </topic>
+  <topic>View_Employee_s_Role.htm
+  </topic>
+  <topic>Currency.htm
+  </topic>
+  <topic>working_absence_tab.docx.htm
+  </topic>
+  <topic>Absence_Pay_Annual_Leave.htm
+  </topic>
+  <topic>system-admin.docx_files\Update_a_Job_to_Role_Mapping.htm
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+  <filenameentry moniker="wh_languagetype">
+   <filename>en_US
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="startpage">
+   <filename>index.htm
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="keywordinfo">
+   <filename>SearchOptions.xml
+   </filename>
+  </filenameentry>
+ </filenamemap>
+</ppfml>

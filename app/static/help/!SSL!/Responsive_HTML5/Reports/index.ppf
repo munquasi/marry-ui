@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE polprojfile>
+<ppfml version="2.00" project="Javelin Reports" type="4">
+ <windowlist defaultwindow="NewWindow">
+  <window name="NewWindow" x="5%" y="5%" width="90%" height="90%" viewtype="doublepane" workspacestyle="DEFAULT" toolbar="off" locationbar="off" menu="off" resizable="yes" statusbar="off" usecurrentwindowsettings="yes" caption="NewWindow">
+   <elements><element name="BrowseSequence" Present="yes" /><element name="SearchInput" Present="no" />
+   </elements>
+   <agents defaultagent="toc">
+    <agent>toc
+    </agent>
+    <agent>ndx
+    </agent>
+    <agent>nls
+    </agent>
+    <agent>gls
+    </agent>
+   </agents>
+  </window>
+ </windowlist>
+ <contextmap>
+ </contextmap>
+ <topiclist defaulttopic="Javelin-reports.docx_files\Reports.htm">
+  <topic>Javelin-reports.docx_files\Establishment_Report.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Overgrading_Report.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Gains_and_Losses_Report.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Audit_Reports.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Generating-Viewing_Reports_and_Logs.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Scheduling_Accuracy_Report.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Employee_Working_Time_Report.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Gross_Pay_Report.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Delivery_of_Contracted_Hours.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Javelin-reports.docx.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Overs_and_Unders_Report.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Operation_Reports.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Allowances_Report.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Customer_Retention.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Training_Compliance_Report.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\License_Compliance_Report.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Time_and_Attendance.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Payroll_Reports.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Security_Report.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Billage_Ratio_Report.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Subcontractor_Usage_Report.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Reports.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Inactive_Employee_Report.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Adjustment_Report.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Hours_Reconciliation_Report.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Audit_Report.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Contract_Reports.htm
+  </topic>
+  <topic>Javelin-reports.docx_files\Skills_Compliance_Report.htm
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+  <filenameentry moniker="wh_languagetype">
+   <filename>en_US
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="startpage">
+   <filename>index.htm
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="keywordinfo">
+   <filename>SearchOptions.xml
+   </filename>
+  </filenameentry>
+ </filenamemap>
+</ppfml>

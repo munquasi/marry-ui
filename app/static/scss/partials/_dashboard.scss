@@ -1,0 +1,10 @@
+.newsFeedList{
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 5px #ccc;
+    max-height: 300px;
+    overflow: auto;
+    li:nth-child(2n+1){
+    	background:#fafafa;
+    }
+    li a{display:block; padding:5px;}
+}

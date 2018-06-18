@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"View Employee Assignment","url":"View_Employee_Assignment.htm"},{"type":"item","name":"View Employee's Photo","url":"View_Employee_s_Photo.htm"},{"type":"item","name":"View Employee's Profile","url":"View_Employee_s_Profile.htm"},{"type":"item","name":"View Employee's Role","url":"View_Employee_s_Role.htm"},{"type":"item","name":"View Visa Permits","url":"View_Visa_Permits.htm"},{"type":"book","name":"Leave","key":"toc19"},{"type":"item","name":"Bank Holiday (Average Pay Calculation Reference)","url":"Bank_Holiday_(Average_Pay_Calculation_Reference).htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

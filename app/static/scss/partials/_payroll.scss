@@ -1,0 +1,30 @@
+payroll-invoice-payroll-create {
+    width:100%
+}
+.payroll-create-form {
+    md-card {
+        background-color:transparent;
+        box-shadow:0 0 0 transparent;
+        md-card-content {
+            background-color:$white;
+            border-radius: 8px;
+            
+        }
+    }
+    label {
+        font-family: "DroidSans";
+        font-size: 12px;
+        color: $text;
+        width:40%
+    }
+    input, select {
+        font-family: "DroidSansMono";
+        font-size: 14px;
+        color: $black;
+    }
+}
+
+
+payroll-radio-list{
+        padding-left: 2px!important;
+}

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 8" />
+<title>Screen_Level_Help</title>
+<link rel="StyleSheet" href="MS_Help.css" type="text/css" />
+</head>
+
+<body>
+<p>&#160;</p>
+<?rh-region_start type="body" ?>
+	<h1><?rh-variable_start name="title" format="default" ?>Screen_Level_Help<?rh-variable_end ?></h1>
+	<h2 style="border-bottom: Solid 1px #000000;">Overview</h2>
+	<p>The <span style="font-weight: bold;">&lt;Insert Screen Name Here&gt;</span> 
+	 screen is used to accomplish the following:</p>
+	<p>Provide some instruction on what the screen is all about.</p>
+	<h2 style="border-bottom: Solid 1px #000000;">Fields/Buttons/Areas</h2>
+	<div align="left">
+		<table cellspacing="0">
+			<col />
+			<col />
+			<tr>
+				<td style="border: Solid 1px #000000;" bgcolor="#C0C0C0"><p 
+					 style="font-weight: bold;">Field</p></td>
+				<td style="border-top: Solid 1px #000000; border-right: Solid 1px #000000; 
+					 border-bottom: Solid 1px #000000;" bgcolor="#C0C0C0"><p 
+					 style="font-weight: bold;">Description</p></td>
+			</tr>
+			<tr>
+				<td style="border-left: Solid 1px #000000; border-right: Solid 1px #000000; 
+					 border-bottom: Solid 1px #000000;"><p style="font-weight: bold;">Field 
+				 1</p></td>
+				<td style="border-right: Solid 1px #000000; border-bottom: Solid 1px #000000;"><p>This 
+				 field allows you to configure the timeout delay.<br />
+				Values may range from zero to 99<br />
+				<br />
+				<span style="font-weight: bold;">The default value is 50.</span></p>
+				<p>For detailed steps on how to configure the timeout delay 
+				 and what it may affect, click here. (This would be a link 
+				 to more detailed information)</p></td>
+			</tr>
+			<tr>
+				<td style="border-left: Solid 1px #000000; border-right: Solid 1px #000000; 
+					 border-bottom: Solid 1px #000000;"><p style="font-weight: bold;">Field 
+				 2</p></td>
+				<td style="border-right: Solid 1px #000000; border-bottom: Solid 1px #000000;"><p>This 
+				 field allows you to configure the update frequency.<br />
+				Values may range from 22 to 88<br />
+				<span style="font-weight: bold;">The default value is 47.</span></p></td>
+			</tr>
+		</table>
+	</div>
+	<p>&#160;</p>
+<?rh-region_end type="body" ?>
+<p>&#160;</p>
+</body>
+</html>

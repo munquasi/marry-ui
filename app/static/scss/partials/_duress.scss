@@ -1,0 +1,29 @@
+  //Duress
+  .duress-modal-top-logo-container {
+    display: inline-flex;
+    margin: 2rem 0.5rem 2rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 3rem;
+    }
+    h4 {
+      color: $g4s-red;
+      margin-left: -48% !important;
+    }
+  }
+  
+  .duress-error-modal-container {
+    display: inline-flex;
+    margin: 0rem 0rem 0rem 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 98.5%;
+    img {
+      width: 2rem;
+    }
+    h4 {
+      color: $g4s-red;
+      margin-left: -15% !important;
+    }
+  }

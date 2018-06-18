@@ -1,0 +1,109 @@
+.global-serach-bar-row {
+  width: 30% !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  position: fixed;
+  z-index: 9;
+    transition: linear 1s;
+}
+
+.global-search-bar-container {
+  display: inline-flex;
+  font-family: DroidSans !important;
+  font-size: 0.9rem;
+  font-weight: 400;
+  width: 38rem;
+  form {
+    .search-popover {
+      position: absolute;
+      color: #3e5766;
+      font-size: 0.7rem;
+      background: aliceblue;
+      border-radius: 3px;
+      margin-top: 2%;
+      padding: 0px 10px;
+    }
+    .searchbar-group {
+      margin-top: 2%;
+      padding: 0 0.5rem;
+      background: $text;
+      input::-webkit-input-placeholder {
+        color: $white;
+      }
+      input:-moz-placeholder {
+        /* Firefox 18- */
+        color: $white;
+      }
+      input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: $white;
+      }
+      input:-ms-input-placeholder {
+        color: $white;
+      }
+      .searchbar-filter {
+        width: 11rem;
+        display: inline-flex;
+        .dropdown-menu {
+          top: -8rem;
+        }
+        .dropdown-toggle {
+          &:after {
+            height: inherit !important;
+            width: inherit !important;
+          }
+        }
+        button {
+          color: $white;
+          background: transparent;
+          border: none;
+          &:after {
+            content: url('/static/img/dropdown.svg') !important;
+            top: 2px;
+            speak: none;
+            left: 0.5rem !important;
+            -webkit-transform: scaleY(.8) scaleX(.8) !important;
+            transform: scaleY(.8) scaleX(.8) !important;
+          }
+        }
+      }
+      .searchbar-input {
+        display: inline-flex;
+        width: 12rem;
+        border: none;
+        color: $white;
+        border-bottom: 1px solid $text-disabled;
+        background: transparent;
+        :-webkit-input-placeholder {
+          color: $white !important;
+        }
+        :-moz-placeholder {
+          /* Firefox 19+ */
+          color: $white !important;
+        }
+        :-ms-input-placeholder {
+          color: $white !important;
+        }
+      }
+    }
+  }
+  .global-search-button {
+    height: 75px;
+    width: 90px;
+    border-radius: 0;
+    display: inline-block;
+    background: $text;
+    margin: 0;
+    &:hover {
+      background: $text !important;
+    }
+  }
+  .global-search-bar {
+    display: inline-block;
+    background: $text;
+    border-radius: 0 3px 0 0;
+    // padding: 1.5rem 1rem 1rem 0rem;
+  }
+}
